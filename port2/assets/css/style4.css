@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#section0 {
+  height:100vh;
+  background-color:#B4DBD2;
+}
+
+#section0 .sub-main {
+  position:absolute;
+  top:20%;
+  right:0; left:0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size:64px;
+  line-height:90px;
+  text-align: center;
+  color:#fff;
+}
+#section0 .work {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height:90px;
+  color:#F47D7D;
+  margin-top:-20px;
+  
+}
+
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+  bottom: 80px;
+	text-align: center;
+}
+
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+
+
+
+.container {width:45%; background-color:#fff; }
+.tit {position:absolute; top:3%; left:0; right:0; color:#555;}
+.tit h3{width:5%;  margin:0 auto; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 12px; line-height:20px; color:#F47D7D;}
+.tit h4 {font-size:20px; font-weight:100; line-height:60px; font-family: 'Playfair Display', serif; font-weight: 400; font-size:40px;}
+.tit h5 {font-size:10px; font-weight:400; margin-top:0px; margin-bottom:20px; opacity:0.6;font-family: 'Noto Sans KR', sans-serif; }
+.tit p {font-size:14px; font-weight:400; opacity:0.8; line-height:15px; margin-bottom:10px; font-family: 'Noto Sans KR', sans-serif; }
+
+#section1 {background: #0D2749; overflow: hidden; height:100vh; text-align:center; color:#fff;}
+#section1 .hugme {position:absolute; top:15%; left:0; width:100%; }
+.view {border:1px solid #fff; font-size:10px; padding:3px 0px; width:20%; margin:0 auto;}
+
+
+

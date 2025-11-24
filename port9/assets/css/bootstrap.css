@@ -1,0 +1,55 @@
+
+body {
+    font-family: 'Nanum Barun Gothic',Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #333;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.7;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.categ.html
+{
+    background: hsl(197, 77%, 58%);
+    border-radius: 3px;
+    padding: 1px 6px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.categ.css {
+    background: hsl(161, 77%, 58%);
+    border-radius: 3px;
+    padding: 1px 6px;
+    color: #fff;
+    font-weight: 600;
+}
+.categ.js {
+    background: hsla(50, 76%, 53%, 0.81);
+    border-radius: 3px;
+    padding: 1px 6px;
+    color: #fff;
+    font-weight: 600;
+}

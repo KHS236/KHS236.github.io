@@ -1,0 +1,149 @@
+/* reset */
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,select,button,figure{margin: 0; padding: 0;}
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,
+select,button,figure{margin:0;padding:0;}
+em,address{font-style:normal;}
+ul,li,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}
+a{color:#333;text-decoration:none;}
+img,fieldset{border:0;}
+/*video, img {width: 100%;}*/
+body{background:#000;direction:ltr;-webkit-text-size-adjust:none;}
+table{width:100%;border-spacing:0;border-collapse:collapse;}
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.ir{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after{display:table;content:'';line-height:0;}
+.clearfix:after{clear:both;}
+
+/* progress */
+.progress {
+	background: rgba(0,0,0,1);
+	color: #000;
+	height: 100vh;
+	width: 100%;
+	position: absolute;	
+	z-index: 1000;
+}
+.progress-bar {
+	border-top: 1px solid rgb(160,160,160);
+	position: absolute;
+	top: 50%;
+	width: 0%;
+}
+.progress-text {
+	font: 14px;
+	margin-top: 10px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+}
+.progress-complete .progress-bar {
+	border-top-color: rgb(255,255,255);
+}
+
+/* .row */
+.row {width: 100%; height: 100vh;  background-color: #fff; position: relative;}
+
+/* .bbox1 */
+.bbox1 {width: 50%; text-align: center; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;}
+.black-title {color: #000; font-size: 79px; font-family: 'Rubik', sans-serif; font-weight: 700; margin-right: 4px;}
+.black-title span {opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease;}
+.black-title span:before {
+	content: ''; position: absolute; left: 27%; top: 10px;
+	background-color: rgb(255, 217, 74); width: 388px; height: 66px;
+	transform: scaleX(0);
+}
+.black-subtitle {color: #000; font-size: 30px; margin-bottom: 80px; font-family: 'Cormorant Garamond', serif; font-style: italic;}
+.black-subtitle span {opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease;}
+.black-subtitle span:before {
+	content: ''; position: absolute; left: 27%; top: 98px;
+	background-color: rgb(0,0,1); width: 388px; height: 34px;
+	transform: scaleX(0);
+}
+
+/* bar */
+.bar {}
+.bar1 {content: ''; position: absolute; left: 5%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 1.7s ease; transform: scaleY(0);}
+.bar2 {content: ''; position: absolute; left: 16.25%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 1.8s ease; transform: scaleY(0);}
+.bar3 {content: ''; position: absolute; left: 27.5%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 1.9s ease; transform: scaleY(0);}
+.bar4 {content: ''; position: absolute; left: 38.75%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 2.0s ease; transform: scaleY(0);}
+.bar5 {content: ''; position: absolute; left: 50%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 2.1s ease; transform: scaleY(0);}
+.bar6 {content: ''; position: absolute; left: 61.25%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 2.2s ease; transform: scaleY(0);}
+.bar7 {content: ''; position: absolute; left: 72.5%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 2.3s ease; transform: scaleY(0);}
+.bar8 {content: ''; position: absolute; left: 83.75%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 2.4s ease; transform: scaleY(0);}
+.bar9 {content: ''; position: absolute; left: 95%; top: 0; width: 1px; height: 0; background-color: #e7eae9; transition: height 0.6s 2.5s ease; transform: scaleY(0);}
+
+/* black-menu */
+.black-menu {margin-top: 50px; width: 100%;}
+.black-menu .bm {overflow: hidden; width: 125vh;}
+.black-menu .bm li {float: left;}
+.black-menu .bm li.l1 {width: 188px; margin-left: 42px;}
+.black-menu .bm li.l2 {width: 188px; margin-left: 1px;}
+.black-menu .bm li.l3 {width: 188px; margin-left: 1px;}
+.black-menu .bm li.l4 {width: 188px; margin-left: 1px;}
+.black-menu .bm li:hover {border-right: 1px solid #000; border-left: 1px solid #000;}
+.black-menu .bm li a {
+	color: #000; display: block;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+    font-size: 16px;
+    padding: 20px 0;
+    opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease;
+}
+
+/* #section1.active */
+#section1.active .flogo a  			   {opacity: 1; transform: translateY(0px); animation: ani2 0.7s 1.2s ease forwards;}
+#section1.active .black-menu .bm li a  {opacity: 1; transform: translateY(0px); animation: ani2 0.7s 1.2s ease forwards;}
+#section1.active .black-title span     {opacity: 1; transform: translateY(0px); animation: ani1 0.7s 1.2s ease forwards;}
+#section1.active .black-subtitle span  {opacity: 1; transform: translateY(0px); animation: ani1 0.7s 1.2s ease forwards;}
+#section1.active .black-title span:before    {animation: ani1 0.7s 1.6s ease forwards;}
+#section1.active .black-subtitle span:before {animation: ani1 0.7s 1.6s ease forwards;}
+#section1.active .bar1 {height: 100vh; animation: ani3 0.7s 2s ease forwards;}
+#section1.active .bar2 {height: 100vh; animation: ani3 0.7s 2.2s ease forwards;}
+#section1.active .bar3 {height: 100vh; animation: ani3 0.7s 2.3s ease forwards;}
+#section1.active .bar4 {height: 100vh; animation: ani3 0.7s 2.4s ease forwards;}
+#section1.active .bar5 {height: 100vh; animation: ani3 0.7s 2.5s ease forwards;}
+#section1.active .bar6 {height: 100vh; animation: ani3 0.7s 2.6s ease forwards;}
+#section1.active .bar7 {height: 100vh; animation: ani3 0.7s 2.7s ease forwards;}
+#section1.active .bar8 {height: 100vh; animation: ani3 0.7s 2.8s ease forwards;}
+#section1.active .bar9 {height: 100vh; animation: ani3 0.7s 2.9s ease forwards;}
+
+
+@keyframes ani1 {
+	0%   {transform-origin: bottom; transform: scaleY(0);}
+	50%  {transform-origin: bottom; transform: scaleY(1);}
+	51%  {transform-origin: top; transform: scaleY(1);}
+	100% {transform-origin: top; transform: scaleY(0);}
+}
+@keyframes ani2 {
+	0%   {transform-origin: bottom; transform: scaleY(0);}
+	100% {transform-origin: top; transform: scaleY(1);}
+}
+@keyframes ani3 {
+	0%   {transform-origin: top; transform: scaleY(0);}
+	100% {transform-origin: bottom; transform: scaleY(1);}
+}
+
+
+/* rotate */
+.rotate {overflow: hidden; width: 4%; position: absolute; right: 11%; top: 5%;}
+.rotate a {display: block; float: left;}
+.rotate a.img2 {padding-left: 10px;}
+
+/* flogo */
+.flogo {position: absolute; left: 50%; bottom: 0; transform: translate(-50%, -50%); z-index: 1;}
+.flogo a {opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease;}
+.flogo a img {transition: all 0.7s ease-in-out; border-radius: 50%;}
+.flogo a img:hover {box-shadow: 0 -180px 0 0 rgb(255, 217, 74) inset;}
+
+
+/* ball */
+.ball {
+  position: fixed;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="autheor" content="jeongahstory">
+    <meta name="description" content="반응형 사이트 따라하기">
+    <meta name="keywords" content="웹 퍼블리셔 포트폴리오, 반응형사이트, 웹퍼블리셔, 웹접근성, HTML5">
+    <title>포트폴리오 만들기</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style4.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon-64.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon-152.png">
+    <link rel="icon" href="assets/icons/favicon-152.png">
+    <link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/icons/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="assets/icons/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="assets/icons/favicon-128.png" sizes="128x128">
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!");
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- progress -->
+    <div class="progress" id="progress">
+        <span class="progress-bar"></span>
+        <span class="progress-text">0</span>
+    </div>
+
+    <div class="info">
+        <h3>SCROLL</h3>
+        <span class="scroll_top">0</span>
+    </div>
+
+    <header id="header">
+        <div class="header">
+            <div class="menu">
+                <a href="#">
+                    <div class="ham">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <nav class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="list-item"><a href="index2.html" class="hover-target">Mainpage</a></li>
+                <li class="list-item"><a href="about.html" class="hover-target">SKILL</a></li>
+                <li class="list-item"><a href="#" class="hover-target">Portfolio</a></li>
+                <li class="list-item"><a href="#" class="hover-target">Work</a></li>
+                <li class="list-item"><a href="#" class="hover-target">Blog</a></li>
+                <li class="list-item"><a href="#" class="hover-target">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--nav -->
+
+    <canvas id="space"></canvas>
+
+    <div class="parallax-page">
+        <div class="parallax">
+            <div class="parallax__layer"><img src="assets/img/index2/bg01-1.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg02.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg03.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg04.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg05.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg06.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg07.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/cover01.png" alt=""></div>
+            <div class="parallax__content">
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="section1">
+        <div class="sec1">
+            <div class="sec1_01"><img src="assets/img/page02_2.png" alt=""></div>
+
+            <div class="skill">
+                <h3>Skill Ability</h3>
+                <div class="skill_wrap about">
+                    <div class="skill1">
+                        <p class="pie" data-percent="90">
+                            <strong class="count">90</strong>
+                        </p>
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill2">
+                        <p class="pie" data-percent="90">
+                            <strong class="count">90</strong>
+                        </p>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill3">
+                        <p class="pie" data-percent="80">
+                            <strong class="count">90</strong>
+                        </p>
+                        <h4>Javascript</h4>
+                    </div>
+                    <div class="skill4">
+                        <p class="pie" data-percent="70">
+                            <strong class="count">90</strong>
+                        </p>
+                        <h4>jQuery</h4>
+                    </div>
+                    <div class="skill5">
+                        <p class="pie" data-percent="60">
+                            <strong class="count">90</strong>
+                        </p>
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section1 -->
+
+    <section id="section2">
+        <div class="container">
+            <div class="row">
+                <div class="sec2">
+                    <div class="sec2_title">
+                        <span>UI/UX Web Site</span>
+                        <h2>BUILD <br><em>A VARIETY OF WEBSITES</em></h2>
+                    </div>
+                    
+                    <div class="sec_site1">
+                        <h3 class="ss1_tit">Web standards</h3>
+                        <p class="ss1_desc"><strong>웹 표준을 준수한 사이트</strong>를 만들어 보았습니다.<br>사이트에는 메뉴, 슬라이드, 탭기능, 동영상, 팝업기능 등<br> 여러기능을 넣어서 작업하였습니다.</p>
+                        <ul class="ss1_ul">
+                            <li>Viewport : Desktop</li>
+                            <li>IE support : IE9+</li>
+                            <li>Palette : <span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></li>
+                        </ul>
+                        <div class="table_wrap">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Source</th>
+                                        <th>Related keywords</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><em class="categ html">HTML</em></td>
+                                        <td><a class="underline" href="https://github.com/jeongah2651/webstandard1/blob/master/index.html" target="_blank">index.html</a></td>
+                                        <td>HTML5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="categ css">CSS</em></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/blob/master/css/style.css" target="_blank">style.css</a></td>
+                                        <td>CSS3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="categ css">CSS</em></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/blob/master/css/reset.css" target="_blank">reset.css</a></td>
+                                        <td>CSS3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="categ css">CSS</em></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/blob/master/css/lightgallery.css" target="_blank">lightgallery.css</a></td>
+                                        <td>CSS3, lightgallery</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="categ js">JS</span></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/tree/master/js" target="_blank">jquery.js</a></td>
+                                        <td>jQuery, <a href="http://kenwheeler.github.io/slick/" target="_blank">slick</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ss1_btn">
+                            <a href="#" class="cta">
+                                <span>SITE VIEW</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- //sec_site1 -->
+                    <div class="sec_site2 right">
+                        <h3 class="ss1_tit">Web standards</h3>
+                        <p class="ss1_desc"><strong>웹 표준을 준수한 사이트</strong>를 만들어 보았습니다.<br>사이트에는 메뉴, 슬라이드, 탭기능, 동영상, 팝업기능 등<br> 여러기능을 넣어서 작업하였습니다.</p>
+                        <ul class="ss1_ul">
+                            <li>Viewport : Desktop</li>
+                            <li>IE support : IE9+</li>
+                            <li>Palette : <span class="c1"></span><span class="c2"></span><span class="c3"></span><span class="c4"></span></li>
+                        </ul>
+                        <div class="table_wrap">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Source</th>
+                                        <th>Related keywords</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><em class="categ html">HTML</em></td>
+                                        <td><a class="underline" href="https://github.com/jeongah2651/webstandard1/blob/master/index.html" target="_blank">index.html</a></td>
+                                        <td>HTML5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="categ css">CSS</em></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/blob/master/css/style.css" target="_blank">style.css</a></td>
+                                        <td>CSS3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="categ css">CSS</em></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/blob/master/css/reset.css" target="_blank">reset.css</a></td>
+                                        <td>CSS3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><em class="categ css">CSS</em></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/blob/master/css/lightgallery.css" target="_blank">lightgallery.css</a></td>
+                                        <td>CSS3, lightgallery</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="categ js">JS</span></td>
+                                        <td><a href="https://github.com/jeongah2651/webstandard1/tree/master/js" target="_blank">jquery.js</a></td>
+                                        <td>jQuery, <a href="http://kenwheeler.github.io/slick/" target="_blank">slick</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ss1_btn">
+                            <a href="#" class="cta">
+                                <span>SITE VIEW</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- //sec_site3 -->
+                    <div class="sec_site3"></div>
+                    <div class="sec_site4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section2 -->
+
+    <section id="section3"></section>
+    <!-- //section3 -->
+
+    <section id="section4"></section>
+    <!-- //section4 -->
+
+    <section id="section5"></section>
+    <!-- //section5 -->
+
+    <section id="section6"></section>
+    <!-- //section6 -->
+
+
+
+
+    <!-- Script-->
+    <script src="http://kiy620.dothome.co.kr/portfolio/port/assets/js/jquery.min_1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://kiy620.dothome.co.kr/portfolio/port/assets/js/easypiechart.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(function() {
+            imagesProgress(); //이미지 로딩 
+            init(); //메뉴
+            counter();
+
+            $(window).scroll(function() {
+                var wScroll = parseInt($(this).scrollTop());
+                $(".scroll_top").text(wScroll);
+
+            });
+
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>

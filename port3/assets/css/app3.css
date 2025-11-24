@@ -1,0 +1,112 @@
+body {background: #000; color: #FFf; font-family: 'K2D', sans-serif;}
+
+/* info (scroll)*/
+.info {position: fixed; right: 30px; top: 65px; z-index: 1100;}
+.info span {position: relative; color: #fff; display: inline-block; text-align: center;}
+
+/* layout */
+#contents {}
+#section1 {background: rgba(0,0,0,0.5); }
+#section2 {background: rgba(0,0,0,0); height: 1000px;}
+#section3 {height: 1000px;}
+#section4 {height: 1000px;}
+#section5 {height: 1000px;}
+#section6 {height: 1000px;}
+#section7 {height: 1000px;}
+
+/* container */
+.container {width: 1200px; margin: 0 auto;}
+.p100 {padding-left: 200px; padding-right: 200px; box-sizing: border-box;}
+
+/* nav */
+#nav {position: fixed; opacity: 0; left: 0; top: -100%; transition: top 1.88s ease, opacity 4s ease; width: 100%; height: 50px; line-height: 50px; border-bottom: 0.5px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.8); z-index: 1000;}
+#nav h1 {float: left; font-size: 24px; font-weight: bold; font-family: 'K2D', sans-serif;}
+#nav .menu {float: right;}
+#nav .menu li {display: inline;}
+#nav .menu li a {font-size: 14px; display: inline-block; padding: 0 13px; color:#fff; }
+#nav .menu li.active a {color:#ffe5db;}
+#nav .menu li:last-child a {padding-right: 0;}
+body.active #nav{top: 0; opacity: 1; }
+
+/* sec1 */
+.sec1 {text-align: center; padding: 300px 0; font-family: 'NanumSquare'; color: #ffe5db;}
+.sec1 .sit1 {max-width: 1000px; height: 400px;  margin: 0 auto; position: relative;}
+.sec1 .sit1:before {content: ''; position: absolute; left: 0; top: 0; z-index: 200; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%); }
+.sec1 .sit1 .bg {width: 100%; height: 400px; position: relative;}
+.sec1 .sit1 .bg:before {content: ''; width: 100%; height: 100%;position: absolute; left: 0; top: 0; z-index: 100;background: url(../img_apple2/mainImg4.png); background-repeat: no-repeat; background-position: center 30px;background-size: 90%;}
+.sec1 .sit1 .bg:after {content: ''; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 100;background:url(../img_apple2/mainImg4.png);background-repeat: no-repeat; background-position: center 0px;background-size: 80%;}
+.sec1 .sit2 {font-size: 30px; padding-bottom: 40px; font-weight: 700; font-family: 'K2D', sans-serif;   }
+.sec1 .sit3 {font-size: 80px; line-height: 1.2; padding-bottom: 70px; font-weight: 800;}
+.sec1 .sit4 {font-size: 28px; line-height: 1.5; padding: 0 20%; padding-bottom: 150px; font-weight: 400; word-break: keep-all }
+.sec1 .sit5 {position: relative; color:#fff; z-index: 200; font-size: 38px; font-weight: 800; color:#fff; letter-spacing: -1px; text-transform: capitalize; line-height: 45px; padding: 25% 0; background: url(https://www.apple.com/v/iphone-xs/b/images/overview/design_film_large.jpg); font-family: 'K2D', sans-serif;}
+.sec1 .sit5 p {color:#fff; font-family: 'K2D', sans-serif;}
+.sec1 .sit5 em {display: inline-block; position: relative; font-weight: 800; font-size: 22px; color:#fff; letter-spacing: -1px; text-transform: capitalize;}
+.sec1 .sit5 em:before {content: ''; opacity: 0; transition: all 0.3s ease;  position: absolute; left: 0; bottom: 0px; width: 100%; height: 3px; background: #fff; }
+.sec1 .sit5 .over {position: absolute; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+.sec1 .sit5 a:hover em:before {opacity: 1; bottom: 7px;}
+
+/* sec1 animation */
+.sec1 .sit1 .bg:before {opacity: 0; transform: translateY(20px); transition: all 1.1s 0.6s ease}
+.sec1 .sit1 .bg:after {opacity: 0; transform: translateY(20px); transition: all 1.1s  ease}
+.sec1 .sit2 {opacity: 0; transform: translateY(40px); transition: opacity 1.95s ease, transform 0.75s ease;}
+.sec1 .sit3 {opacity: 0; transform: translateY(40px); transition: opacity 1.95s ease, transform 0.75s ease;}
+.sec1 .sit4 {opacity: 0; transform: translateY(40px); transition: opacity 1.95s ease, transform 0.75s ease;}
+.sec1 .sit5 {opacity: 0; transform: translateY(40px); transition: opacity 0.95s ease, transform 0.75s ease;}
+.sec1 .sit5 p {opacity: 0; transform: translateY(40px); transition: opacity 0.95s 0.7s ease, transform 0.75s 0.7s ease;}
+.sec1 .sit5 em {opacity: 0; transform: translateY(40px); transition: opacity 0.95s 0.9s ease, transform 0.75s 0.9s ease;}
+
+body.active .sec1 .sit1 .bg:before {opacity: 1;transform: translateY(0px)}
+body.active .sec1 .sit1 .bg:after {opacity: 1; transform: translateY(0px)}
+.sec1 .sit2.active {opacity: 1; transform: translateY(0px);}
+.sec1 .sit3.active {opacity: 1; transform: translateY(0px);}
+.sec1 .sit4.active {opacity: 1; transform: translateY(0px);}
+.sec1 .sit5.active {opacity: 1; transform: translateY(0px);}
+.sec1 .sit5.active p {opacity: 1; transform: translateY(0px);}
+.sec1 .sit5.active em {opacity: 1; transform: translateY(0px);}
+
+
+/* sec2 */
+.sec2 .sat1 {font-size: 50px; font-weight: 800; color:#FFE5E0}
+.sec2 .sat1 p em {background: url(../img_apple2/text/copy_texture_1_large.jpg); background-size: cover;
+  background-position: bottom; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+
+.swrap {width: 100%; overflow: hidden;}
+.swrap .sat2 {background: rgba(255,255,255,0); width: 4000px; height: 570px; padding-top: 200px; overflow: hidden;}
+.swrap .sat2 > div {float: left;}
+.swrap .sat2 > div img {width: 340px;}
+.swrap .sat3 {background: rgba(255,255,255,0); width: 4000px; padding-top: 40px; height: 570px; overflow: hidden;}
+.swrap .sat3 > div {float: left; }
+.swrap .sat3 > div img {width: 340px;}
+
+.sec2 .sat4 {font-size: 50px; font-weight: 800; color:#FFE5E0; padding-top: 100px;}
+.sec2 .sat4 p em {background: url(../img_apple2/text/copy_texture_1_large.jpg); background-size: cover;
+  background-position: bottom; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+
+.swrap2 {width: 100%; overflow: hidden;}
+.sat5 {padding-top: 150px; overflow: hidden;}
+.sat5 > div {float: left; width: 33.33333%; text-align: center}
+.sat5 > div img {width: 300px;}
+.sat5 > div p {font-family: 'NanumSquare'; font-size: 14px; line-height: 1.5; padding: 10px 100px; margin-bottom: 60px; font-weight: bold;}
+.sat5 > div p em {font-weight: normal; color: #b2b2b2; font-size: 13px;}
+
+.sec2 .sat6 {font-size: 50px; font-weight: 800; color:#FFE5E0; margin-top: 100px;}
+.sec2 .sat6 p em {background: url(../img_apple2/text/copy_texture_1_large.jpg); background-size: cover;
+  background-position: bottom; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
+
+.sec2 .sat7 {width: 100%; height: 1000px; padding: 50px 0; position: relative; }
+.sec2 .sat7-1 {position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 0%);}
+.sec2 .sat7-1 img {width: 400px;}
+.sec2 .sat7-2 {position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 0%);}
+.sec2 .sat7-2 img {width: 400px;}
+.sec2 .sat7-3 {position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 0%);}
+.sec2 .sat7-3 img {width: 400px;}
+
+
+
+/* mediaquery */
+@media (max-width:1220px){
+    .container {width: 100%;}
+    .row {padding: 0 16px;}
+}
+
+

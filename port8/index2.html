@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="bibibigcom">
+    <meta name="description" content="반응형 사이트 따라하기">
+    <meta name="keyword" content="반응형사이트, 웹퍼블리셔, 웹접근성, HTML5">
+    <title>bibibigcom</title>
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/music.css">
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="HTML5">
+    <meta property="og:title" content="반응형 사이트 만들기">
+    <meta property="og:url" content="http://bibibigcom.dothome.co.kr">
+    <meta property="og:image" content="http://bibibigcom.dothome.co.kr">
+    <meta property="og:site_name" content="반응형 사이트 만들기">
+    <meta property="og:description" content="반응형 사이트 따라하기">
+
+    <!-- twitter meta tags -->
+    <meta property="twitter:card" content="HTML5">
+    <meta property="twitter:site" content="@bibibig">
+    <meta property="twitter:title" content="반응형 사이트">
+    <meta property="twitter:description" content="반응형 사이트 만들기">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="assets/icon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/favicon-152.png">
+    <link rel="icon" href="assets/icon/favicon.png">
+    <link rel="icon" href="assets/icon/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="assets/icon/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/icon/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="assets/icon/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="assets/icon/favicon-128.png" sizes="128x128">
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet">
+
+    <!-- HTMLhtml5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+		<script src="js/html5shiv.min.js"></script>
+		<script type="text/javascript">
+			alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!")
+		</script>
+	<![endif]-->
+</head>
+
+<body class="bgColor1">
+
+
+    <div class="progress" id="progress">
+        <span class="progress-bar">
+            <div class="box">
+                <span><img src="assets/img/loading.svg" alt="">
+                </span>
+            </div>
+        </span>
+        <span class="progress-text">0</span>
+    </div>
+
+
+    <div id="wrap">
+        <header id="headers">
+            <div class="header_logo">
+                <img src="assets/img/logo.svg" alt="">
+            </div>
+            <div class="header_ham">
+                <img src="assets/img/ham.svg" alt="">
+            </div>
+            <div class="header_clock">
+                <img src="assets/img/clock.svg" alt="">
+            </div>
+            <div class="header_lang">
+                <img src="assets/img/lang.svg" alt="">
+            </div>
+            <div class="header_siri">
+                <img src="assets/img/siri.svg" alt="">
+            </div>
+            <div class="header_search">
+                <img src="assets/img/search.svg" alt="">
+            </div>
+            <div class="header_wifi">
+                <img src="assets/img/wifi.svg" alt="">
+            </div>
+            <div class="header_battery">
+                <img src="assets/img/battery.svg" alt="">
+            </div>
+        </header>
+
+        <section id="contents">
+            <div class="app_dog drag hoverWobble">
+                <img src="assets/img/dog.svg" alt="">
+            </div>
+            <div class="app_ai hoverjello drag hoverBounce open" data-num="1">
+                <img src="assets/img/ai.svg" alt="일러스트">
+            </div>
+            <div class="app_ps hoverjello drag hoverjello open" data-num="2">
+                <img src="assets/img/photoshop.svg" alt="">
+            </div>
+            <div class="app_xd hoverjello drag open" data-num="3">
+                <img src="assets/img/xd.svg" alt="">
+            </div>
+            <div class="app_me drag hoverjello open" data-num="9">
+                <img src="assets/img/about.svg" alt="">
+            </div>
+            <div class="app_chrome hoverjello drag open" data-num="4">
+                <img src="assets/img/chrome.svg" alt="">
+            </div>
+            <div class="app_music drag hoverjello">
+                <img src="assets/img/music.svg" alt="">
+            </div>
+            <div class="app_kakao hoverjello drag open" data-num="7">
+                <img src="assets/img/kakao.svg" alt="">
+            </div>
+            <div class="app_insta hoverjello drag open" data-num="5">
+                <img src="assets/img/insta.svg" alt="">
+            </div>
+            <div class="app_coding hoverjello drag open" data-num="6">
+                <img src="assets/img/coding.svg" alt="">
+            </div>
+            <div class="app_megabox hoverjello drag open" data-num="8">
+                <img src="assets/img/megabox.svg" alt="">
+            </div>
+            <div class="folder_b drag hoverjello">
+                <img src="assets/img/folder_bibibig.svg" alt="">
+            </div>
+            <div class="folder_s drag hoverjello">
+                <img src="assets/img/folder_secret.svg" alt="">
+            </div>
+            <div class="app_minimi drag open hoverjello" data-num="10">
+                <img src="assets/img/minimi.svg" alt="">
+            </div>
+        </section>
+
+        <section class="table">
+            <div class="app_boll">
+                <img src="assets/img/redboll_bg.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/game_name.svg" alt="">
+                </div>
+            </div>
+
+            <div class="app_cal hoverTada">
+                <img src="assets/img/calender.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/calender_name.svg" alt="">
+                </div>
+            </div>
+            <div class="app_cal_bg">
+                <img src="assets/img/calender_bg.svg" alt="">
+            </div>
+            <div class="app_set hoverjello">
+                <img src="assets/img/setting.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/set_name.svg" alt="">
+                </div>
+            </div>
+            <div class="app_set_bg">
+                <img src="assets/img/set_bg.svg" alt="">
+            </div>
+            <div class="app_mail hoverBounce">
+                <img src="assets/img/mail.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/mail_name.svg" alt="">
+                </div>
+            </div>
+            <div class="app_mail_bg">
+                <img src="assets/img/mail_bg.svg" alt="">
+            </div>
+            <div class="app_memo hoverBounce2">
+                <img src="assets/img/memo.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/memo_name.svg" alt="">
+                </div>
+            </div>
+            <div class="app_memo_bg">
+                <img src="assets/img/memo_bg.svg" alt="">
+            </div>
+            <div class="app_finder hoverHeartBeat">
+                <img src="assets/img/finder.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/finder_name.svg" alt="">
+                </div>
+            </div>
+            <div class="app_finder_bg">
+                <img src="assets/img/finder_bg.svg" alt="">
+            </div>
+            <div class="app_trash hoverWobble">
+                <img src="assets/img/trash.svg" alt="">
+                <div class="app_name">
+                    <img src="assets/img/trash_name.svg" alt="">
+                </div>
+            </div>
+            <div class="app_trash_bg">
+                <img src="assets/img/trash_bg.svg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <!-- 클릭시 메인페이지 -->
+    <div class="modal_wrap1">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    일러스트
+                </div>
+                <a class="btn close ir_su" data-num="1">close</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal_wrap2">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    포토샵
+                </div>
+                <a class="btn close ir_su" data-num="2">close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrap3">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    xd
+                </div>
+                <a class="btn close ir_su" data-num="3">close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrap4">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    크롬
+                </div>
+                <a class="btn close ir_su" data-num="4">close</a>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="modal_wrap5">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    인스타그램
+                </div>
+                <a class="btn close ir_su" data-num="5">close</a>
+            </div>
+        </div>
+    </div>
+-->
+    <div class="modal_wrap5">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <a class="btn close ir_su" data-num="5">close</a>
+                <a class="box-btn insta1"></a>
+                    <div class="box-img">
+                        <img src="assets/img/instaImg.jpg" alt="">
+                        <a href="#" class="bi_btn">
+                            <p>X</p>
+                        </a>
+                        <a href="https://www.instagram.com/bibibig.com_/" class="bi_link" target="_blank">
+                            <p>GO</p>
+                        </a>
+                    </div>
+
+                <a class="box-btn insta2">
+                </a>
+                <a class="box-btn insta3">
+                </a>
+                    </div>
+             </div>
+        </div>
+
+    <div class="modal_wrap6">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    브라켓
+                </div>
+                <a class="btn close ir_su" data-num="6">close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrap7">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    카카오톡
+                </div>
+                <a class="btn close ir_su" data-num="7">close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrap8">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <a class="btn close ir_su" data-num="8">close</a>
+                <a class="box-btn"></a>
+                <div class="box-img">
+                    <img src="assets/img/megaImg.jpg" alt="">
+                    <a href="#" class="bi_btn">
+                        <p>X</p>
+                    </a>
+                    <a href="https://www.behance.net/gallery/78464343/MEGABOX-WEBSITE-RENEWAL" class="bi_link" target="_blank">
+                        <p>GO</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrap9">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    한비
+                </div>
+                <a class="btn close ir_su" data-num="9">close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrap10">
+        <div class="circle"></div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="box ir_su">
+                    미니미
+                </div>
+                <a class="btn close ir_su" data-num="10">close</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- mp3 -->
+    <div id="wrapper" class="drag">
+        <div id="iphone">
+            <div id="camera">
+                <span></span>
+                <span></span>
+            </div>
+            <div id="screen">
+                <div id="content-wrap">
+                    <div id="background"></div>
+                    <div id="content">
+                        <div id="header">
+                            <span id="menu-btn"><img src="https://emilcarlsson.se/assets/svg/menu.svg" alt="" class="svg"></span>
+                            <span id="options-btn"><img src="https://emilcarlsson.se/assets/svg/more.svg" alt="" class="svg"></span>
+                        </div>
+                        <div class="jcarousel">
+                            <ul id="songs">
+                                <li class="song" data-audio="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Leo%20-%20Trying.mp3" data-color="#f38578">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/trying-album-cover.jpg">
+                                    <p class="song-title">Trying</p>
+                                    <p class="song-artist">Leo</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <audio crossorigin>
+                            <source src="" type="audio/mpeg">
+                        </audio>
+                        <div id="controls">
+                            <span id="previous-btn"><i class="fa fa-step-backward fa-fw" aria-hidden="true"></i></span>
+                            <span id="play-btn"><i class="fa fa-play fa-fw" aria-hidden="true"></i></span>
+                            <span id="next-btn"><i class="fa fa-step-forward fa-fw" aria-hidden="true"></i></span>
+                        </div>
+                        <div id="timeline">
+                            <span id="current-time">--:--</span>
+                            <span id="total-time">--:--</span>
+                            <div class="slider" data-direction="horizontal">
+                                <div class="progress">
+                                    <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sub-controls">
+                            <i class="fa fa-random" aria-hidden="true"></i>
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                            <i class="fa fa-bluetooth-b active" id="bluetooth-btn" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" id="heart-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+                <div id="sidemenu">
+                    <ul>
+                        <li>
+                            <i class="fa fa-search fa-fw" aria-hidden="true"></i>
+                            Search
+                        </li>
+                        <li>
+                            <img class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/music-player.svg" alt="">
+                            Playlists
+                        </li>
+                        <li>
+                            <img id="album-icon" class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/album-icon.svg" alt="">
+                            Albums
+                        </li>
+                        <li>
+                            <i class="fa fa-microphone fa-fw" aria-hidden="true"></i>
+                            Artists
+                        </li>
+                        <li>
+                            <i class="fa fa-podcast fa-fw" aria-hidden="true"></i>
+                            Podcasts
+                        </li>
+                        <li>
+                            <i class="fa fa-cog fa-fw" aria-hidden="true"></i>
+                            Settings
+                        </li>
+                    </ul>
+                </div>
+                <div id="bluetooth-devices" class="menu">
+                    <span class="close-btn"><span>&times;</span> Close</span>
+                    <h3>Devices nearby</h3>
+                    <ul>
+                        <li class="connected">
+                            <img id="headphones-icon" class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/headphone.svg" alt="">
+                            <p>
+                                Major II Bluetooth
+                                <span>Connected</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img id="headphones-icon" class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/loudspeaker.svg" alt="">
+                            <p>
+                                Sonos One
+                                <span>Connected</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img id="headphones-icon" class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/car.svg" alt="">
+                            <p>
+                                Kia Motors
+                                <span>Connected</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="info-text">
+                        Make sure your bluetooth device is turned on and in range.
+                    </p>
+                </div>
+                <div id="song-options" class="menu">
+                    <span class="close-btn"><span>&times;</span> Close</span>
+                    <div id="song-info">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg" alt="">
+                        <div class="artist-wrap">
+                            <p>
+                                <span class="title">rockstar</span>
+                                <span class="artist">Post Malone, 21 Savage</span>
+                            </p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-music fa-fw add" aria-hidden="true"></i>
+                            Add to playlist
+                        </li>
+                        <li>
+                            <i class="fa fa-microphone fa-fw" aria-hidden="true"></i>
+                            View Artist
+                        </li>
+                        <li>
+                            <img id="album-icon" class="svg menu-icons" src="https://emilcarlsson.se/assets/svg/compact-disc.svg" alt="">
+                            View Album
+                        </li>
+                        <li>
+                            <i class="fa fa-share-square-o fa-fw" aria-hidden="true"></i>
+                            Share
+                        </li>
+                    </ul>
+                </div>
+                <div id="home-screen">
+                    <div class="home-content">
+                        <h2>Music Player App</h2>
+                       
+                        <div class="app-icon">
+                            <img class="svg" src="https://emilcarlsson.se/assets/svg/music-note.svg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="home-btn"></div>
+        </div>
+    </div>
+    <!-- mp3 -->
+
+
+    <!-- 스크립트 -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://use.fontawesome.com/15af25ac7b.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //$(".drag").draggable({ containment: "#containment-wrapper", scroll: false });
+        /*megabox*/
+        $(".drag").draggable();
+        imagesProgress();
+
+        $(".box-btn").click(function() {
+            $(".box-img").fadeIn(300);
+        });
+
+        $(".box-img .bi_btn").click(function() {
+            $(".box-img").fadeOut(300);
+        });
+        /*insta*/
+        $(".drag").draggable();
+        imagesProgress();
+
+        $(".insta1").click(function() {
+            $(".box-img").fadeIn(300);
+        });
+
+        $(".box-img .bi_btn").click(function() {
+            $(".box-img").fadeOut(300);
+        });
+
+        /*
+         * Icons by:
+         * Font Awesome – http://fontawesome.io/
+         * Those Icons – https://www.flaticon.com/authors/those-icons
+         * EpicCoders – https://www.flaticon.com/authors/epiccoders
+         * Smashicons – https://www.flaticon.com/authors/smashicons
+         */
+
+        $(document).ready(function() {
+            var songs = [{
+                    title: "rockstar",
+                    artist: "Post Malone, 21 Savage",
+                    cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg",
+                    audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3",
+                    color: "#c3af50"
+                },
+                {
+                    title: "Let You Down",
+                    artist: "NF",
+                    cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/perception-album-cover.png",
+                    audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/NF%20-%20Let%20You%20Down.mp3",
+                    color: "#25323b"
+                },
+                {
+                    title: "Silence",
+                    artist: "Marshmello, Khalid",
+                    cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/silence-album-cover.jpg",
+                    audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Marshmello%20-%20Silence%20ft.%20Khalid.mp3",
+                    color: "#c1c1c1"
+                },
+                {
+                    title: "I Fall Apart",
+                    artist: "Post Malone",
+                    cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/stoney-cover-album.jpg",
+                    audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20I%20Fall%20Apart.mp3",
+                    color: "#cd4829"
+                },
+                {
+                    title: "Fireproof",
+                    artist: "VAX, Teddy Sky",
+                    cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/fireproof-album-cover.jpeg",
+                    audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/VAX%20-%20Fireproof%20Feat%20Teddy%20Sky.mp3",
+                    color: "#5d0126"
+                }
+            ];
+
+            for (let song of songs) {
+                $("#songs").append('<li class="song" data-audio="' + song.audioFile + '" data-color="' + song.color + '">' +
+                    '<img src="' + song.cover + '">' +
+                    '<p class="song-title">' + song.title + '</p>' +
+                    '<p class="song-artist">' + song.artist + '</p>' +
+                    '</li>');
+            }
+
+            $('.jcarousel').jcarousel({
+                wrap: 'circular'
+            });
+        });
+
+
+        // Current slide
+        $('.jcarousel').on('jcarousel:visiblein', 'li', function(event, carousel) {
+            let cover = $(this).find("img").attr("src");
+            let songTitle = $(this).find("p.song-title").html();
+            let songArtist = $(this).find("p.song-artist").html();
+            let audioSrc = $(this).attr("data-audio");
+            let backgroundColor = $(this).attr("data-color");
+            $("body").css('background', backgroundColor)
+            $("#background").css('background-image', 'url(' + cover + ')');
+            $("audio").find("source").attr("src", "" + audioSrc + "");
+            player.load();
+            player.currentTime = 0;
+            $("#song-info").find("img").attr("src", cover);
+            $("#song-info .artist-wrap p").find("span.title").html(songTitle);
+            $("#song-info .artist-wrap p").find("span.artist").html(songArtist);
+        });
+
+        // Previous slide
+        $('#previous-btn').click(function() {
+            $('.jcarousel').jcarousel('scroll', '-=1');
+            $('#play-btn i').removeClass('fa-pause');
+            player.pause();
+        });
+
+        // Next slide
+        $('#next-btn').click(function() {
+            if ($(".fa-random").hasClass('active')) {
+                let songs = $("#songs li").length - 1;
+                let randomSong = Math.floor(Math.random() * songs) + 1;
+                $('.jcarousel').jcarousel('scroll', '+=' + randomSong);
+            } else {
+                $('.jcarousel').jcarousel('scroll', '+=1');
+            }
+            $('#play-btn i').removeClass('fa-pause');
+            player.pause();
+        });
+
+        // Play Icon Switcher
+        $('#play-btn').click(function() {
+            $(this).find('i').toggleClass('fa-pause');
+        });
+
+        // Menu
+        $("#menu-btn").click(function() {
+            $("#content-wrap").addClass('inactive');
+            $("#sidemenu").addClass('active');
+        });
+
+        // Home Button
+        $("#home-btn").click(function() {
+            $("#home-screen").addClass('active');
+            $(".menu").removeClass('active');
+            $("#content-wrap").addClass('minimized');
+        });
+
+        // App
+        $(".app-icon").click(function() {
+            $("#content-wrap").removeClass('minimized');
+            setTimeout(function() {
+                $("#home-screen").removeClass('active');
+            }, 300);
+        });
+
+        // Overlay
+        $("#overlay").click(function() {
+            $("#content-wrap").removeClass('inactive');
+            $("#sidemenu").removeClass('active');
+        });
+
+        // Options
+        $("#options-btn").click(function() {
+            $("#song-options").addClass('active');
+        });
+
+        // Bluetooth
+        $("#bluetooth-btn").click(function() {
+            $("#bluetooth-devices").addClass('active');
+        });
+
+        // Bluetooth Menu
+        $("#bluetooth-devices ul li").click(function() {
+            $(this).toggleClass('connected');
+            $(this).siblings().removeClass('connected');
+
+            if ($("#bluetooth-devices ul li").hasClass('connected')) {
+                $("#sub-controls i.fa-bluetooth-b").addClass('active');
+            } else {
+                $("#sub-controls i.fa-bluetooth-b").removeClass('active');
+            }
+        });
+
+        // Close Menu
+        $(".close-btn").click(function() {
+            $(".menu").removeClass('active');
+        });
+
+        $('#sub-controls i').click(function() {
+            if (!$(this).hasClass('fa-bluetooth-b')) {
+                $(this).toggleClass('active');
+            }
+
+            if ($("#heart-icon").hasClass('active')) {
+                $("#heart-icon").removeClass('fa-heart-o');
+                $("#heart-icon").addClass('fa-heart');
+            } else {
+                $("#heart-icon").removeClass('fa-heart');
+                $("#heart-icon").addClass('fa-heart-o');
+            }
+        });
+
+        /*
+         * Music Player
+         * By Greg Hovanesyan
+         * https://codepen.io/gregh/pen/NdVvbm
+         */
+
+        var audioPlayer = document.querySelector('#content');
+        var playpauseBtn = audioPlayer.querySelector('#play-btn');
+        var progress = audioPlayer.querySelector('.progress');
+        var sliders = audioPlayer.querySelectorAll('.slider');
+        var player = audioPlayer.querySelector('audio');
+        var currentTime = audioPlayer.querySelector('#current-time');
+        var totalTime = audioPlayer.querySelector('#total-time');
+
+        var draggableClasses = ['pin'];
+        var currentlyDragged = null;
+
+        window.addEventListener('mousedown', function(event) {
+
+            if (!isDraggable(event.target)) return false;
+
+            currentlyDragged = event.target;
+            let handleMethod = currentlyDragged.dataset.method;
+
+            this.addEventListener('mousemove', window[handleMethod], false);
+
+            window.addEventListener('mouseup', () => {
+                currentlyDragged = false;
+                window.removeEventListener('mousemove', window[handleMethod], false);
+            }, false);
+        });
+
+        playpauseBtn.addEventListener('click', togglePlay);
+        player.addEventListener('timeupdate', updateProgress);
+        player.addEventListener('loadedmetadata', () => {
+            totalTime.textContent = formatTime(player.duration);
+        });
+        player.addEventListener('ended', function() {
+            player.currentTime = 0;
+
+            if ($(".fa-refresh").hasClass('active')) {
+                togglePlay();
+            } else {
+                if ($(".fa-random").hasClass('active')) {
+                    let songs = $("#songs li").length - 1;
+                    let randomSong = Math.floor(Math.random() * songs) + 1;
+                    $('.jcarousel').jcarousel('scroll', '+=' + randomSong);
+                } else {
+                    $('.jcarousel').jcarousel('scroll', '+=1');
+                }
+                togglePlay();
+            }
+        });
+
+        sliders.forEach(slider => {
+            let pin = slider.querySelector('.pin');
+            slider.addEventListener('click', window[pin.dataset.method]);
+        });
+
+        function isDraggable(el) {
+            let canDrag = false;
+            let classes = Array.from(el.classList);
+            draggableClasses.forEach(draggable => {
+                if (classes.indexOf(draggable) !== -1)
+                    canDrag = true;
+            })
+            return canDrag;
+        }
+
+        function inRange(event) {
+            let rangeBox = getRangeBox(event);
+            let direction = rangeBox.dataset.direction;
+            let screenOffset = document.querySelector("#screen").offsetLeft + 26;
+            var min = screenOffset - rangeBox.offsetLeft;
+            var max = min + rangeBox.offsetWidth;
+            if (event.clientX < min || event.clientX > max) {
+                return false
+            };
+            return true;
+        }
+
+        function updateProgress() {
+            var current = player.currentTime;
+            var percent = (current / player.duration) * 100;
+            progress.style.width = percent + '%';
+
+            currentTime.textContent = formatTime(current);
+        }
+
+        function getRangeBox(event) {
+            let rangeBox = event.target;
+            let el = currentlyDragged;
+            if (event.type == 'click' && isDraggable(event.target)) {
+                rangeBox = event.target.parentElement.parentElement;
+            }
+            if (event.type == 'mousemove') {
+                rangeBox = el.parentElement.parentElement;
+            }
+            return rangeBox;
+        }
+
+        function getCoefficient(event) {
+            let slider = getRangeBox(event);
+            let screenOffset = document.querySelector("#screen").offsetLeft + 26;
+            let K = 0;
+            let offsetX = event.clientX - screenOffset;
+            let width = slider.clientWidth;
+            K = offsetX / width;
+            return K;
+        }
+
+        function rewind(event) {
+            if (inRange(event)) {
+                player.currentTime = player.duration * getCoefficient(event);
+            }
+        }
+
+        function formatTime(time) {
+            var min = Math.floor(time / 60);
+            var sec = Math.floor(time % 60);
+            return min + ':' + ((sec < 10) ? ('0' + sec) : sec);
+        }
+
+        function togglePlay() {
+            player.volume = 0.5;
+
+            if (player.paused) {
+                player.play();
+            } else {
+                player.pause();
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="bibibigcom">
+    <meta name="description" content="웹 포트폴리오 디자인, 반응형 사이트 따라하기">
+    <meta name="keyword" content="웹 포트폴리오 디자인, 반응형사이트, 웹퍼블리셔, 웹접근성, HTML5">
+    <title>bibibigcom</title>
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="HTML5">
+    <meta property="og:title" content="반응형 사이트 만들기">
+    <meta property="og:url" content="http://bibibigcom.dothome.co.kr">
+    <meta property="og:image" content="http://bibibigcom.dothome.co.kr">
+    <meta property="og:site_name" content="반응형 사이트 만들기">
+    <meta property="og:description" content="반응형 사이트 따라하기">
+
+    <!-- twitter meta tags -->
+    <meta property="twitter:card" content="HTML5">
+    <meta property="twitter:site" content="@bibibig">
+    <meta property="twitter:title" content="반응형 사이트">
+    <meta property="twitter:description" content="반응형 사이트 만들기">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="assets/icon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/favicon-152.png">
+    <link rel="icon" href="assets/icon/favicon.png">
+    <link rel="icon" href="assets/icon/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="assets/icon/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/icon/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="assets/icon/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="assets/icon/favicon-128.png" sizes="128x128">
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet">
+
+    <!-- HTMLhtml5shiv ie6~8 -->
+    <!--[if lt IE 10]> 
+		<script src="js/html5shiv.min.js"></script>
+		<script type="text/javascript">
+			alert("현재 브라우저는 지원하지 않습니다. 최신 브라우저로 또는 크롬으로 이용해주세요!")
+		</script>
+	<![endif]-->
+</head>
+<body>
+   
+   
+    <div class="progress" id="progress">
+        <span class="progress-bar">
+            <div class="box">
+                <span><img src="assets/img/loading.svg" alt=""></span>
+            </div>
+        </span>
+        <span class="progress-text">0</span>
+    </div>
+    <!-- //progress -->
+   
+    <header id="headers">
+        <div class="header_logo"><img src="assets/img/logo.svg" alt="로고"></div>
+        <div class="header_text"><img src="assets/img/header_text.svg" alt="BIBIBIG PORTFOLIO"></div>
+        <div class="header_ham"><img src="assets/img/ham.svg" alt="Menu"></div>
+        <div class="header_clock"><img src="assets/img/clock.svg" alt="시계"></div>
+        <div class="header_lang"><img src="assets/img/lang.svg" alt=""></div>
+        <div class="header_siri"><img src="assets/img/siri.svg" alt=""></div>
+        <div class="header_search"><img src="assets/img/search.svg" alt=""></div>
+        <div class="header_wifi"><img src="assets/img/wifi.svg" alt=""></div>
+        <div class="header_battery"><img src="assets/img/battery.svg" alt=""></div>
+    </header>
+    <!-- //headers -->
+    
+    <section id="contents">
+        <div class="drag app_ps trigger hoverjello" data-num="1"><img src="assets/img/photoshop.svg" alt="photoshop"></div>
+        <div class="drag app_ai trigger hoverjello" data-num="2"><img src="assets/img/ai.svg" alt="illustrator"></div>
+        <div class="drag app_xd trigger hoverjello" data-num="3"><img src="assets/img/xd.svg" alt="xd"></div>
+        <div class="drag app_chrome hoverjello" data-num="4"><img src="assets/img/chrome.svg" alt="크롬"></div>
+        <div class="drag app_music hoverjello"><img src="assets/img/music.svg" alt="뮤직"></div>
+        <div class="drag app_kakao hoverjello" data-num="7"><img src="assets/img/kakao.svg" alt="카카오"></div>
+        <div class="drag app_insta hoverjello" data-num="5"><img src="assets/img/insta.svg" alt="인스타"></div>
+        <div class="drag app_coding hoverjello" data-num="6"><img src="assets/img/coding.svg" alt="코딩"></div>
+        <div class="drag app_megabox hoverjello" data-num="8"><img src="assets/img/megabox.svg" alt="메가박스"></div>
+        <div class="drag folder_b hoverjello" data-num="11"><img src="assets/img/folder_bibibig.svg" alt="비비빅폴더"></div>
+        <div class="drag folder_s hoverjello" data-num="12"><img src="assets/img/folder_secret.svg" alt="비밀폴더"></div>
+        <div class="drag app_minimi hoverjello" data-num="10"><img src="assets/img/minimi.svg" alt="미니미"></div>
+        <div class="drag app_dog hoverWobble"><img src="assets/img/dog.svg" alt="강아지 코딩"></div>
+    </section>
+    <!-- //contents -->
+    
+    <section class="table">
+        <div class="app_boll">
+            <img src="assets/img/redboll_bg.svg" alt="GAME">
+            <span class="app_name"><img src="assets/img/game_name.svg" alt="GAME"></span>
+        </div>
+        <div class="app_cal hoverTada">
+            <img src="assets/img/calender.svg" alt="달력">
+            <span class="app_name"><img src="assets/img/calender_name.svg" alt="달력"></span>
+        </div>
+        <div class="app_set hoverjello">
+            <img src="assets/img/setting.svg" alt="셋팅">
+            <span class="app_name"><img src="assets/img/set_name.svg" alt=""></span>
+        </div>
+        <div class="app_mail hoverBounce">
+            <img src="assets/img/mail.svg" alt="메일">
+            <span class="app_name"><img src="assets/img/mail_name.svg" alt=""></span>
+        </div>
+        <div class="app_memo hoverBounce2">
+            <img src="assets/img/memo.svg" alt="메모">
+            <span class="app_name"><img src="assets/img/memo_name.svg" alt=""></span>
+        </div>
+        <div class="app_finder hoverHeartBeat">
+            <img src="assets/img/finder.svg" alt="파인더">
+            <span class="app_name"><img src="assets/img/finder_name.svg" alt=""></span>
+        </div>
+        <div class="app_trash hoverWobble">
+            <img src="assets/img/trash.svg" alt="쓰레기">
+            <span class="app_name"><img src="assets/img/trash_name.svg" alt=""></span>
+        </div>
+    </section>
+    <!-- //table -->
+    
+    
+    
+
+    <div class="modal-wrapper">
+        <div class="modal photoshop">
+            <div class="head">
+                <a class="btn-close" href="#"></a>
+            </div>
+            <div class="content">
+                <div class="photoshop">
+                    <div class="box-btn1">
+                        <div class="select1">1</div>
+                        <div class="select2">2</div>
+                        <div class="select3">3</div>
+                        <div class="select4">4</div>
+                        <div class="select5">5</div>
+                        <div class="select6">6</div>
+                    </div>
+                    <div class="box-cont1">
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //photoshop -->
+                
+                <div class="illustrator">
+                    <div class="box-btn2">
+                        <div class="select1">일러스트1</div>
+                        <div class="select2">일러스트2</div>
+                        <div class="select3">일러스트3</div>
+                        <div class="select4">일러스트4</div>
+                        <div class="select5">일러스트5</div>
+                        <div class="select6">일러스트6</div>
+                    </div>
+                    <div class="box-cont2">
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //illustrator -->
+                
+                <div class="xd">
+                    <div class="box-btn3">
+                        <div class="select1">xd1</div>
+                        <div class="select2">xd2</div>
+                        <div class="select3">xd3</div>
+                        <div class="select4">xd4</div>
+                    </div>
+                    <div class="box-cont3">
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                        <div>
+                            <div><img src="assets/img/aiImg1.jpg" alt=""></div>
+                            <a href="#" class="btn_x">닫기</a>
+                            <a href="#" class="btn_link">고고</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //xd -->
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- 스크립트 -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src='assets/js/fontawsome.js'></script>
+    <script src='assets/js/jquery.jcarousel.min.js'></script>
+    <script src="assets/js/custom3.js"></script>
+    <script>
+        $(document).ready(function(){
+            imagesProgress();
+            $(".drag").draggable();
+            
+            //레이어 팝업
+            $(".trigger").click(function(){
+                var data = $(this).attr("data-num");
+                var name = $(this).find("img").attr("alt");
+                data = data - 1;
+                $(".modal-wrapper").toggleClass('open');
+                $(".modal-wrapper .content > div").hide();
+                $(".modal-wrapper .content > div").eq(data).show();
+                $(".modal-wrapper > div").removeClass();
+                $(".modal-wrapper > div").addClass("modal " + name +"");
+            });
+            $(".btn-close").click(function(){
+                $(".modal-wrapper").removeClass('open');
+            });
+            $(".modal-wrapper .btn_x").click(function(){
+                $(this).parent().css("display","none");
+            });
+            
+            //버튼
+            $(".box-btn1 > div").click(function(){        
+                var index = $(this).index();         
+                $(".box-cont1 > div").css("display","none");
+                $(".box-cont1 > div").eq(index).css("display","block");
+            });
+            
+            $(".box-btn2 > div").click(function(){        
+                var index = $(this).index();         
+                $(".box-cont2 > div").css("display","none");
+                $(".box-cont2 > div").eq(index).css("display","block");
+            });
+            
+            $(".box-btn3 > div").click(function(){        
+                var index = $(this).index();         
+                $(".box-cont3 > div").css("display","none");
+                $(".box-cont3 > div").eq(index).css("display","block");
+            });
+            
+            
+            
+
+
+            
+
+            
+            
+            
+            
+            
+            
+            
+        });
+        
+        
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

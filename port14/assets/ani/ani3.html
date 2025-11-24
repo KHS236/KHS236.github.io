@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rotate play animation</title>
+    <style>
+    body{
+      height: 100vh;
+      margin: 0 auto;
+      background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    }
+
+    .loading{
+      width: 20px; height: 100px;
+      position: absolute;
+      left: 48%; top:40%;
+      transform:translate(-50%, -50%);
+      animation : loading ease-in-out 1s 100;
+    }
+    .loading .circle1{
+      width: 20px; height: 20px;
+      background: #fff;
+      border-radius : 50%;
+    }
+    .loading .circle2{
+      width: 20px; height: 20px;
+      background: #fff;
+      border-radius : 50%;
+      margin-top: 60px;
+    }
+
+    @keyframes loading{
+      0%{transform : rotate(0deg);}
+      100%{transform : rotate(360deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+</html>

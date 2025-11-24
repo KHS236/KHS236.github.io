@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="portfolio">
+		<meta name="description" content="개인 포트폴리오 사이트 입니다.">
+		<meta name="keywords" content="hanaziro, hana, portfolio, design, html, css, animation, javascript, jquery, illustrator">
+		<title>Hanaziro</title>
+		
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="assets/css/pf04_style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/pf01_reset.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+		<!-- font -->
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="assets/downloaded fonts/NotoSansMonoCJKkr-Bold.otf">
+		<link rel="stylesheet" type="text/css" href="assets/downloaded fonts/NotoSansMonoCJKkr-Regular.otf">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Volkhov:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+		<!-- font-family: 'Vollkorn', serif; -->
+		<!-- font-family: 'Do Hyeon', sans-serif; -->
+		<!--[If IE 8]>
+		<script type="text/javascript">
+			alert("Please Upgrade Your BROWSER !");
+		</script>
+		<![endif]--> 
+		<!-- 	<style type="text/css">
+		// 지원이 되는것과 안되는것을 미리 만들어줌.
+		html.transform {}
+		html.no-transform {}
+		</style> -->
+	</head>
+	<body>
+		<!-- loading -->
+    <!--     <div class="progress" id="progress">
+            <div class="p-container">
+                <div class="h1Container">
+                    <div class="jump h1 w1 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w1 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w1 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w2 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w2 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w2 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w3 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w3 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h1 w3 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+                </div>
+
+                <div class="h2Container">
+
+                    <div class="jump h2 w1 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w1 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w1 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w2 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w2 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w2 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w3 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w3 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h2 w3 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+                </div>
+
+                <div class="h3Container">
+
+                    <div class="jump h3 w1 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w1 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w1 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w2 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w2 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w2 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w3 l1">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w3 l2">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+
+                    <div class="jump h3 w3 l3">
+                        <div class="face f-top"></div>
+                        <div class="face f-left"></div>
+                        <div class="face f-right"></div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="progress-bar"></span>
+            <span class="progress-text">0</span>
+        </div> -->
+
+  	<!-- //loading -->
+
+    <div id="wrap">
+
+      <!-- offset,scroll -->
+      <div class="info">
+        <span class="offset_top">0</span>
+        <span class="scroll_top">0</span>
+      </div>
+      <!-- //offset,scroll -->
+      
+      <!-- section1 -->
+      <div id="section1">
+        <div class="sec1">
+          <div class="sec1Bg">
+            <div class="sec1BgContainer">
+              <div class="sec1BgWrap">
+                <img class="blueBg"src="assets/img/section1_head/bg3-1.png">
+                <img class="blueBg2"src="assets/img/section1_head/bg3-2.png" style="z-index: 5;">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png"  style="left: 18.64%; top: 10.86%; z-index: 1; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png" style="left: 9.28%; top: 13.55%; z-index: 2; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/black.png" style="left: 9.28%; top: 18.93%; z-index: 3; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/black.png" style="left: 12.4%; top: 21.62%; z-index: 4; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_headblack.png" style="left: 15.52%; top: 18.93%; z-index: 5; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/black.png" style="left: 15.52%; top: 13.55%; z-index: 6; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/black.png" style="left: 18.64%; top: 27%; z-index: 7;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/black.png" style="left: 21.76%; top: 29.69%; z-index: 8;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left"  src="assets/img/section1_head/black.png" style="left: 3.04%; top: 29.69%; z-index: 9;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png" style="left: -0.08%; top: 37.76%; z-index: 10;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left"  src="assets/img/section1_head/blue.png" style="left: -0.08%; top: 37.76%; z-index: 10;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/white.png" style="left: 38.92%; top: 22.965%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left"  src="assets/img/section1_head/black.png" style="left: 34.24%; top: 24.31%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png" style="left: 37.36%; top: 16.24%; z-index: 60; ">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png" style="left: 34.24%; top: 18.93%; z-index: 60; ">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png" style="left: 21.76%; top: 56.59%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/white.png" style="left: 18.64%; top: 59.28%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left" src="assets/img/section1_head/blue.png" style="left: 18.64%; top: 53.9%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 54.52%; top: 22.965%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 51.4%; top: 14.895%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 51.4%; top: 14.895%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 56.08%; top: 10.86%; z-index: 70;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 59.2%; top: 24.31%; z-index: 70;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 59.2%; top: 18.93%; z-index: 70;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 68.56%; top: 32.38%; z-index: 20;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/blue.png" style="left: 73.24%; top: 49.865%; z-index: 15;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 79.48%; top: 44.485%; z-index: 20;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 85.72%; top: 55.245%; z-index: 30;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 81.04%; top: 16.24%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 90.4%; top: 21.62%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 87.28%; top: 24.31%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 90.4%; top: 13.55%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue right" src="assets/img/section1_head/black.png" style="left: 93.52%; top: 16.24%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-0" src="assets/img/section1_head/blue.png" style="left: 71.68%; top: 72.73%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P1-Up" src="assets/img/section1_head/white.png" style="left: 71.68%; top: 67.35%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P2-Up" src="assets/img/section1_head/blue.png" style="left: 71.68%; top: 61.97%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue left"  src="assets/img/section1_head/blue.png" style="left: 74.8%; top: 64.66%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P1-5" src="assets/img/section1_head/blue.png" style="left: 68.56%; top: 80.8%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P1" src="assets/img/section1_head/blue.png" style="left: 65.44%; top: 80.8%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P1" src="assets/img/section1_head/blue.png" style="left: 68.56%; top: 86.18%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P2" src="assets/img/section1_head/blue.png" style="left: 56.08%; top: 80.8%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-M1" src="assets/img/section1_head/blue.png" style="left: 49.84%; top: 80.8%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P3" src="assets/img/section1_head/blue.png" style="left: 18.3%; top: 88.4%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-0" src="assets/img/section1_head/blue.png" style="left: 59.2%; top: 83.49%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P1" src="assets/img/section1_head/blue.png" style="left: 40.48%; top: 70.04%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-M2" src="assets/img/section1_head/blue.png" style="left: 43.6%; top: 75.42%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-M1" src="assets/img/section1_head/blue.png" style="left: 37.36%; top: 86.18%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue static" src="assets/img/section1_head/tri.png" style="left: 12.38%; top: 65%; z-index: 60; margin-top: -3.6%;">
+                <img class="sec1Blue static" src="assets/img/section1_head/tri.png" style="left: 65.44%; top: 56.59%; z-index: 60; margin-top: -3.6%;">
+                <img class="sec1Blue bottom-P4" src="assets/img/section1_head/blue.png" style="left: 75.2%; top: 87.4%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P4" src="assets/img/section1_head/blue.png" style="left: 6.3%; top: 114.4%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1Blue bottom-P4" src="assets/img/section1_head/blue.png" style="left: 84.2%; top: 143.4%; z-index: 60;  transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha name h" src="assets/img/section1_head/h.png" style="left: 23.00%; top:44.5%; z-index: 4; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha name a1" src="assets/img/section1_head/a.png" style="left: 30%; top:40.3%; z-index: 3; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha name n" src="assets/img/section1_head/n.png" style="left: 36.5%; top:33%; z-index: 2; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha name a2" src="assets/img/section1_head/a.png" style="left: 43.4%; top:28.6%; z-index: 1; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha que who" src="assets/img/section1_head/who.png" style="left: 50.4%; top:57.6%; z-index: 6; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha que is" src="assets/img/section1_head/is.png" style="left: 49.4%; top:64.6%; z-index: 7; transform: translate3d(0px, 0px, 0px);">
+                <img class="sec1alpha que she" src="assets/img/section1_head/she.png" style="left: 53.4%; top:68.6%; z-index: 8; transform: translate3d(0px, 0px, 0px);">
+              </div>
+            </div>
+            <div class="mobileImg">
+              <img class="mobile_bg" src="assets/img/mobile/m_blue.png" alt="" >
+            </div>
+          </div>
+          <div class="sec1text">
+            <div class="container"></div>
+          </div>
+        </div>
+      </div>
+      <!-- //section1 -->
+
+      <!-- section2 -->
+      <div id="section2">
+        <div class="sec2">
+          
+        </div>
+      </div>
+      <!-- //section2 -->      
+      
+      <!-- section3 -->
+      <div id="section3">
+        <div class="sec3">
+          
+        </div>
+      </div>
+      <!-- //section3 --> 
+
+      <!-- section4 -->
+      <div id="section4">
+        <div class="sec4">
+          
+        </div>
+      </div>
+      <!-- //section4 --> 
+
+      <!-- section5 -->
+      <div id="section5">
+        <div class="sec5">
+          
+        </div>
+      </div>
+      <!-- //section5 --> 
+
+      <!-- section6 -->
+      <div id="section6">
+        <div class="sec6">
+          
+        </div>
+      </div>
+      <!-- //section6 --> 
+
+    </div>
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ie-checker.js"></script> <!-- ie checker -->
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/html5shiv.js"></script><!-- html5shiv -->
+    <script src="assets/js/easypiechart.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/pf04_custom.js"></script>
+    <script src="assets/js/skrollr.js"></script>
+    <script type="text/javascript">
+            $(function(){
+                // counter();    //counter
+                imagesProgress();
+                
+            //     var s = skrollr.init({
+            //     edgeStrategy: 'set',
+            //     easing: 'linear'
+            //     });               
+
+            // });
+            
+            // $('#autoplay').slick({
+            //   slidesToShow: 3,
+            //   slidesToScroll: 1,
+            //   autoplay: true,
+            //   autoplaySpeed: 2000
+            // });
+          });
+            
+
+            
+
+            
+            
+
+    </script>
+  </body>
+</html>

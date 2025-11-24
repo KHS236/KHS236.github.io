@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+        <meta name="format-detection" content="telephone=no, address=no, email=no">
+        <meta name="author" content="seojihyun">
+        <meta name="description" content="포트폴리오, 포트폴리오 사이트, 웹접근성, 반응형웹">
+        <meta name="keywords" content="퍼블리셔, 포트폴리오, 웹사이트">
+        <title>Seo Ji Hyun's Portfolio Site</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style2.css">
+        
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/img/favicon_ios.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon_android.png">
+        
+        <!-- webfont -->
+        <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200i,700,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+        
+        <!-- HTLM5shiv ie6~8 -->
+        <!--[if lt IE 9]> 
+            <script src="assets/js/html5shiv.min.js"></script>
+            <script type="text/javascript">
+                alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+            </script>
+        <![endif]-->
+    </head>
+    <body>
+            
+            
+        <div class="progress" id="progress"> 
+            <span class="progress-text"></span> 
+        </div>
+        <!-- //progress -->
+
+            
+        <section id="contents">
+            <section id="section1">
+                <div class="sec1">
+                    <div class="sec1_top">
+                        <strong>Professional Web Publisher</strong>
+                        <div class="frame">
+                            <div class="frame-line top"></div>
+                            <div class="frame-img"></div>
+                            <div class="frame-line bom"></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <figure class="me">
+<!--                            <img src="assets/img/woman.png" alt="" style="visibility: hidden;">-->
+                        </figure>
+                        <h1 class="stext">PORTFOLIO</h1>
+                    </div>
+                    <div class="sec1_bom">
+                        <h1 class="logo"><img src="assets/img/main_logo.png" alt="지현"></h1>
+                        <ul class="menu">
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">Skill</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="frame top">
+                            <div class="frame-line top"></div>
+                            <div class="frame-img line2"></div>
+                            <div class="frame-line bom"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section1 -->
+            
+            <section id="section2">
+                <div class="row">
+                    <div class="sec2">
+                        <div class="tit">
+                            <h2>About</h2>
+                            <div class="btn">
+                                <em>　</em>
+                                <a href="#section1"><img src="assets/img/tit_btn.png" alt="닫기 버튼"></a>
+                            </div>
+                        </div>
+                        
+                        <div class="con1">
+                           <p class="desc">
+                                WHAT DOES NOT DESTROY ME,<br>
+                                MAKES ME <strong>STRONGER.</strong><br>
+                                - Friedrich <strong>Nietzsche</strong>
+                            </p>
+                            <p class="desc">
+                                <span class="arrow">CONTEXT</span>THIS PROJECT HAS BEEN INITIATED <br>
+                                BY THE FOUR MEMBERS OF <strong>TOOSOON</strong> : <br>
+                                HUGO MAURY, NICOLAS LOUREIRO, <br>
+                                YANN KUBACKI AND ARNAUD ROCCA, AS <br>
+                                THEIR GRADUATION PROJECT FOR THE <br>
+                                INTERACTIVE DESIGN AND DEVELOPMENT <br>
+                                MASTER OF GOBELINS PARIS.
+                            </p>
+                        </div>
+                        <div class="img">이미지영역</div>
+                        <div class="con2">
+                            <p class="desc2">
+                                <span class="wall">THE BEGINNING</span>
+                                THE PROJECT KICKED OFF IN JANUARY WHEN ARNAUD FROM <br>
+                                TOOSOON SENT A TWEET TO MAI LAN, PROPOSING HER TO <br>
+                                COLLABORATE AND TO MAKE AN INTERACTIVE MUSIC VIDEO <br>
+                                TOGETHER. AFTER SOME QUICK TALKS, THE COLLABORATION <br>
+                                BETWEEN TOOSOON. MALLAN AND PANAMAERA WAS INITIATED.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section2 -->
+            
+            <section id="section3"></section><!-- //section3 -->
+            <section id="section4"></section><!-- //section4 -->
+            <section id="section5"></section><!-- //section5 -->
+            <section id="section6"></section><!-- //section6 -->
+            <section id="section7"></section><!-- //section7 -->
+        </section>
+        <!-- //contents -->
+        
+        
+        
+        <!-- JS -->
+        <script src="assets/js/jquery.min_1.12.4.js"></script>
+        <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/modernizr-custom.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/easypiechart.min.js"></script>
+        <script src="assets/js/custom2.js"></script>
+        <script>
+            $(function(){
+                imagesProgress();           
+            });
+            
+            
+            var txt = $(".stext").text().split("").join("</span><span>");
+                txt = "<span>" + txt + "</span> ";
+            $(".stext").html(txt);
+            
+            
+            $(".sec1_bom").each(function(){
+                var header = $(this);  
+                
+                $(window).scroll(function(){
+                    var wScroll = $(this).scrollTop(); 
+                    if(wScroll >= $("#section2").offset().top - 100){
+                        header.addClass("on");
+                    } else {
+                        header.removeClass("on");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- 
+    https://pumper.thisismailan.com/ 
+    http://simsim.fouroom.co/
+    https://lydiaamaruch.com/
+
+-->

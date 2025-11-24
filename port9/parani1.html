@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document Animation</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background: #ffdcca;
+            transform-style: preserve-3d;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .effect {
+            position: relative;
+            perspective: 100px;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .effect .layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .effect .layer img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: block;
+        }
+
+        .effect .layer.img1 {
+            transform: translatez(-250px) scale(3.7);
+            z-index: 7;
+        }
+
+        .effect .layer.img2 {
+            transform: translatez(-200px) scale(3.1);
+            z-index: 6;
+        }
+
+        .effect .layer.img3 {
+            transform: translatez(-150px) scale(2.5);
+            z-index: 5;
+        }
+
+        .effect .layer.img4 {
+            transform: translatez(-120px) scale(2.2);
+            z-index: 4;
+        }
+
+        .effect .layer.img5 {
+            transform: translatez(-80px) scale(1.8);
+            z-index: 3;
+        }
+
+        .effect .layer.img6 {
+            transform: translatez(-40px) scale(1.4);
+            z-index: 2;
+        }
+
+        .effect .layer.img7 {
+            transform: translatez(-0px);
+            z-index: 1;
+        }
+
+        .cover {
+            background: #2b092d;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            height: 500px;
+            z-index: 0;
+        }
+
+
+        .section1 {
+            height: 500px;
+            background: #2b092d;
+        }
+
+        .section2 {
+            height: 500px;
+            background: #2b092d;
+        }
+
+        .section3 {
+            height: 500px;
+            background: #2b092d;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="effect">
+        <div class="layer img1"><img src="assets/img/pal1/pal01.png" alt="bg1"></div>
+        <div class="layer img2"><img src="assets/img/pal1/pal02.png" alt="bg2"></div>
+        <div class="layer img3"><img src="assets/img/pal1/pal03.png" alt="bg3"></div>
+        <div class="layer img4"><img src="assets/img/pal1/pal04.png" alt="bg4"></div>
+        <div class="layer img5"><img src="assets/img/pal1/pal05.png" alt="bg5"></div>
+        <div class="layer img6"><img src="assets/img/pal1/pal06.png" alt="bg6"></div>
+        <div class="layer img7"><img src="assets/img/pal1/pal07.png" alt="bg7"></div>
+
+
+        <div class="cover"></div>
+
+    </header>
+
+    <section class="section1">
+        <h2>section1</h2>
+    </section>
+    <section class="section2">
+        <h2>section2</h2>
+    </section>
+    <section class="section3">
+        <h2>section3</h2>
+    </section>
+
+</body>
+
+</html>

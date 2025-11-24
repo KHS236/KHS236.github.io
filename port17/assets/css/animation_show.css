@@ -1,0 +1,90 @@
+/* keyframes */
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+    35% {
+        left: 41%; 
+        transform:rotate(0deg);
+        opacity:1;
+    }
+    65% {
+        left:59%; 
+        transform:rotate(0deg); 
+        opacity:1;
+    }
+    100% {
+        left:100%; 
+        transform:rotate(-180deg);
+        opacity:0;
+    }
+}
+
+@keyframes transform {
+   0%  { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+   28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+   42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+  100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+}
+
+@keyframes moveY2 {
+    0%   {transform: translateY(0)}
+    50%  {transform: translateY(15px)}
+    100% {transform: translateY(0)}
+}
+@keyframes moveY {
+    0%   {transform: translateY(0)}
+    50%  {transform: translateY(40px)}
+    100% {transform: translateY(0)}
+}
+@keyframes moveX {
+    0%   {transform: translateX(0)}
+    50%  {transform: translateX(40px)}
+    100% {transform: translateX(0)}
+}
+@keyframes rotate{
+  0%   {transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);} 
+  100% {transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);} 
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@keyframes swoosh {
+    0% {
+        transform-origin: left center;
+    }
+    20% {
+        transform: skewX(-20deg) scaleX(1);
+        transform-origin: left center;
+    }
+    21% {
+        transform-origin: right center;
+    }
+    50% {
+        transform: skewX(-20deg) scaleX(0);
+        transform-origin: right center;
+    }
+}
+
+@keyframes fill {
+    0% {
+        background-color: rgba(14, 56, 118, 0);
+    }
+    20% {
+        opacity: .5;
+        border-width: 15px;
+        border-color: #092248;
+    }
+    100% {
+        opacity: .5;
+        border-width: 1px;
+        background-color: rgba(14, 56, 118, 0.5);
+    }
+}

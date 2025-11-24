@@ -1,0 +1,185 @@
+body {background: #000; height: 4000px; font-family: 'Noto Sans KR', sans-serif; color: #FFE5DB;}
+a {cursor: pointer; color: #FFE5DB;}
+h1,h2,h3,h4,p,a {word-break: keep-all; word-wrap: break-word;}
+
+/* info (scroll)*/
+.info {
+  position: fixed; right: 30px; top: 65px;
+  z-index: 1100;
+}
+.info span {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+/* layout */
+#contents {max-widthwidth: 1920px;}
+.container  {width: 980px; margin: 0 auto;}
+#section1 {}
+#section2 {}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+
+
+/* banner */
+#banner {
+    width: 100%; position: fixed; top: 0; left: 0; 
+    border-bottom: 0.5px solid #555; z-index:1000;
+    background: rgba(0,0,0,0.7);
+}
+.banner {width: 100%; }
+.banner a {display: block; color: #fff; line-height: 50px;}
+.banner .name {float: left; font-weight: 500; font-size: 24px;}
+.banner ul {float: right; }
+.banner ul li {display: inline-block;}
+.banner ul li a {font-size: 12px; padding: 0 15px; transition: all 0.5s ease;}
+.banner ul li a:hover {color: #22c1c3; }
+
+/* 더 알아보기 more*/
+.more {
+  display: inline-block;
+  margin-top: 55px; padding: 12px 20px;
+  font-size: 15px; font-weight: 600;
+  border: 2px solid #FFE5DB; border-radius: 30px;
+  transition: 0.3s background cubic-bezier(0.4, 0, 0.6, 1);
+}
+.more:hover {background-color: #FFE5DB; color: #000;}
+
+/* info - 사이트 소개글  */
+.Info {font-size: 55px; font-weight: 600;}
+
+/* section 1 */
+.sec1 {width: 100%; padding-top: 220px; margin-bottom: 300px;}
+.sec1 .mainImg {width: 100%; text-align: center; position: relative;}
+.sec1 .mainImg .mainLarge {width: 100%; position: absolute; animation: main1 3s 1s forwards;}
+.sec1 .mainImg .mainLarge img {width: 100%; animation: main2 3s 1s forwards; opacity:0;}
+.sec1 .mainImg .mainSmall {width: 100%;position: absolute; top: 0; z-index:10;}
+.sec1 .mainImg .mainSmall img {width: 100%; transform: scale(0.9);}
+
+@keyframes main1 {
+    0% {top: 0;}
+    100% {top: 50px;}
+}
+@keyframes main2 {
+    0% {transform: scale(0.9); opacity:0;}
+    100% {transform: scale(1.05); opacity:1;}
+}
+
+.sec1 .mainText {text-align: center; margin-top: 350px;}
+.sec1 .mainText .hanaziro {font-size: 28px;}
+.sec1 .mainText .main-tit {font-size: 77px;font-weight: 700; line-height: 85px; margin-bottom: 80px; margin-top: 30px;}
+.sec1 .mainText .descBig {font-size: 28px; font-weight: 500; padding: 0 15%; margin-bottom: 40px;}
+.sec1 .mainText .descSmall {font-size: 22px;}
+
+/* section 2 */
+.sec2 {margin-bottom: 1400px;}
+.sec2 .webImg1 {width: 100%; position: relative; text-align: center; margin-bottom: 300px;} 
+.sec2 .webImg1 img {width: 100%; transform: scale(1.45); filter: sepia(30%); /*transform: translatex(-16%);*/ opacity:1; transition: 0.5s opacity cubic-bezier(0.4, 0, 0.6, 1); }
+.sec2 .webImg1 img:hover {opacity:0.5;}
+.sec2 .Info .textColor {
+  background: url(../img_apple2/text/copy_texture_1_large.jpg);
+  background-size: cover;
+  background-position: 0px 30%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sec2 .mockup1 {width: 70%; text-align: center; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.sec2 .mockup1 img {width: 100%;}
+.sec2 .mockup1 .mask1 {  
+  position: absolute; top: 5.3%; left: 3.6%;
+  width: 92.6%; height: 62.4%; 
+  background-color: blue;
+  overflow: hidden; text-align: center;
+}
+.sec2 .mockup1 .mask1 img {position: absolute; top: 0; left: 0;}
+
+/* section 3 */
+.sec3 {}
+.sec3 .infoBox {position: fixed; width: 51%; top: 50%; left: 24.5%; transform: translateY(-50%);}
+.sec3 .infoBox .Info .textColor {
+  background: url(../img_apple2/text/copy_texture_2_large.jpg);
+  background-size: cover;
+  background-position: 0% -57%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sec3 .gabiaImg1 {position: fixed; width: 51%; top: 50%; left: 24.5%; transform: translateY(-50%);}
+.sec3 .gabiaImg1 img {width: 100%;}
+.sec3 .description1 {}
+.sec3 .description1 .desc {position: fixed; width: 10%; }
+.sec3 .description1 .desc.d1 {top: 60%; left: 24.5%;}
+.sec3 .description1 .desc.d2 {top: 60%; left: 46%;}
+.sec3 .description1 .desc.d3 {top: 72%; left: 46%;}
+.sec3 .description1 .desc.d4 {top: 60%; right: 24.5%;}
+.sec3 .description1 .desc p {}
+.sec3 .description1 .desc p em {color: #fff;}
+
+.sec3 .gabiaImg2 {position: fixed; width: 35%; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.sec3 .gabiaImg2 img {width:100%;}
+.sec3 .description2 .desc {position: fixed; opacity: 0;}
+.sec3 .description2 .desc p em {color: #fff; display: block;}
+.sec3 .description2 .desc.d1 {width: 35%; top: 15%; left: 50%; transform: translateX(-50%); }
+.sec3 .description2 .desc.d2 {width: 12%;top: 40%; left: 19%; }
+.sec3 .description2 .desc.d3 {width: 12%;top: 40%; right: 19%; }
+.sec3 .description2 .desc.d4 {width: 35%; top: 80%; left: 50%; transform: translateX(-50%);}
+
+.sec3 .gabiaImg3 {position: fixed; width: 35%; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.sec3 .gabiaImg3 img {width:100%;}
+.sec3 .description3 .desc {position: fixed; opacity: 1;}
+.sec3 .description3 .desc p em {color: #fff; display: block;}
+.sec3 .description3 .desc.d1 {width: 35%; top: 15%; left: 50%; transform: translateX(-50%);}
+.sec3 .description3 .desc.d2 {width: 35%; top: 80%; left: 50%; transform: translateX(-50%);}
+
+.sec3 .gabiaImg4 {position: fixed; width: 35%; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.sec3 .gabiaImg4 img {width:100%;}
+.sec3 .description4 .desc {position: fixed; opacity: 1;}
+.sec3 .description4 .desc p em {color: #fff; display: block;}
+.sec3 .description4 .desc.d1 {width: 12%; top: 30%; left: 19%;}
+.sec3 .description4 .desc.d2 {width: 12%; top: 55%; left: 19%;}
+.sec3 .description4 .desc.d3 {width: 12%; top: 30%; right: 19%;}
+.sec3 .description4 .desc.d4 {width: 12%; top: 55%; right: 19%;}
+
+.sec3 .gabiaImg5 {position: fixed; width: 15%;}
+.sec3 .gabiaImg5 img {width:100%;}
+.sec3 .gabiaImg6 {position: fixed; width: 15%;}
+.sec3 .gabiaImg6 img {width:100%;}
+
+/* section 4 */ 
+.sec4 .infoBox {position: fixed; width: 51%; top: 50%; left: 24.5%; transform: translateY(-50%); z-index: 10;}
+.sec4 .Info {}
+.sec4 .Info .textColor {
+  background: url(../img_apple2/text/copy_texture_4_large.jpg);
+  background-size: cover;
+  background-position: 0px 32%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sec4 .html5Img {
+  width: 100%; height: 1000px; 
+  opacity: 0.3;
+  position: fixed; top: 50%; left: 0;
+  background-image: url(../img_apple2/screen_htnl5.png);
+  background-attachment: fixed;
+  background-position: 0px 0px;
+}
+.sec4 .html5Img:before {
+    content:'';
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index:1;
+}
+
+
+
+/* section 5 */
+/* section 6 */
+
+
+

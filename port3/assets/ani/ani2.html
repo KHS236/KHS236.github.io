@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Spinning Loader</title>
+
+	<style>
+		body {
+			height: 100vh;
+	    	background: linear-gradient(to right, #414345, #232526);
+		}
+		.circle-wrap {
+			width: 100vw; height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.circle {
+			position: relative;
+			width: 100px;	height: 100px;
+			margin: 75px;
+			animation: rotating 1s linear infinite;
+		}
+		.circle:before, .circle:after {
+			content:''; display: block;
+			width: 40px;height: 40px;
+			position: absolute;
+			animation: center 2s ease-in-out infinite;
+		}
+		.circle:before {
+			top: 0;left: 0;
+			background-color: rgba(241,196,15,0.5);
+			border-radius: 50%;
+			box-shadow: 60px 60px 0 rgba(241,196,15,0.5);
+		}
+		.circle:after {
+			top: 0;left: calc(100% - 40px);
+			background-color: rgba(231,76,60,0.5);
+			border-radius: 50%;
+			box-shadow: -60px 60px 0 rgba(231,76,60,0.5);
+		}
+
+		@keyframes rotating {
+			0% {transform: rotate(0deg);}
+			100% {transform: rotate(360deg);}
+		}
+		@keyframes center {
+			50% {
+				top: calc(50% - (40px / 2));
+				left: calc(50% - (40px / 2));
+				box-shadow: 0 0 0 rgba(241,1966,14,0.5);
+				background-color: rgba(241,196,15,0.5);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="circle-wrap">
+		<div class="circle"></div>
+	</div>
+
+
+
+
+
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../js/TweenMax.min.js"></script>
+
+</body>
+</html>

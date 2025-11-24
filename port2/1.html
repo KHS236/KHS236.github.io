@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="keyim">
+	<meta name="description" content="포트폴리오 사이트입니다.">
+	<meta name="keywords" content="웹퍼블리셔,웹표준,웹접근성">
+	
+	<title>Portfolio Site</title>
+  
+	<!-- Style-->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/mediaquery.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/jquery.fullpage.css">
+
+	<!-- Webfont-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+	
+	<style>
+		
+		.loading5{
+		  width: 40px;
+		  height: 40px;
+		  transform:rotate(45deg);
+		  animation:loading5-ani1 3s ease-in-out infinite;
+		  position:absolute;
+		  top:0;
+		  bottom:0;
+		  right:0;
+		  left:0;
+		  margin:auto;	
+		}
+		.loading5 i{
+		  width: 40px;
+		  height: 40px;
+		  display: inline-block;
+		  border-radius: 50%;
+		  position:absolute;
+		
+		}
+		.loading5 i:nth-child(1){
+		  background: #ff5954;
+		  transform:translate(0,50px);
+		  animation:loading5-ani2 3s ease-in-out infinite;
+		}
+		.loading5 i:nth-child(2){
+		  background: #1f4c59;
+		  transform:rotate(90deg) translate(0,50px);
+		  animation:loading5-ani3 3s ease-in-out infinite;
+		}
+		.loading5 i:nth-child(3){
+		  background: #00b39f;
+		  transform:rotate(180deg) translate(0,50px);
+		  animation:loading5-ani4 3s ease-in-out infinite;
+		}
+		.loading5 i:nth-child(4){
+		  background: #ffb364;
+		  transform:rotate(270deg) translate(0,50px);
+		  animation:loading5-ani5 3s ease-in-out infinite;
+		}
+		@keyframes loading5-ani1{
+		  25%{
+		    transform:rotate(135deg);
+		  }
+		  50%{
+		    transform:rotate(225deg);
+		  }
+		  75%{
+		    transform:rotate(315deg);
+		  }
+		  100%{
+		    transform:rotate(405deg);
+		  }
+		}
+		@keyframes loading5-ani2{
+		  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%{
+		    transform:translate(0,50px);
+		  }
+		  12.5%,37.5%,62.5%,87.5%{
+		    transform:translate(0,35px);
+		  }
+		}
+		@keyframes loading5-ani3{
+		  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%{
+		    transform:rotate(90deg) translate(0,50px);
+		  }
+		  12.5%,37.5%,62.5%,87.5%{
+		    transform:rotate(90deg) translate(0,35px);
+		  }
+		}
+		@keyframes loading5-ani4{
+		  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%{
+		    transform:rotate(180deg) translate(0,50px);
+		  }
+		  12.5%,37.5%,62.5%,87.5%{
+		    transform:rotate(180deg) translate(0,35px);
+		  }
+		}
+		@keyframes loading5-ani5{
+		  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%{
+		    transform:rotate(270deg) translate(0,50px);
+		  }
+		  12.5%,37.5%,62.5%,87.5%{
+		    transform:rotate(270deg) translate(0,35px);
+		  }
+		}
+	</style>
+</head>
+<body>
+	<div class="loading5"><i></i><i></i><i></i><i></i></div>
+		
+</body>
+</html>
+
+

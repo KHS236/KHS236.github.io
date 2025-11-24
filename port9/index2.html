@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="autheor" content="jeongahstory">
+    <meta name="description" content="반응형 사이트 따라하기">
+    <meta name="keywords" content="웹 퍼블리셔 포트폴리오, 반응형사이트, 웹퍼블리셔, 웹접근성, HTML5">
+    <title>포트폴리오 만들기</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/favicon-64.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon-152.png">
+    <link rel="icon" href="assets/icons/favicon-152.png">
+    <link rel="icon" href="assets/icons/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/icons/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="assets/icons/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="assets/icons/favicon-128.png" sizes="128x128">
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!");
+        </script>
+    <![endif]-->
+</head>
+<body>
+
+    <!--
+
+    <div class="progress01" id="progress01">
+        <span class="progress-bar01"></span>
+        <span class="progress-text01">0</span>
+    </div>
+-->
+    <!-- progress -->
+
+
+    <header id="header">
+        <div class="header">
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <div class="ham">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!--
+            <div class="info">
+                <h3>SCROLL</h3>
+                <span class="scroll_top">0</span>
+            </div>
+-->
+            <!-- scroll -->
+        </div>
+    </header>
+    <!-- header -->
+
+    <nav class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="index2.html" class="hover-target">Mainpage</a></li>
+                <li class="nav__list-item"><a href="about.html" class="hover-target">SKILL</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">Portfolio</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">Work</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">Blog</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--nav -->
+
+    <canvas id="space"></canvas>
+
+    <div class="parallax-page">
+        <div class="parallax">
+            <div class="parallax__layer"><img src="assets/img/index2/bg01-1.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg02.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg03.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg04.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg05.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg06.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/bg07.png" alt=""></div>
+            <div class="parallax__layer"><img src="assets/img/index2/cover01.png" alt=""></div>
+            <div class="parallax__content">
+                <section id="section1">
+                    <div class="img01"><img src="assets/img/page02_bg02.png" alt=""></div>
+                    <div class="img02 fadeinleft"><img src="assets/img/page02_2.png" alt=""></div>
+                    <div class="box1">
+                        <h2>JEONG-AH LEE <br> SKILL ABILITY</h2>
+                        <div class="bar"></div>
+                        <div class="btn"><a href="#">VIEW MORE</a></div>
+                    </div>
+
+                    <div class="popup">
+                        <h4>Skill Ability</h4>
+                        <div class="gage">
+                            <div class="col-sm-3 col-md-2">
+                                <div class="progress clearfix" data-percentage="80">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            80%<br>
+                                            <span>HTML5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-2">
+                                <div class="progress clearfix" data-percentage="90">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            90%<br>
+                                            <span>CSS3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 col-md-2">
+                                <div class="progress clearfix" data-percentage="70">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            70%<br>
+                                            <span>JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3 col-md-2">
+                                <div class="progress clearfix" data-percentage="60">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            60%<br>
+                                            <span>jQuery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-3 col-md-2">
+                                <div class="progress clearfix" data-percentage="80">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <div>
+                                            80%<br>
+                                            <span>Photoshop, illustration</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //section1 -->
+
+                <section id="section2">
+                    <div class="section2_t clearfix">
+                        <div class="section2_t_left">
+                            <h4>UI/UX Web Site</h4>
+                            <h2>BUILD <br><span>A VARIETY OF WEBSITES</span></h2>
+                            <div class="bar2"></div>
+                        </div>
+                        <div class="section2_t_right">
+                            <div class="bar3"></div>
+                            <h4>여러 종류의 웹 사이트를<br>만들어 보았습니다.</h4>
+                            <img src="assets/img/section2-1@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="section2_b clearfix">
+                        <div class="box01"><img src="assets/img/" alt=""></div>
+                        <div class="box02">
+                            <div class="top">Webstandard <span>웹 표준을 준수한 페이지 입니다.</span></div>
+                            <h3>This page complies <br> with web standards.</h3>
+                            <div class="bar3"></div>
+                            <h4>웹 표준이란?</h4>
+                            <p>웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 공식 표준이나<br>
+                                다른 기술 규격을 가리키는 일반적인 용어이다. 최근에 이 용어는 <br>
+                                웹 사이트를 작성하는 데 중요도가 높아지고 있으며 웹 디자인, 개발과 <br>
+                                관계가 있습니다.</p>
+                            <div class="btn01"><a href="">SEE MORE</a></div>
+                        </div>
+                        <div class="box03"><img src="assets/img/section2-3@2.png" alt="">
+                            <p>Responsive <br>
+                                Website</p>
+                        </div>
+                        <div class="bar4 clearfix">
+                            <ul>
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="btn02">
+                                <div class="leftBtn"><a href="#">
+                                        <figure><img src="assets/img/leftBtn@2x.png" alt=""></figure>
+                                    </a></div>
+                                <div class="rightBtn"><a href="#">
+                                        <figure><img src="assets/img/rightBtn@2x.png" alt=""></figure>
+                                    </a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- //section2 -->
+
+
+                <section id="section3">
+                    <div class="section3_t">
+                        <h2>A VARIETY OF Designs <span>여러가지 디자인 샘플입니다.</span></h2>
+                        <div class="bar5"></div>
+                        <p>일러스트, 포토샵, 애니메이션 등 다양한 디자인 샘플입니다. 각 항목에는 로고, 사람, 배너, 효과 등 다양한 디자인들이 포함되어 있습니다. </p>
+                    </div>
+                    <div class="section3_b">
+                        <div class="box01">
+                            <h4>illustration</h4>
+                            <div class="btn3"><a href="#">SEE MORE</a></div>
+                        </div>
+                        <div class="box02">
+                            <h4>Photoshop</h4>
+                            <div class="btn3"><a href="#">SEE MORE</a></div>
+                        </div>
+                        <div class="box03">
+                            <h4>Animation</h4>
+                            <div class="btn3"><a href="#">SEE MORE</a></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //section3 -->
+
+
+
+                <section id="section4">
+                    <div class="svg"><img src="assets/img/message.svg" alt=""></div>
+                    <h2>For the next generation<br>Contact me.</h2>
+                    <p>Information About Me</p>
+                    <div class="btn4"><a href="#">START NOW</a></div>
+                </section>
+                <!-- //section4 -->
+
+
+                <section id="section5">section5</section>
+                <!-- //section5 -->
+                <section id="section6">section6</section>
+                <!-- //section6 -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://webstoryboy8.dothome.co.kr/javascript/assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="http://webstoryboy8.dothome.co.kr/javascript/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(function() {
+            imagesProgress(); //이미지 로딩 
+        });
+    </script>
+
+
+
+
+</body>
+</html>

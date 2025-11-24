@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="leehun">
+	<meta name="description" content="이재훈 포트폴리오 사이트입니다.">
+	<meta name="keywords" content="이재훈, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, leehun, publisher, html5, html4, css3, html, markup, design">
+	<title>Portfolio</title>
+
+	<!-- style -->
+	<link rel="stylesheet" href="../assets/css/main_style.css">
+	<link href="../assets/css/jquery.fancybox.css" rel="stylesheet">
+
+	<!-- font -->
+	<link rel="stylesheet" href="../assets/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+	<!-- font-family: 'Roboto', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900" rel="stylesheet">
+	<!-- font-family: 'Poppins', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	
+	
+	<!--[If IE 8]>
+	<script type="text/javascript">
+		alert("Please Upgrade Your BROWSER !");
+	</script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- hunborder -->
+    <div class="hunborder">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- //hunborder -->
+
+    <!-- hunheader -->
+    <header class="hunheader">
+        <div class="logo"><a href="#">leejaehun</a></div>
+        <div class="menu">
+            <div>
+                <div><div></div></div>
+                <div><div></div></div>
+                <div><div></div></div>
+            </div>
+            <span>MENU</span>
+        </div>
+        <div class="theme">
+            <a href="#"><i class="fa fa-undo" aria-hidden="true"></i></a><a href="#"><img src="../assets/img/bat.svg"></a>
+        </div>
+    </header>
+    <!-- //hunheader -->
+    <!-- nav -->
+	<nav id="nav">
+		<div class="background">
+			<div class="background1"></div>
+			<div class="background2"></div>
+			<div class="background3"></div>
+			<div class="background4"></div>
+			<div class="background5"></div>
+			<div class="background6"></div>
+			<div class="background7"></div>
+			<div class="background8"></div>
+			<div class="background9"></div>
+			<div class="background10"></div>
+		</div>
+		<ul class="menu">
+			<li><a href="#section1"><span>about me</span></a></li>
+			<li><a href="#section2"><span>coding</span></a></li>
+			<li><a href="#section3"><span>design</span></a></li>
+			<li><a href="#section4"><span>skills</span></a></li>
+		</ul>
+	</nav>
+	<!-- nav -->
+    
+	<!-- section -->
+	<section id="contents">
+	    <div id="hunstrokes">
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	    </div>
+	    <!-- //hunstrokes-->
+		<div id="section1">
+			<div class="container">
+				<div class="sec1">
+				    <h2>who we are</h2>
+				    <p>introducing the bears</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="section2">
+			<div class="container">
+				
+			</div>
+		</div>
+	</section>
+	<!-- //section -->
+	
+	<!-- script -->
+	<script src="../assets/js/jquery-1.12.4.js"></script>
+	<script src="../assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../assets/js/TweenMax.min.js"></script>
+	<script src="../assets/js/ie-checker.js"></script>
+	<script src="../assets/js/modernizr.min.js"></script>
+	<script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="../assets/js/html5shiv.js"></script>
+	<script src="../assets/js/custom.js"></script>
+	<script src="../assets/js/jquery.fancybox.pack.js"></script>
+	<script>
+		$(function(){
+			imagesProgress(); //이미지 로딩 소스
+			setTimeout(ball, 5000);     //바탕 원 애니메이션
+            page();     //페이지 로딩
+                        
+            $(".menu").click(animation);
+
+            function animation(){
+                if( $("#nav").hasClass("active") ){
+                     $("#nav").removeClass("active");
+                     $("#nav").addClass("notActive");
+                } else {
+                     $("#nav").removeClass("notActive");
+                     $("#nav").addClass("active");
+                }
+            }
+		});
+	</script>
+</body>
+</html>

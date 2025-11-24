@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	x="0px" y="0px" width="200px" height="64px" viewBox="0 0 200 64" enable-background="new 0 0 200 64" xml:space="preserve">
+
+	<defs>
+		<filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+			<feGaussianBlur stdDeviation="3" result="glow"/>
+			<feMerge>
+				<feMergeNode in="glow"/>
+			</feMerge>
+		</filter>
+	</defs>
+
+	<rect x1="0" y1="64" x2="200" y2="64" width="200px" height="64px" fill="#000000" style="filter: url(#glow);"/>
+
+	<line fill="none" stroke="#ee2a4d" stroke-width="2" stroke-miterlimit="10" x1="0" y1="64" x2="200" y2="64" />
+	<line fill="none" stroke="#ee2a4d" stroke-width="2" stroke-miterlimit="10" x1="200" y1="0" x2="200" y2="64"/>
+</svg>

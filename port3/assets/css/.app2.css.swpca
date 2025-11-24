@@ -1,0 +1,84 @@
+body {background: #000; height: 4000px; font-family: 'Noto Sans KR', sans-serif; color: #FFE5DB;}
+a {cursor: pointer;}
+h1,h2,h3,h4,p,a {word-break: keep-all; word-wrap: break-word;}
+
+/* info (scroll)*/
+.info {
+  position: fixed; right: 30px; top: 65px;
+  z-index: 1100;
+}
+.info span {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+/* layout */
+#contents {max-widthwidth: 1920px;}
+.container  {width: 980px; margin: 0 auto;}
+#section1 {}
+#section2 {}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+
+
+/* banner */
+#banner {
+    width: 100%; position: fixed; top: 0; left: 0; 
+    border-bottom: 0.5px solid #555; z-index:1000;
+    background: rgba(0,0,0,0.7);
+}
+.banner {width: 100%; }
+.banner a {display: block; color: #fff; line-height: 50px;}
+.banner .name {float: left; font-weight: 500; font-size: 24px;}
+.banner ul {float: right; }
+.banner ul li {display: inline-block;}
+.banner ul li a {font-size: 12px; padding: 0 15px; transition: all 0.5s ease;}
+.banner ul li a:hover {color: #22c1c3; }
+
+
+/* section 1 */
+.sec1 {width: 100%; padding-top: 220px; margin-bottom: 90px;}
+.sec1 .mainImg {width: 100%; text-align: center; position: relative;}
+.sec1 .mainImg .mainLarge {width: 100%; position: absolute; animation: main1 3s 1s forwards;}
+.sec1 .mainImg .mainLarge img {width: 100%; animation: main2 3s 1s forwards; opacity:0;}
+.sec1 .mainImg .mainSmall {width: 100%;position: absolute; top: 0; z-index:10;}
+.sec1 .mainImg .mainSmall img {width: 100%; transform: scale(0.9);}
+
+@keyframes main1 {
+    0% {top: 0;}
+    100% {top: 50px;}
+}
+@keyframes main2 {
+    0% {transform: scale(0.9); opacity:0;}
+    100% {transform: scale(1.05); opacity:1;}
+}
+
+.sec1 .mainText {text-align: center; margin-top: 350px;}
+.sec1 .mainText .hanaziro {font-size: 28px;}
+.sec1 .mainText .main-tit {font-size: 77px;font-weight: 700; line-height: 85px; margin-bottom: 80px; margin-top: 30px;}
+.sec1 .mainText .descBig {font-size: 28px; font-weight: 500; padding: 0 15%; margin-bottom: 40px;}
+.sec1 .mainText .descSmall {font-size: 22px;}
+
+/* section 2 */
+.sec2 {}
+.sec2 .webImg1 {width: 100%; position: relative; margin-bottom: 90px; text-align: center; } 
+.sec2 .webImg1 img {width: 100%; transform: scale(1.4); filter: sepia(30%); /*transform: translatex(-16%);*/ opacity:1; transition: 0.5s opacity cubic-bezier(0.4, 0, 0.6, 1); }
+.sec2 .webImg1 img:hover {opacity:0.5;}
+.sec2 .webInfo {font-size: 28px; font-weight: 500;}
+
+
+
+
+
+/* section 3 */
+/* section 4 */
+/* section 5 */
+/* section 6 */
+
+
+

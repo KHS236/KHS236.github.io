@@ -1,0 +1,212 @@
+.black-menu {margin-top: 50px; width: 100%;}
+.black-menu .bm {}
+.black-menu .bm li {position: relative;}
+.black-menu .bm li.l1 {position: absolute; left: 5%; top: 0; width: 190px;}
+.black-menu .bm li.l2 {position: absolute; left: 27.5%; top: 0; width: 190px;}
+.black-menu .bm li.l3 {position: absolute; right: 27.5px; top: 0; width: 190px;}
+.black-menu .bm li.l4 {position: absolute; right: 5%; top: 0; width: 190px;}
+.black-menu .bm:hover li {opacity: 0.5;}
+.black-menu .bm li:hover {opacity: 1;}
+.black-menu .bm li a {
+	position: relative;
+	color: #fff; display: block;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+    font-size: 16px;
+    padding: 20px 0;
+    opacity: 0;  transition: all 0.3s 1.4s ease;
+}
+.black-menu .bm li a:before { 
+ 	content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ccc;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: .7s cubic-bezier(.77,0,.175,1);
+    box-sizing: border-box;
+}
+.black-menu .bm li a:after {
+	content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ccc;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: .7s cubic-bezier(.77,0,.175,1);
+    box-sizing: border-box;
+}
+.black-menu .bm li a:hover:before {opacity: 1; transform: scaleY(1); background-color: #fff;}
+.black-menu .bm li a:hover:after {opacity: 1; transform: scaleY(1); background-color: #fff;}
+
+
+
+///////////////////////////////////
+/* reset */
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,select,button,figure{margin: 0; padding: 0;}
+body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,
+select,button,figure{margin:0;padding:0;}
+em,address{font-style:normal;}
+ul,li,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}
+a{color:#333;text-decoration:none;}
+img,fieldset{border:0;}
+/*video, img {width: 100%;}*/
+body{background:#fff;direction:ltr;-webkit-text-size-adjust:none;}
+table{width:100%;border-spacing:0;border-collapse:collapse;}
+.ir_pm{display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* �ъ슜�� �대�吏��� �섎��덈뒗 �띿뒪�몄쓽 ��泥댄뀓�ㅽ듃瑜� �쒓났�좊븣 */
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%} /* 以묒슂�� �대�吏� ��泥댄뀓�ㅽ듃濡� �대�吏�off�쒖뿉�� ��泥� �띿뒪�몃� 蹂댁뿬二쇨퀬�� �좊븣 */
+.ir{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* ��泥댄뀓�ㅽ듃媛� �꾨땶 �묎렐�깆쓣 �꾪븳 �④��띿뒪�몃� �쒓났�좊븣 */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after{display:table;content:'';line-height:0;}
+.clearfix:after{clear:both;}
+
+
+
+/* main_border */
+.main_border {}
+.main_border div {position: fixed; z-index: 1000; background-color: #ffd94a;}
+.main_border div:nth-child(1) {width: 100vw; height: 20px; top: 0; left: 0;}
+.main_border div:nth-child(2) {width: 20px; height: 100%; top: 0; right: 0;}
+.main_border div:nth-child(3) {width: 100vw; height: 20px; bottom: 0; left: 0;}
+.main_border div:nth-child(4) {width: 20px; height: 100%; top: 0; left: 0;}
+
+/* .row */
+.row {width: 100%; height: 100vh;  background-color: #1d1d1b; position: relative;}
+
+/* .bbox1 */
+.bbox1 {width: 45%; text-align: center; display: block; position: absolute; left: 27.5%; top: 50%; z-index: 1; padding-bottom: 50px; background: rgba(0,0,0,0.5);}
+.black-title {color: #fff; font-size: 80px; font-family: 'Rubik', sans-serif; font-weight: 700; margin-right: 4px;}
+.black-title span {opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease; position: relative;}
+.black-title span:before {
+    content: ''; position: absolute; left: 0; top: 15px;
+    background-color: rgb(255, 217, 74); width: 100%; height: 62px;
+    transform: scaleX(0);
+}
+.black-subtitle {color: #fff; font-size: 30px; margin-bottom: 80px; font-family: 'Cormorant Garamond', serif; font-style: italic;}
+.black-subtitle span {opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease; position: relative;}
+.black-subtitle span:before {
+    content: ''; position: absolute; left: -1%; top: 0;
+    background-color: rgb(255,255,255); width: 102%; height: 39px;
+    transform: scaleX(0);
+}
+
+/* ball */
+.ball {
+  position: fixed;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+
+/* bar */
+.bar {}
+.bar1 {content: ''; position: absolute; left: 5%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 1.7s ease; transform: scaleY(0);}
+.bar2 {content: ''; position: absolute; left: 16.25%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 1.8s ease; transform: scaleY(0);}
+.bar3 {content: ''; position: absolute; left: 27.5%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 1.9s ease; transform: scaleY(0);}
+.bar4 {content: ''; position: absolute; left: 38.75%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 2.0s ease; transform: scaleY(0);}
+.bar5 {content: ''; position: absolute; left: 50%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 2.1s ease; transform: scaleY(0);}
+.bar6 {content: ''; position: absolute; left: 61.25%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 2.2s ease; transform: scaleY(0);}
+.bar7 {content: ''; position: absolute; left: 72.5%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 2.3s ease; transform: scaleY(0);}
+.bar8 {content: ''; position: absolute; left: 83.75%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 2.4s ease; transform: scaleY(0);}
+.bar9 {content: ''; position: absolute; left: 95%; top: 0; width: 1px; height: 0; background-color: #363636; transition: height 0.6s 2.5s ease; transform: scaleY(0);}
+
+/* black-menu */
+.clearfix {display: block;}
+.clearfix:before, .clearfix:after {display: table; content: ''; line-height: 0;}
+/*
+.black-menu {margin-top: 50px; position: relative;}
+.black-menu ul {padding-left: 42px;}
+.black-menu ul:hover li {opacity: 0.5;}
+.black-menu ul li {width: 190px; float: left; text-align: center; opacity: 1;}
+.black-menu li a {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    text-transform: lowercase;
+    padding: 20px 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    transition: .35s cubic-bezier(.77,0,.175,1);
+    transform: translateY(20px);
+    color: #fff;
+}
+.black-menu li a:before, .black-menu li a:after {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+    opacity: 0;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: .35s cubic-bezier(.77,0,.175,1);
+}
+.black-menu .bm li a:hover:before {opacity: 1; transform: scaleY(1); background-color: #fff;}
+.black-menu .bm li a:hover:after {opacity: 1; transform: scaleY(1); background-color: #fff;}
+
+*/
+
+.black-menu  {position: absolute; left: 0; bottom: 20px; width: 100%; }
+.black-menu ul {overflow: hidden;}
+.black-menu li {float: left; width: 25%; border-right: 1px solid #fff; margin-right: -1px;}
+
+
+/* #section1.active */
+#section1.active .flogo a              {opacity: 1; transform: translateY(0px); animation: ani2 0.7s 1.2s ease forwards;}
+
+#section1.active .black-title span     {opacity: 1; transform: translateY(0px); animation: ani1 0.7s 1.2s ease forwards;}
+#section1.active .black-subtitle span  {opacity: 1; transform: translateY(0px); animation: ani1 0.7s 1.2s ease forwards;}
+#section1.active .black-title span:before    {animation: ani1 0.7s 1.6s ease forwards;}
+#section1.active .black-subtitle span:before {animation: ani1 0.7s 1.6s ease forwards;}
+
+#section1.active .bar1 {height: 100vh; animation: ani3 0.7s 2s ease-in forwards;}
+#section1.active .bar2 {height: 100vh; animation: ani3 0.7s 2.2s ease-in forwards;}
+#section1.active .bar3 {height: 100vh; animation: ani3 0.7s 2.3s ease-in forwards;}
+#section1.active .bar4 {height: 100vh; animation: ani3 0.7s 2.4s ease-in forwards;}
+#section1.active .bar5 {height: 100vh; animation: ani3 0.7s 2.5s ease-in forwards;}
+#section1.active .bar6 {height: 100vh; animation: ani3 0.7s 2.6s ease-in forwards;}
+#section1.active .bar7 {height: 100vh; animation: ani3 0.7s 2.7s ease-in forwards;}
+#section1.active .bar8 {height: 100vh; animation: ani3 0.7s 2.8s ease-in forwards;}
+#section1.active .bar9 {height: 100vh; animation: ani3 0.7s 2.9s ease-in forwards;}
+
+
+@keyframes ani1 {
+    0%   {transform-origin: bottom; transform: scaleY(0);}
+    50%  {transform-origin: bottom; transform: scaleY(1);}
+    51%  {transform-origin: top; transform: scaleY(1);}
+    100% {transform-origin: top; transform: scaleY(0);}
+}
+@keyframes ani2 {
+    0%   {transform-origin: bottom; transform: scaleY(0);}
+    100% {transform-origin: top; transform: scaleY(1);}
+}
+@keyframes ani3 {
+    0%   {transform-origin: top; transform: scaleY(0);}
+    100% {transform-origin: bottom; transform: scaleY(1);}
+}
+
+/* rotate */
+.rotate {overflow: hidden; width: 4%; position: absolute; right: 11%; top: 5%;}
+.rotate a {display: block; float: left;}
+.rotate a:hover:first-child {transform: rotateZ(-100deg); transition: all 1s ease;}
+.rotate a.img2 {padding-left: 10px;}
+
+/* flogo */
+.flogo {position: absolute; left: 50%; bottom: 0; transform: translate(-50%, -50%); z-index: 1}
+.flogo a {opacity: 0; transform: translateY(20px); transition: all 0.3s 1.4s ease;}
+.flogo a img {transition: all 0.3s ease-in-out; border-radius: 50%;}
+.flogo a img:hover {box-shadow: 0 -180px 0 0 rgb(255, 217, 74) inset;}
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="75px" height="12px">
+	<defs>
+		<filter id="glow2" x="-30%" y="-30%" width="160%" height="160%">
+		<feGaussianBlur stdDeviation="1" result="glow2"/>
+		<feMerge>
+			<feMergeNode in="glow2"/>
+		</feMerge>
+		</filter>
+	</defs>
+
+	<rect x1="0" y1="14" x2="50" y2="6" width="75px" height="12px" fill="#000000" style="filter: url(#glow2);"/>
+
+	<line stroke="#ee2a4d" stroke-width="1" x1="0" y1="12" x2="75" y2="12" />
+	<line stroke="#ee2a4d" stroke-width="1" x1="75" y1="0" x2="75" y2="12"/>
+</svg>

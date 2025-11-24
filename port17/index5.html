@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+     <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style5.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville|Bree+Serif|Comfortaa&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    
+</head>
+<body>
+    <div class="scroll"><span>0</span></div>
+   
+    <section id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <h1 class="radius"
+                    data-0 = "left: 50%",
+                    data-1000 = "left: -50%"
+                ><em>Websites</em></h1>
+                <div class="moon1"
+                    data-0 = "right: 3%",
+                    data-2000 = "right: 130%"
+                ><img src="https://www.netbluez.com/img/moon.png" alt ></div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2"></section><!-- //section2 -->
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </section>
+    <!-- //contents -->
+    
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            let wScroll = $(this).scrollTop();
+            
+            $(".scroll").text(wScroll);
+
+        });
+    </script>
+    
+    
+</body>
+</html>

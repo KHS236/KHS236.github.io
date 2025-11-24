@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="author" content="김강산">
+    <meta name="description" content="김강산의 포트폴리오 사이트">
+    <meta name="keywords" content="웹퍼블리셔, 웹접근성, 반응형사이트, HTML5, WEB">
+    <title>PORTFOLIO</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    
+    
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    
+    
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+        </script>
+   <![endif]-->
+   
+   
+</head>
+<body>
+  
+
+    <div class="progress" id="progress"> 
+		<span class="progress-bar"></span>
+		<span class="progress-text"></span> 
+        <div class="loader">
+            <div class="loader_box"></div>
+            <div class="loader_box"></div>
+        </div> 
+	</div>
+
+    <!-- //progress -->
+   
+    <div id="dot">
+        <ul>
+            <li class="active"><a href="#"><em class="active">01</em><span>HOME</span></a></li>
+            <li><a href="#"><em>02</em><span>ABOUT ME</span></a></li>
+            <li><a href="#"><em>03</em><span>PORTFOLIO</span></a></li>
+            <li><a href="#"><em>04</em><span>ANIMATION</span></a></li>
+            <li><a href="#"><em>05</em><span>CONTACT</span></a></li>
+        </ul>
+    </div>
+    <!-- //dot -->
+    
+    	<div class="menu-wrapper">
+		<button class="menu-button wrap">
+			<span class="menu-button-item line">
+				<svg viewBox="0 0 80 80" width="100%" height="100%">
+					<path class="est0" d="M65.4 14.8L40.1 4.3 14.8 14.8 4.3 40.2l10.5 25.3L40.2 76l25.3-10.5L76 40.2 65.4 14.8zm-1.1 49.5l-24.2 10-24.1-10L6 40.1l10-24.2L40.1 6l24.2 10 10 24.2-10 24.1z"></path>
+				</svg>
+			</span>
+			<span class="menu-button-item dots">
+				<svg viewBox="0 0 80 80" width="100%" height="100%">	
+					<circle class="dst0" cx="40.1" cy="5.2" r="1.9"></circle>
+					<circle class="dst0" cx="40.1" cy="75.1" r="1.9"></circle>
+					<g>
+						<circle class="dst0" cx="5.1" cy="40.1" r="1.9"></circle>
+						<circle class="dst0" cx="75.1" cy="40.1" r="1.9"></circle>
+					</g>
+				</svg>
+			</span>
+			<span class="menu-button-item base">
+				<svg viewBox="0 0 80 80" id="burger-base" width="100%" height="100%">
+					<path class="cst0" d="M61.3 18.9l-21.2-8.8-21.2 8.8-8.8 21.3 8.8 21.2 21.3 8.7 21.2-8.8 8.7-21.2z"></path>
+				</svg>
+			</span>
+			<div class="icon-wrap">
+			   <div class="icon"></div>
+			</div> 
+		</button>
+	</div>
+	<!-- //menu-wrapper -->
+   
+   
+   <div class="menu-inner">
+		<div class="box-wrap">
+            <div class="box1 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box2 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box2 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box1 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box1 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box2 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box2 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box1 left">
+                <div class="overlay left"></div>
+            </div>
+
+            <div class="menu">
+                <div id="line">
+                    <div class="line sline"></div>
+                    <div class="line mline"></div>
+                    <div class="line mline"></div>
+                    <div class="line sline"></div>
+                    <div class="hline"></div>
+                </div>
+        	<div class="o_container">
+	    		<div class="menu-left">
+		    		<a href="http://kangsane.dothome.co.kr/portfolio" target="_blank"><span>Kim kang san</span></a><br>
+		    		<a href="http://kangsane.dothome.co.kr/portfolio" target="_blank"><span>kangsane.dothome.co.kr/portfolio</span></a>
+	    		</div>
+	    		<div class="menu-right">
+		    		<a href="#section1"><span>HOME</span></a><br>
+		    		<a href="#section2"><span>INTRODUCE</span></a><br>
+		    		<a href="#section3"><span>CODING</span></a><br>
+		    		<a href="#section4"><span>ANIMATION</span></a><br>
+		    		<a href="#section5"><span>CONTACT</span></a><br>
+	    		</div>
+		    </div>
+		</div>
+        </div>
+	</div>
+	<!-- //menu-inner -->
+    
+    <nav id="nav">
+        <h1>
+            <svg fill="#3EE7AC" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 175 70" enable-background="new 0 0 175 70" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.514,33.466c-1.08-0.675-4.24-4.359-4.131-9.71
+                  c0.028-1.396-0.204-3.069,0.287-4.119c0.599-1.281,2.363-1.711,2.558-3.588c0.296-2.852-1.145-3.052-2.587-3.083
+                  c-0.061-0.001-5.384,0-6.466,0c-1.064,0-6.658-0.006-6.725,0c-1.041,0.085-2.804,0.493-2.587,3.34
+                  c0.147,1.925,2.07,2.017,2.587,3.34c0.518,1.328,0.248,2.637,0.259,4.111c0.042,5.759-3.275,9.012-4.402,9.717
+                  C3.715,36.976,0,43.166,0,50.218C0,61.143,8.917,70,19.917,70s19.917-8.857,19.917-19.782
+                  C39.833,43.161,36.113,36.967,30.514,33.466z M21.694,22.379c0.836,0,1.514,0.68,1.514,1.52c0,0.839-0.678,1.52-1.514,1.52
+                  c-0.836,0-1.514-0.68-1.514-1.52C20.18,23.06,20.858,22.379,21.694,22.379z M18.162,17.313c0.557,0,1.009,0.454,1.009,1.013
+                  c0,0.56-0.452,1.013-1.009,1.013s-1.009-0.454-1.009-1.013C17.153,17.767,17.605,17.313,18.162,17.313z M17.522,28.608
+                  c1.462,0,2.647,1.186,2.647,2.65c0,1.464-1.185,2.65-2.647,2.65c-1.462,0-2.647-1.186-2.647-2.65
+                  C14.874,29.795,16.06,28.608,17.522,28.608z M20.043,67.476c-9.538,0-17.269-7.74-17.269-17.288c0-6.466,2.62-10.787,6.807-13.755
+                  c2.103-1.491,5.664-1.066,8.824,0.757c2.048,1.182,4.817,4.354,12.081,2.732c0.885-0.198,1.619-0.02,2.819,0.017
+                  c2.315,1.048,3.791,4.448,4.009,10.249C37.67,59.729,29.58,67.476,20.043,67.476z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.978,8.846c0.611,0,1.106,0.495,1.106,1.106
+                c0,0.611-0.495,1.106-1.106,1.106c-0.611,0-1.106-0.495-1.106-1.106C21.872,9.341,22.367,8.846,22.978,8.846z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.975,6.266c0.814,0,1.474,0.66,1.474,1.474
+                s-0.66,1.474-1.474,1.474c-0.814,0-1.474-0.66-1.474-1.474S15.16,6.266,15.975,6.266z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"  d="M21.688,0c1.12,0,2.027,0.908,2.027,2.027
+                s-0.908,2.027-2.027,2.027c-1.12,0-2.027-0.908-2.027-2.027S20.568,0,21.688,0z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.987,37.261c5.662-0.872,10.45,0.53,13.596,2.822
+                  c-6.125,0.375-9.356,1.404-14.771-2.639C19.145,37.657,19.594,37.322,19.987,37.261z"/>
+            </svg>
+            <span class="name">KANGSAN</span>
+            <span class="sname">PORTFOLIO</span>
+        </h1>
+    </nav>
+    <!-- //nav -->
+    
+
+    <section id="contents">
+        <section id="section1">
+            <div id="bg">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </div>
+            <div class="sec1">
+                <div class="text">
+                    <span class="sec1_desc">Front End Developer / Web Publisher / Web Design</span>
+                    <h2 class="glitch">HI,T<span class="style1">HERE</span></h2>
+                    <a href="#section2" class="skew"><span>I NEED YOU TO HIRE ME</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="s2_bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="sec2">
+                        <p class="strapline">PROFILE</p>
+                        <h3>
+                            <span>I</span><span>N</span><span>T</span><span>R</span><span>O</span><span>D</span><span>U</span><span>C</span><span>E</span>
+                        </h3>
+                        <div class="photo">
+                            <img src="assets/img/photo.jpg" alt="photo">
+                            <p>Kim kangsan</p>
+                        </div>
+                        <div class="skill-wrap">
+							<div class="skill">
+								<ul class="clearfix about">
+									<li class="pie" data-percent="100"><a href="#" target="_blank"><strong class="count">90</strong><span class="f1">PHOTOSHOP</span></a></li>
+									<li class="pie" data-percent="100"><a href="#" target="_blank"><strong class="count">85</strong><span class="f1">ILLUSTRATOR</span></a></li>
+									<li class="pie" data-percent="100"><a href="#" target="_blank"><strong class="count">95</strong><span class="f1">HTML</span></a></li>
+									<li class="pie" data-percent="100"><a href="#" target="_blank"><strong class="count">95</strong><span class="f1">CSS</span></a></li>
+									<li class="pie" data-percent="100"><a href="#" target="_blank"><strong class="count">85</strong><span class="f1">JAVASCRIPT</span></a></li>
+								</ul>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3">
+            <div class="s3_bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="sec3">
+                        <p class="strapline">MY WORK</p>
+                        <h3>
+                            <span>C</span><span>O</span><span>D</span><span>I</span><span>N</span><span>G</span>
+                        </h3>
+                        <div class="cont_left">
+                            <div class="s3_img"><img src="assets/img/cont1.png" alt="웹표준사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 01</p>
+                                <h4 class="h4_tit">STANDARD</h4>
+                                <p class="s3_desc">Web Standard Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="http://kangsane.dothome.co.kr/web/" target="_blank" class="skew"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                        <div class="cont_right">
+                            <div class="s3_img"><img src="assets/img/cont2.png" alt="반응형사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 02</p>
+                                <h4 class="h4_tit">RESPONSIVE</h4>
+                                <p class="s3_desc">Web Responsive Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="http://kangsane.dothome.co.kr/responsive/html5/index.html" target="_blank" class="skew"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                        <div class="cont_left">
+                            <div class="s3_img"><img src="assets/img/cont3.png" alt="메가박스사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 03</p>
+                                <h4 class="h4_tit">MEGABOX</h4>
+                                <p class="s3_desc">Web Responsive Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="http://kangsane.dothome.co.kr/mega/index21.html" target="_blank" class="skew"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                        <div class="cont_right">
+                            <div class="s3_img"><img src="assets/img/cont4.png" alt="키즈가오사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 04</p>
+                                <h4 class="h4_tit">KIDSGAO</h4>
+                                <p class="s3_desc">Web Responsive Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="http://kangsane.dothome.co.kr/kidsgao/kidsgao.html" target="_blank" class="skew"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                        <div class="cont_left">
+                            <div class="s3_img"><img src="assets/img/cont5.png" alt="가비아사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 05</p>
+                                <h4 class="h4_tit">GABIA</h4>
+                                <p class="s3_desc">Web Responsive Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="http://kangsane.dothome.co.kr/gabia/" target="_blank" class="skew"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                        <div class="cont_right">
+                            <div class="s3_img"><img src="assets/img/cont6.png" alt="락앤락사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 06</p>
+                                <h4 class="h4_tit">LOCK&amp;LOCK</h4>
+                                <p class="s3_desc">Web Standard Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="http://kangsane.dothome.co.kr/locknlock/" target="_blank" class="skew"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                        <div class="cont_left">
+                            <div class="s3_img"><img src="assets/img/cont7.png" alt="모바일사이트"></div>
+                            <div class="revealer"></div>
+                            <div class="s3_text">
+                                <p class="s3_tit">PROJECT 07</p>
+                                <h4 class="h4_tit">MOBILE</h4>
+                                <p class="s3_desc">Web Mobile Site Coding</p>
+                                <span class="mSite">kangsane.dothome.co.kr</span>
+                                <a href="#" class="skew window"><span>VIEW SITE</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section3 -->
+        
+        <section id="section4">
+            <div class="s4_bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="sec4">
+                        <p class="strapline">HTML · CSS3 · JAVASCRIPT</p>
+                        <h3>
+                            <span>A</span><span>N</span><span>I</span><span>M</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span>
+                        </h3>
+                        <div class="ani_wrap">
+                            <div class="ani ani1">
+                                <a href="#">TEXT</a>
+                            </div>
+                            <div class="ani ani2">
+                                <a href="#">ROKET</a>
+                            </div>
+                            <div class="ani ani3">
+                                <a href="#">CUBE</a>
+                            </div>
+                            <div class="ani ani4">
+                                <a href="#">LINE</a>
+                            </div>
+                            <div class="ani ani5">
+                                <a href="#">LOADING</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section4 -->
+        
+        <div id="modal" class="modal1">
+            <div class="modal-bg">
+                <div class="modal-cont">
+                    <h2><span class="style1">TEXT</span> ANIMATION</h2>
+                    <p data-height="600" data-theme-id="0" data-slug-hash="gNWqoq" data-default-tab="result" data-user="kangsan" data-pen-title="SVG - Text animation" class="codepen">See the Pen <a href="https://codepen.io/ksan63/pen/gNWqoq">SVG - Text animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <a href="#1" class="close close1">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal2">
+            <div class="modal-bg">
+                <div class="modal-cont">
+                    <h2><span class="style1">ROKET</span> ANIMATION</h2>
+                    <p data-height="600" data-theme-id="0" data-slug-hash="rEmgee" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">See the Pen <a href="https://codepen.io/ksan63/pen/rEmgee">CSS animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <a href="#1" class="close close1">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div> 
+        <div id="modal" class="modal3">
+            <div class="modal-bg">
+                <div class="modal-cont">
+                    <h2><span class="style1">CUBE</span> ANIMATION</h2>
+                    <p data-height="600" data-theme-id="0" data-slug-hash="QXvRPN" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">See the Pen <a href="https://codepen.io/ksan63/pen/QXvRPN">Cube animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <a href="#1" class="close close1">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>    
+        <div id="modal" class="modal4">
+            <div class="modal-bg">
+                <div class="modal-cont">
+                    <h2><span class="style1">LINE</span> ANIMATION</h2>
+                    <p data-height="600" data-theme-id="0" data-slug-hash="NZjZgb" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">See the Pen <a href="https://codepen.io/ksan63/pen/NZjZgb">LINE animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <a href="#1" class="close close1">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>      
+        <div id="modal" class="modal5">
+            <div class="modal-bg">
+                <div class="modal-cont">
+                    <h2><span class="style1">LOADING</span> ANIMATION</h2>
+                    <p data-height="600" data-theme-id="0" data-slug-hash="pXPXQa" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">See the Pen <a href="https://codepen.io/ksan63/pen/pXPXQa">LODING animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <a href="#1" class="close close1">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //modal -->
+        
+        <section id="section5">
+            <div class="container">
+                <div class="row">
+                    <div class="sec5">
+                        <p class="strapline">THANK YOU</p>
+                        <h3>
+                            <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+                        </h3>
+                        <div class="namecard">
+                            <span class="sp1">&lt; To Me &gt;</span>
+                            <div class="card">
+                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/sovaniirune@naver.com" method="post">
+                                    <fieldset id="fs-frm-inputs">
+                                        <label for="full-name" class="ir_su">Name</label>
+                                        <input type="text" name="name" id="full-name" placeholder="Your name.." required="">
+                                        <label for="email-address" class="ir_su">Email Address</label>
+                                        <input type="email" name="_replyto" id="email-address" placeholder="Your email.." required="">
+                                        <label for="message" class="ir_su">Message</label>
+                                        <textarea rows="5" name="message" id="message" placeholder="message.." required=""></textarea>
+                                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                                        <input type="submit" value="Submit">
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <span class="sp2">&lt; / From You &gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section5 -->
+        
+
+    </section>
+    <!-- //contents -->
+    
+    
+    
+    
+
+    
+    
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/modernizr-custom.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/easypiechart.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //윈도우 팝업
+        $('.window').click(function(e){
+            e.preventDefault();
+            //window.open("파일명", "팝업이름", "옵션설정");
+            //옵션 : left, top, width, height, status, toolbar, location, menubar, scrollbars, fullscreen
+            window.open("http://kangsane.dothome.co.kr/kakao/", "popup01", "width=375, height=667, toolbar=0, menubar=0");
+        });
+    </script>
+</body>
+</html>

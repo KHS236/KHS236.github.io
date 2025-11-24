@@ -1,0 +1,409 @@
+@charset "utf-8";
+/*미디어쿼리*/
+@media (max-width: 1440px){
+    #canv {display: none;}
+    #contents {background-color: #000;}
+    /*nav*/
+    .fixed-nav .nav {height: 60px;}
+    /*섹션1*/
+    .text-m .tm-wrap:nth-of-type(1),.text-m .tm-wrap:nth-of-type(3) {margin-left: 24%;}
+    .text-m .tm-wrap:nth-of-type(2) {margin-left: 37%;}
+    .text-m .tm-wrap .tm2 {text-indent: 3.4vw;}
+    .text-m .tm-wrap .tm2:nth-of-type(2) {text-indent: 2.7vw;}
+    /*섹션2*/
+    .result-wrap .rw-about .about-thema ul li:first-child {font-size: 2.7em;}
+    .result-wrap .rw-about .about-thema ul li {font-size: 1.6em;}
+    /*섹션3*/
+    .abilityEffect .abA {margin-top: 60vh;}
+    .ab-bottom {margin-top: 130vh;}
+    .abilityEffect .abA > div:nth-child(2) {margin-left: 27%;}
+    .frw {margin-top: 70vh;}
+    /*섹션4*/
+    .animation-effect .ani-e > div {margin-left: 1%;}
+    .animation-effect .ani-e > div:nth-child(2) {margin-left: 40%;}
+    .animation-effect .ani-e > div > .ae-t4 {margin-right: -4vw;}
+    .animation-effect .ani-e > div > .ae-t5 {margin-right: -6vw;}
+    .animation-effect .ani-e > div:nth-child(3) {margin-left: 15%;}
+    .anibox .ani-list .ani-shower li {left: 12%;}
+    .dog {width: 32vmin; height: 27vmin;}
+    .ani-sode h4 {margin-left: 20vh;}
+    .planet-wrap {width: 250px; height: 250px; margin-top: 0;}
+    .planet {width: 150px; height: 150px;}
+    .anibox .ani-list .ani-shower li:nth-of-type(2) {left: 6%;}
+    .color-wrap {left: 40%;}
+    .svg-t-ani svg {width: 60%;}
+    .anibox .ani-list .ani-shower li:nth-of-type(4) {left: 15%;}
+    /*섹션5*/
+    .contact-effect .cn-e > div > .ae-t7 em{text-indent: -0.5vw;}
+    .social .social-icon {width: 65%;}
+    
+    
+}
+@media (max-width: 1280px){
+    /*섹션1*/
+    .awrap {height: 10vh;}
+    .sec2 {padding: 10% 0% 5% 0;}
+    /*섹션2*/
+    #section2 {margin-bottom: 15vh;}
+    .sec3 {margin-top: 0;}
+    .no-list {font-size: 2.75vw;}
+    .no-list li {margin-bottom: 0.18em;}
+    .result-wrap {margin-top: 35vh;}
+    .result-wrap .rw-about {margin-top: 5vh;}
+    .result-wrap .rw-about .about-thema ul li:first-child {font-size: 2.5em;}
+    .result-wrap .rw-about .about-detail p {font-size: 2.05vw;}
+    .result-wrap .rw-about .about-detail {margin-top: 7vh;}
+    .goweb {font-size: 20px; line-height: 40px;}
+    .goweb-box {height: 40px;}
+    .p-img-list.p-desktop.view {top: 40vh;}
+    .p-img-list.p-desktop {left: 23%; width: 62%;}
+    .ab-bottom {margin-top: 120vh;}
+    .ab-detail {top: 20vh; left: 24.2%;}
+    /*섹션3*/
+    .skill-wrap .skill ul li {margin-right: 60px;}
+    .chart-wrap {margin-left: 39%;}
+    /*섹션4*/
+    .animation-effect {margin-top: 5vh;}
+    .anibox .ani-list {margin-top: 20vh; height: 35vh;}
+    .dog {width: 28vmin; height: 23vmin;}
+    .planet-wrap {width: 200px; height: 200px;}
+    .wave.wave-1 {bottom: 86px;}
+    .planet {width: 130px; height: 130px;}
+    .ani-itduce {margin-top: 4vh;}
+    /*섹션5*/
+    .contact-effect {margin-top: -5vh;}
+    .social {margin-top: 10vh;}
+    .social .social-icon {width: 70%;}
+    .frw {margin-top: 70vh;}
+}
+
+@media (max-width: 960px){
+    .grid_wrap .grid > div:nth-of-type(1) {margin-left: 16%;}
+    .grid_wrap .grid > div:nth-of-type(2) {margin-left: 34%;}
+    .grid_wrap .grid > div:nth-of-type(3) {margin-left: 94%;}
+    /*섹션1*/
+    .sec2 {padding: 10% 0% 10% 0;}
+    .sec2 {padding: 0% 0% 5% 0; margin-top: -5vh;}
+    .sec2 .about {font-size: 5vw;}
+    .awrap {height: 7.9vh;}
+    .goweb-box {transform: scale(0.6); margin-left: -6%; margin-top: 1vh;}
+    .result-wrap .rw-about .about-thema ul li {font-size: 1.2em;}
+    .result-wrap .rw-about .about-thema ul li:first-child {font-size: 1.7em;}
+    .result-wrap {margin-top: 24vh;}
+    /*메인텍스트*/
+    .text-m .tm-wrap:nth-of-type(1), .text-m .tm-wrap:nth-of-type(3) {margin-left: 25%;}
+    .text-m .tm-wrap:nth-of-type(2) {margin-left: 38%;}
+    .text-m .tm-wrap .tm2:nth-of-type(3) em {}
+    .text-m .tm-wrap .tm1 em,.text-m .tm-wrap .tm2 em,.text-m .tm-wrap .tm3 em {font-size: 15.6vw;}
+    .text-m .tm-wrap .tm3:nth-of-type(2) {text-indent: 4.5vw;}
+    .text-m .tm-wrap:nth-of-type(1), .text-m .tm-wrap:nth-of-type(3) {margin-left: 18%;}
+    .text-m .tm-wrap:nth-of-type(2) {margin-left: 33%;}
+    .text-m .tm-wrap .tm1 {width: 22vw; height: 22vw;}
+    .text-m .tm-wrap .tm1:nth-of-type(1) {width: 16vw;}
+    .text-m .tm-wrap .tm1:nth-of-type(2) {width: 19vw;}
+    .text-m .tm-wrap .tm1:nth-of-type(3) {width: 18vw;}
+    .text-m .tm-wrap .tm2 {height: 22vw;}
+    .text-m .tm-wrap .tm2:nth-of-type(1) {width: 19vw;}
+    .text-m .tm-wrap .tm2:nth-of-type(2) {width: 16vw;}
+    .text-m .tm-wrap .tm2:nth-of-type(3) {width: 20vw;}
+    .text-m .tm-wrap .tm3 {height: 22vw;}
+    .text-m .tm-wrap .tm3:nth-of-type(1) {width: 17vw;}
+    .text-m .tm-wrap .tm3:nth-of-type(2) {width: 18vw;}
+    .text-m .tm-wrap .tm3:nth-of-type(3) {width: 20vw;}
+    .text-m .tm-wrap .tm1 em {font-size: 23vw; line-height: 22vw; transform: translateX(-21vw);}
+    .text-m .tm-wrap .tm2 em {font-size: 23vw; line-height: 22vw; transform: translateX(-21vw);}
+    .text-m .tm-wrap .tm3 em {font-size: 23vw; line-height: 22vw; transform: translateX(-21vw);}
+    .con-num {margin-left: 16%;}
+    .sec2 .about {margin-left: 34.5%; width: 59%; font-size: 6vw;}
+    .awrap {height: 9vh;}
+    .sec3 .port1 {margin-left: 34.5%;}
+    .con-tit {margin:0vh 0 28vh 0; transform: translateX(-12vw);}
+    /*섹션2*/
+    .sec3 .port1 {width: 59%;}
+    .sec3 .port1 .portext-top .port-tbox .text-left {font-size: 21vw;}
+    .sec3 .port2 {width: 70%; margin-left: 16%;}
+    .sec3 .port2 .portext-top .port-tbox .text-left {font-size: 21vw;}
+    .sec3 .port3 {width: 60%;}
+    .sec3 .port3 .portext-top .port-tbox .text-left {font-size: 21vw;}
+    .text-left .me-t1 {transform: translateX(-22vw);}
+    .text-left .me-t2 {transform: translateX(-22vw);}
+    .text-left .me-t3 {transform: translateX(-22vw);}
+    .text-left .me-t4 {transform: translateX(-22vw);}
+    .text-left .me-t5 {transform: translateX(-22vw);}
+    .text-left .me-t6 {transform: translateX(-22vw);}
+    .text-left .me-t7 {transform: translateX(-22vw);}
+    .text-left .me-t8 {transform: translateX(-22vw);}
+    .text-left .me-t9 {transform: translateX(-22vw);}
+    .text-left .me-t10 {transform: translateX(-22vw);}
+    .text-left .me-t11 {transform: translateX(-22vw);}
+    .project-wrap {margin-top: 15vh;}
+    .re-r-big {width: 60%;}
+    .re-os-2 {margin-left: 35%;}
+    .p-img-list.p-mobile {width: 30%;}
+    .no-list {margin-top: 12vh;}
+    .no-list li:before {font-size: 2vw;}
+    .no-list.in-view li a {font-size: 3.5vw;}
+    .no-list li {margin-bottom: 0.5em; line-height: 1.5em;}
+    .p-img-list.p-mood.view {top: -11vh;}
+    .p-img-list.p-mood {left: 77%; width: 18%;}
+    .p-img-list.p-desktop {width: 78%; left: 25%;}
+    .p-img-list.p-desktop.view {top: 30vh;}
+    .result-wrap .rw-t .rwt-num {right: 7%;}
+    .result-wrap .rw-t .rwt-num span {font-size: 1.5vw;}
+    .result-wrap .rw-t .rwt-tit-img {margin-left: 16%; width: 78%;}
+    .result-wrap .rw-t .rwt-tit h3 span {font-size: 13vw;}
+    .result-wrap .rw-about {margin-top: 0;}
+    .result-wrap .rw-about .about-thema {margin-left: 16%;}
+    .result-wrap .rw-about .about-detail {width: 60%; margin-left: 32%;}
+    .goweb-box {margin-left: -17%;}
+    .frw2 .rw-t .rwt-tit h3 span {font-size: 11vw;}
+    .frw4 .rw-t .rwt-tit h3 span {font-size: 11vw;}
+    .dream {margin-left: 16%; margin-top: 35vh;}
+    .dream-b .arrow {width: 12%;}
+    .dream-b .address h2 {font-size: 1.8vw;}
+    #section2 {margin-bottom: 35vh;}
+    .ab-tit {margin-left: 34.5%;}
+    .abilityEffect .abA {margin-top: 35vh;}
+    .abilityEffect .abA {transform: translateX(-50%,-50%);}
+    .abilityEffect .abA > div {margin-left:3%; font-size: 21vw; margin-bottom: 2.5vh;}
+    .abilityEffect .abA > div > span {margin-right: -4.5vw;}
+    .ab-bottom {margin-top: 85vh;}
+    .ab-bottom .ab-count {left: 18%;}
+    .ab-detail {top: 14vh; left: 18.5%;}
+    .abilityEffect .abA  > div > .ae-t1> em,
+    .abilityEffect .abA  > div > .ae-t2> em,
+    .abilityEffect .abA  > div > .ae-t3> em,
+    .abilityEffect .abA  > div > .ae-t4> em,
+    .abilityEffect .abA  > div > .ae-t5> em,
+    .abilityEffect .abA  > div > .ae-t6> em,
+    .abilityEffect .abA  > div > .ae-t7> em,
+    .abilityEffect .abA  > div > .ae-t8> em,
+    .abilityEffect .abA  > div > .ae-t9> em {transform:translateX(-22vw);}
+    
+    canvas {height: 170px !important; width: 170px !important;}
+    .chart-wrap {width: 60%; margin-left: 34%;}
+    .skill-wrap .skill ul {width: 390px;}
+    .skill-wrap .skill ul li {margin-right: 50px; width: 170px;}
+    #section3 {margin-bottom: 25vh;}
+    .an-tit {margin-left: 34.5%;}
+    .animation-effect {margin-top: -8vh;}
+    .animation-effect .ani-e {transform: translate(-50%, -50%); margin-left: -7%;}
+    .animation-effect .ani-e > div {font-size: 21vw;  line-height: 17vw;}
+    .animation-effect .ani-e > div > span {margin-right: -4.5vw;}
+    .animation-effect .ani-e > div:nth-child(2) {margin-left: 36%;}
+    .animation-effect .ani-e > div:nth-child(3) {margin-left: 12%;}
+    .anibox {margin-top: 8vh;}
+    .animation-effect .ani-e  > div > .ae-t1> em {transform:translateX(-22vw);}
+    .animation-effect .ani-e  > div > .ae-t2> em {transform:translateX(-22vw);}
+    .animation-effect .ani-e  > div > .ae-t3> em {transform:translateX(-22vw);}
+    .animation-effect .ani-e  > div > .ae-t4> em {transform:translateX(-22vw);}
+    .animation-effect .ani-e  > div > .ae-t5> em {transform:translateX(-22vw);}
+    .animation-effect .ani-e  > div > .ae-t6> em {transform:translateX(-22vw);}
+    .animation-effect .ani-e  > div > .ae-t7> em {transform:translateX(-22vw); text-indent:-1.5vw;}
+    .animation-effect .ani-e  > div > .ae-t8> em {transform:translateX(-22vw); text-indent:2.5vw;}
+    .animation-effect .ani-e  > div > .ae-t9> em {transform:translateX(-22vw);  text-indent:0.5vw;}
+    .anibox .ani-list {height: 23vh;}
+    .anibox .ani-list .ani-shower li {left: 4%; top: 0;}
+    .dog {width: 30vmin; height: 24vmin;}
+    .anibox .ani-list .ani-shower li:nth-of-type(2) {top: 30%; left: -4%;}
+    .anibox .ani-list .ani-shower li:nth-of-type(3) {top: 50%; left: -4%;}
+    .svg-t-ani svg {width: 70%;}
+    .anibox .ani-list .ani-shower li:nth-of-type(4) {left: 10%;top: 50%;}
+    .anibox .ani-list .ani-mok {margin-left: 40%;}
+    .ani-itduce {margin-left: 39%;}
+    #section4 {margin-bottom: 25vh;}
+    .cn-tit {margin-left: 34.5%;}
+    .contact-effect {margin-top: -20vh;}
+    .contact-effect .cn-e > div {font-size: 21vw; line-height: 17vw;}
+    .contact-effect .cn-e > div >span {margin-right: -4.5vw;}
+    .contact-effect .cn-e > div {margin-left: 1%;}
+    .contact-effect .cn-e > div:nth-of-type(2) {margin-left: 5%;}
+    .contact-effect .cn-e  > div > .ae-t1> em {transform:translateX(-22vw);}
+    .contact-effect .cn-e  > div > .ae-t2> em {transform:translateX(-22vw);}
+    .contact-effect .cn-e  > div > .ae-t3> em {transform:translateX(-22vw);}
+    .contact-effect .cn-e  > div > .ae-t4> em {transform:translateX(-22vw);}
+    .contact-effect .cn-e  > div > .ae-t5> em {transform:translateX(-22vw); text-indent:1vw;}
+    .contact-effect .cn-e  > div > .ae-t6> em {transform:translateX(-22vw); text-indent:1vw;}
+    .contact-effect .cn-e  > div > .ae-t7> em {transform:translateX(-22vw);  text-indent:1vw;}
+    .mycontact {margin-left: 16%;}
+    .pic-inner {width: 22vw; height: 26vw; margin-top: -20vw;}
+    .email-address h2 {font-size: 1.4vw;}
+    .social h2 {font-size: 1.5vw; margin-bottom: 6vh;}
+    .social .social-icon {width: 85%;}
+    .social strong {font-size: 1vw;}
+    .myform  {width: 100%;}
+    .myform .myemail {height: 4vh; padding: 0; width: 100%;}
+    .myform .myemail-post {width: 94%; padding: 6px; margin-top: 2vh; height: 13vh; font-size: 1.2vw;}
+    .frw {margin-top: 60vh;}
+    
+}
+/*갤럭시tab 800*1200 세웟을시기준*/
+@media (max-width: 800px){
+    .container {padding: 0;}
+    .fixed-nav .nav {height: 65px;}
+    .fixed-nav .nav li {font-size: 1.15em;}
+    .con-tit {transform: translateX(-15vw);}
+    .mainEffect {left: 50%;}
+    #section1 {margin-bottom: 20vh;}
+    .text-m .tm-wrap:nth-of-type(1), .text-m .tm-wrap:nth-of-type(3) {margin-left: 21%;}
+    .sec2 {margin-top: -10vh;}
+    .sec2 .about {font-size: 6.5vw; width: 78%;}
+    .con-tit {margin: 0vh 0 20vh 0;}
+    .awrap {height: 6vh;}
+    .sec2 .about {margin-left: 36%;}
+    .con-num {margin-left: 21%; margin-top: -7vh;}
+    .sec3 .port2 {margin-left: 21%;}
+    .p-img-list.p-mood {left: 70%;}
+    .p-img-list.p-mood.view {top: -7vh;}
+    .p-img-list.p-mobile {left: 6%;}
+    .p-img-list.p-desktop {left: 15%;}
+    .frw {margin-top: 50vh;}
+    .result-wrap .rw-t {padding-top: 15vh; height: 60vh;}
+    .result-wrap .rw-t .rwt-tit-img {width: 66%; margin-left: 21.2%;}
+    .result-wrap .rw-t .rwt-num {right: 14%;}
+    .result-wrap .rw-about .about-thema {margin-left: 21.2%;}
+    .result-wrap .rw-about .about-detail {width: 50%; margin-left: 34%;}
+    .goweb-box {margin-left: -12%;}
+    .result-wrap .rw-t .rwt-tit h3 {margin-left: 18%;}
+    .result-wrap .rw-t .rwt-tit .h3secound {margin-left: 10%;}
+    .frw2 .rw-t .rwt-tit h3 {margin-left: 12%;}
+    .frw2 .rw-t .rwt-tit .h3secound {margin-left: 6%;}
+    .frw3 .rw-t .rwt-tit h3 {margin-left: 25%;}
+    .frw4 .rw-t .rwt-tit h3 {margin-left: 12%;}
+    .frw4 .rw-t .rwt-tit .h3secound {margin-left: 6%;}
+    .dream {margin-left: 21%;}
+    .abilityEffect .abA {margin-top: 22vh;}
+    .abilityEffect .abA > div {margin-left: 4%;}
+    .ab-bottom {margin-top: 60vh;}
+    .ab-bottom .ab-count {left: 22%;}
+    .ab-detail {top: 10vh; left: 23%;}
+    .animation-effect {margin-top: -24vh;}
+    .animation-effect .ani-e > div {margin-left: 4%;}
+    .animation-effect .ani-e > div:nth-child(2) {margin-left: 33%;}
+    .anibox {margin-top: -13vh;}
+    .anibox .ani-list .ani-shower li {left: 8%;}
+    .dog {width: 25vmin; height: 21vmin;}
+
+    .anibox .ani-list .ani-shower li:nth-of-type(2) {top: 25%; left: -2%;}
+
+    .color-wrap {width: 220px; left: 85%;}
+
+    .svg-t-ani svg {width: 60%; left: 30%;}
+    .anibox .ani-list {height: auto;} 
+    .ani-itduce li {padding-left: 2vh;}
+    .ani-itduce {height: 8vh;}
+    #section4 {margin-bottom: 32vh;}
+    .contact-effect {margin-top: -35vh;}
+    .contact-effect .cn-e > div {margin-left: 3.5%;}
+    .contact-wrap {margin-top: -18vh;}
+    .mycontact {margin-left: 22%;}
+    .myform .myemail {height: 2.5vh;}
+    .myform .myemail-post {margin-top: 1vh;}
+    .myform .myemail-send {height: 3vh; margin: 1.5vh auto;}
+    #section5 {padding-bottom: 15vh;}
+    .social .social-icon {height: 5vh;}
+    .no-list a:before {height: 1px;}
+    
+
+}
+
+@media (max-width: 420px){
+    .grid_wrap .grid > div:nth-of-type(1) {margin-left: 10%;}
+    .grid_wrap .grid > div:nth-of-type(2) {margin-left: 31%;}
+    .grid_wrap .grid > div:nth-of-type(3) {margin-left: 103%;}
+    .text-m .tm-wrap:nth-of-type(1), .text-m .tm-wrap:nth-of-type(3) {margin-left: 21%;}
+    .text-m .tm-wrap:nth-of-type(2) {margin-left: 33%;}
+    .sec2 {margin-top:2vh;}
+    .fixed-nav .nav {height: 45px;}
+    .fixed-nav .nav li {font-size: 0.8em;}
+    .sec2 .about {margin-left: 37%;}
+    .con-num {margin-left: 22%;}
+    .con-tit {margin: 0vh 0 20vh 0;}
+    .sec2 .about {line-height: 1.05em;}
+    .awrap {height: 5.5vh;}
+    .con-tit {transform:translateX(-25vw);}
+    .project-wrap {margin-top: 22vh;}
+    .no-list.in-view li a {font-size: 3.9vw;}
+    .no-list li {padding-left: 1.8em;}
+    .p-img-list.p-desktop {width: 90%; left: 5.2%;}
+    .p-img-list.p-desktop.view {top: 24vh;}
+    .frw {margin-top: 40vh;}
+    .result-wrap .rw-t .rwt-tit-img .imgwrap {top: -0.5em;}
+    .result-wrap .rw-about {margin-top: -5vh;}
+    .result-wrap .rw-about .about-thema ul li:first-child {font-size: 0.9em;}
+    .result-wrap .rw-about .about-thema ul li {font-size: 0.7em;}
+    .result-wrap .rw-about .about-thema {margin-left: 22.2%;}
+    .goweb-box {transform: scale(0.35); margin-top: 0;}
+    .dream {margin-top: 20vh;}
+    .dream .ab-text {line-height: 1.1em;}
+    #section2 {margin-bottom: 37vh;}
+    .ab-tit .con-tit {transform:translateX(-25vw);}
+    .abilityEffect .abA > div {margin-left: 6%;}
+    .ab-detail {letter-spacing: 4px; font-size: 2vw; left: 24.5%; top: 9vh;}
+    canvas {height: 80px !important;
+    width: 80px !important;}
+    .chart-wrap {width: 51%; margin-left: 37%;}
+    .skill-wrap .skill ul {width: 180px;}
+    .skill-wrap .skill ul li {width: 80px; margin-right: 20px; margin-top: 2vh;}
+    .skill-wrap span {font-size: 3vw; width: 20vw; margin: 1vh auto; }
+    .skill-wrap strong {font-size: 2.1vw; top: 61%;}
+    .an-tit .con-tit {transform: translateX(-32vw);}
+    .ani-sode h4 {width: 11vh;}
+    .planet-wrap {transform: scale(0.4);}
+    .anibox .ani-list .ani-shower li:nth-of-type(2) {left: -28%;}
+    .ani-sode1 h4 {margin-left: 33vh; width: 13vh; margin-top: -25vh;}
+    .color-wrap {transform: scale(0.4); left: 55%;}
+    .ani-sode2 h4 {margin-left: 20vh; margin-top: -20vh;}
+    .cn-tit .con-tit {transform: translateX(-25vw);}
+    .contact-effect .cn-e > div {margin-left: 4.5%;}
+    .contact-effect .cn-e > div:nth-of-type(2) {margin-left: 7.5%;}
+    .mycontact {margin-left: 24%;}
+    .social .social-icon {height: 4vh;}
+    .myform {width: 80%;}
+    .myform .myemail {height: 1vh; padding: 3px;}
+    .myform .myemail-post {width: 100%; padding: 3px; margin-top: 1vh; font-size: 1.3vw; height: 8vh;}
+    .myform .myemail-send {width: 50%; height: 3vh; margin: 1vh 0; font-size: 1.4vw;}
+    .sec1 .ltext.afterintro {top: 7px; left: 7px;}
+    .ani-itduce {font-size: 1.8vw; width: 42vw;}
+}
+
+@media (max-width: 360px){
+    .grid_wrap .grid > div:nth-of-type(1) {margin-left: 3%;}
+    .grid_wrap .grid > div:nth-of-type(2) {margin-left: 25%;}
+    .text-m .tm-wrap:nth-of-type(1), .text-m .tm-wrap:nth-of-type(3) {margin-left: 18%;}
+    .text-m .tm-wrap:nth-of-type(2) {margin-left: 31%;}
+    .con-num {margin-left: 19%;}
+    .sec2 .about {margin-left: 34%;}
+    .con-tit {transform: translateX(-30vw);}
+    .p-img-list.p-mood {left: 68%;}
+    .p-img-list.p-mobile {left: 5%;}
+    .p-img-list.p-desktop {width: 83%; left: 10.4%;}
+    .result-wrap .rw-t .rwt-num span {transform: translateX(21vw);}
+    .result-wrap .rw-t .rwt-num {right:16%;}
+    .result-wrap .rw-t .rwt-tit-img {width: 66.2%; margin-left: 19%;}
+    .result-wrap .rw-about .about-thema {margin-left: 19.2%;}
+    .result-wrap .rw-about .about-detail {margin-left: 29%;}
+    .goweb-box {margin-left: -21%;}
+    .dream {margin-left: 19%;}
+    .abilityEffect .abA > div {margin-left: 2.5%;}
+    .abilityEffect .abA > div:nth-child(2) {margin-left: 23%;}
+    .ab-bottom .ab-count {left: 18.7%;}
+    .ab-detail {left: 20.6%;}
+    canvas {height: 70px !important; width: 70px !important;}
+    .chart-wrap {margin-left: 34%;}
+    .skill-wrap .skill ul {width: 160px;}
+    .skill-wrap .skill ul li {width: 70px; margin-right: 20px;}
+    .animation-effect .ani-e > div:nth-child(1) {margin-left: 0%;}
+    .animation-effect .ani-e > div:nth-child(2) {margin-left: 27%;}
+    .animation-effect .ani-e > div:nth-child(3) {margin-left: 0%;}
+    .anibox .ani-t {margin-left: 20%;}
+    .planet-wrap {transform: scale(0.3);}
+    .ani-sode1 h4 {margin-top: -29vh; margin-left: 43vh; width: 14vh;}
+    .color-wrap {left: 45%;}
+    .ani-sode2 h4 {margin-left: 25vh; margin-top: -25vh;}
+    .contact-effect .cn-e > div {margin-left:0%;}
+    .contact-effect .cn-e > div:nth-of-type(2) {margin-left: 3%;}
+    .mycontact {margin-left: 20%;}
+    .myform {width: 89%;} 
+    #section5 {padding-bottom: 22vh;}
+}

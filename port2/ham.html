@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="keyim">
+  <meta name="description" content="포트폴리오 사이트입니다.">
+  <meta name="keywords" content="웹퍼블리셔,웹표준,웹접근성">
+  
+  <title>Portfolio Site</title>
+  <!-- Style-->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/mediaquery.css">
+
+  <!-- favicon-->
+ 
+
+  <!-- Webfont-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+	
+	
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+<style>
+  body{margin:0; -webkit-perspective: 1000; background: url(http://f.cl.ly/items/3Q031Q1m1s1d3C0I023k/geometry2.png); font-family: Avenir Next, sans-serif;}
+body,html {height: 100%; width: 100%; overflow-x: hidden;}
+.menu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align:center;
+  border-radius: 100%;
+  right:25px;
+  top:25px;
+}
+.menu-bg {
+  @extend .menu;
+  background: #663399;
+  pointer-events: none;
+  transition: .3s; 
+  right:50px;
+  top:50px;
+  transform:translate3d(50%,-50%,0); 
+  transform-origin: center center;
+  &.fs{
+    transform:translate3d(50%,-50%,0);  
+    width:300vw; 
+    height:300vw;
+  }
+}
+.menu-burger {
+  @extend .menu;
+  color: white;
+  padding-top: 11px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  transition: .4s;
+  transform-origin: center;
+  &.fs {
+    transform: rotate(-180deg) translateY(10px);
+  }
+}
+.menu-items{
+  position:absolute;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing:10px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  transition: .4s;
+  margin-top:100px;
+  transform: translateY(-200%);
+  pointer-events:none;
+  div {
+    transition: 1s;
+    opacity: 0;
+    margin-top: 0px;
+  }
+  &.fs {
+    transform: translateY(0);
+    pointer-events:auto;
+    opacity: 1;
+    div{
+      opacity: 1;
+      margin-top: 75px;
+    }
+  }
+}
+
+.content {
+  padding:100px 50px;
+  line-height: 1.62em;
+  color:#444;
+  h1{
+    font-weight:bold;
+    font-size:2em;
+    margin-bottom: 1em;
+  }
+}
+</style>
+</head>
+<body>
+<div class="menu-bg"></div>
+<div class="menu-burger">☰</div>
+<div class="menu-items">
+  <div>CALL</div>
+  <div>DRIVE</div>
+  <div>MAIL</div>
+</div>
+
+<div class="content">
+  <h1>Circular Hamburger menu</h1>
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  <br />
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+</div>
+	<script>
+	$('.menu-burger, .menu-items').on('click', function() {
+  $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
+  $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+});
+	</script>
+</body>
+</html>

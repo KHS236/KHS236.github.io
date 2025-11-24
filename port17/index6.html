@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+     <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style6.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville|Bree+Serif|Comfortaa&display=swap" rel="stylesheet" crossorigin="crossorigin">
+    
+</head>
+<body>
+    <div class="scroll"><span>0</span></div>
+   
+    <section id="contents">
+        <section id="section1">
+            <img src="assets/img/cloud-1.svg" class="cloud1" alt>
+            <img src="assets/img/cloud-2.svg" class="cloud2" alt>
+            <div class="sec1" data-0="left: 0vh" data-2000="left: -200vh";>
+                <h1 class="radius" ><em>Websites</em></h1>
+                <div class="moon1">
+                    <img src="https://www.netbluez.com/img/moon.png" alt />
+                </div>
+                <img class="moon2" src="assets/img/mars.png" alt >
+                <img src="assets/img/men.png" class="men1" alt>
+                <img src="assets/img/line.png" class="line" alt>
+            </div>
+        </section>    
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="sec2" data-2200="left: 200vh" data-5200="left: -200vh";>
+                <div class="s2_title">
+                <h3>
+                    <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span>
+                </h3>
+                </div>
+                <div class="s2_skill">
+                <div class="skill">
+                    <ul>
+                        <li class="pie" data-percent="90"><a href="#"><strong class="count">90</strong><span class="f1">PHOTOSHOP</span></a></li>
+                        <li class="pie" data-percent="90"><a href="#"><strong class="count">95</strong><span class="f1">HTML</span></a></li>
+                        <li class="pie" data-percent="80"><a href="#"><strong class="count">85</strong><span class="f1">ILLUSTRATOR</span></a></li>
+                        <li class="pie" data-percent="80"><a href="#"><strong class="count">95</strong><span class="f1">CSS</span></a></li>
+                        <li class="pie" data-percent="90"><a href="#"><strong class="count">85</strong><span class="f1">JAVASCRIPT</span></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section><!-- //section2 -->
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </section>
+    <!-- //contents -->
+    
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            let wScroll = $(this).scrollTop();
+            
+            $(".scroll").text(wScroll);
+
+        });
+    </script>
+    
+    
+</body>
+</html>

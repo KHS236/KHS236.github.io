@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+
+		body {
+
+			background-color: #0E3741;
+			color: #FFF;
+
+		}
+
+		.sec5 .site .right .circle {
+			width: 14vmax; height: 14vmax;
+			background-color: #CB4B16;
+			position: absolute;
+			top: 60px; left: 60px;
+			mix-blend-mode: difference;	
+			border-radius: 50%;
+			will-change: transform;
+		}
+		.sec5 h2 {font-family: 'Poppins'; font-weight: 800; padding: 2%;}
+.sec5 h2 span {display: block; font-size: 16vw; line-height: .8em; opacity: 0;}
+.sec5.show h2 span {opacity: 1;}
+.sec5.show h2 em {display: inline-block; opacity: 0; animation: revealX .8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;}
+.sec5 h2 .mid em {animation-delay: .2s;}
+.sec5 h2 .bot em {animation-delay: .45s;}
+
+
+.sec5 .circle1 {position: absolute; top: 1%; right: 2%; width: 12vw; height: 12vw; background: #000; border-radius: 50%; opacity: 0;}
+.sec5.show .circle1 {animation: size .6s .5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;}
+
+.sec5 .site .right {overflow: hidden;} 
+.sec5 .site .right h3 {font-family: 'poppins'; font-size: 5vw; font-weight: 700; float:right;}
+.sec5 .site .right h3 span {display: block;}
+
+
+	</style>
+</head>
+<body>
+	<section id="section5">
+                <div class="container">
+                    <div class="sec5">
+                        <h2>
+                            <span class="top"><em>HOW TO</em></span>
+                            <span class="mid"><em>MAKE</em></span>
+                            <span class="bot"><em>IT</em></span>
+                            <span class="let">
+                            </span>
+                        </h2>
+                        <div class="circle1"></div>
+                        <div class="site s1">
+                            <div class="left"></div>
+                            <div class="right">
+                                <h3>
+                                    <span>Megabox</span>
+                                    <span>site</span>
+                                </h3>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="site s2">
+                            
+                        </div>
+                        <div class="site s3">
+                            
+                        </div>
+                        <div class="site s4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+	<script>
+		const circle = document.querySelector('.circle')
+
+		let mouseX = 0
+		let mouseY = 0
+
+		let circleX = 0
+		let circleY = 0
+
+		let speed = 0.06
+
+		const animate = () => {
+		  let distX = mouseX - circleX
+		  let distY = mouseY - circleY
+			let translatedValue = `translate3d(${circleX}px, ${circleY}px, 0 )`;
+		  
+		  circleX = circleX + (distX * speed)
+		  circleY = circleY + (distY * speed)    
+			
+			circle.style.transform = translatedValue;
+		  
+		  requestAnimationFrame(animate)
+		}
+
+		animate()
+
+		document.addEventListener('mousemove', (e) => {
+		  mouseX = e.clientX - circle.offsetWidth / 4;
+		  mouseY = e.clientY - circle.offsetHeight / 4;
+		})
+	</script>
+
+
+
+</body>
+</html>
+  #CB4B16

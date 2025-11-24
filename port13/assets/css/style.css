@@ -1,0 +1,279 @@
+/* layout */
+#contents {}
+#section1 {height: 3000px; background: #000;}
+#section2 {height: 3000px; background: #000;}
+#section3 {height: 3000px; background: #000;}
+#section4 {height: 100vh; background: red;}
+#section5 {height: 100vh; background: yellow;}
+#section6 {height: 100vh; background: green;}
+
+/* container */
+.container {padding: 60px;}
+
+/* grid_wrap */
+.grid_wrap {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9000;
+    top: 0; left: 60px;bottom: 0; right: 60px;
+}
+.grid_wrap .grid > div {position: absolute; top: 0; left: 0; width: 1px; height: 100vh; background-color: rgba(255, 255, 255, .1);}
+.grid_wrap .grid > div:nth-of-type(1) {margin-left: 23%;}
+.grid_wrap .grid > div:nth-of-type(2) {margin-left: 38%;}
+.grid_wrap .grid > div:nth-of-type(3) {margin-left: 85%;}
+
+/* common */
+.lp1 {margin-left: 23%;}
+.lp2 {margin-left: 38%;}
+.lp3 {margin-left: 85%;}
+
+.con-tit {font-size:20px;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 5vh 0 15vh 0;
+    display: block;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;}
+.con-num {width: 15%;
+    float: left;
+    position: relative;}
+.con-num span{color: #fff;
+    display: block;
+    font-size: .95em;
+    position: absolute;
+    padding-top: 22vh;}
+
+/*메뉴*/
+.fixed-nav {}
+.fixed-nav .nav{z-index: 7000;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+	/*flex end:항목의 첫 열이 교차축 방향의 끝선에 정렬*/
+    top: 60px;
+    left: 100%;
+    height: 80px;
+    transform: rotateZ(90deg);
+    transform-origin: 0% 0%;
+   }
+.fixed-nav .nav li{font-size: 0.9em;
+    margin-right: 5vh;
+	font-weight: 400;}
+.fixed-nav .nav li a{color: #FFF;
+	position: relative;
+    display: inline-block;
+	font-family: 'Montserrat', sans-serif;}
+.fixed-nav .nav li a:before {content: "";
+    display: block;
+    background-color: #fff;
+    width: 6px;
+    border-radius: 50%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all 400ms cubic-bezier(0.3, 0, 0, 1);
+    transform: scale(0) translate(-50%, -1.2em);
+    transform-origin: 0% 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+	}
+
+.fixed-nav .nav li a.active:before {
+    transform: scale(1) translate(-50%, -1.2em);}
+
+
+
+
+
+/* sec1 */
+.sec1 {width: 100%;
+    height: 100vh;}    
+
+/*인트로 텍스트*/                     
+.sec1 {}
+.sec1 .ltext {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; font-family: 'Montserrat'; font-size: 4vw; text-transform: uppercase;
+white-space: nowrap;}
+.sec1 .ltext .t1 {font-size: 1.3em; line-height: .9em; letter-spacing: .05em; font-weight: 700;}
+.sec1 .ltext .t2 {font-size: 2.3em; line-height: 1em; letter-spacing: .03em; font-weight: 900;
+clear: both;}
+.sec1 .ltext .t3 {font-size: 1.02em; line-height: 1.1em; font-weight: 300;
+clear: both;}
+
+
+.sec1 .ltext .text-ani {display: inline-block; overflow: hidden; float: left;}
+.sec1 .ltext .tani1>em {display: block; transform: translateX(-120px); transition: transform 1.7s 1.7s ease;}
+.sec1 .ltext .tani2>em {display: block; transform: translateY(-100px); transition: transform 0.8s 0.8s ease;}
+.sec1 .ltext .tani3>em {display: block; transform: translateY(100px); transition: transform 1.6s 1.6s ease;}
+.sec1 .ltext .tani4>em {display: block; transform: translateY(-100px); transition: transform 0.9s 0.9s ease;}
+.sec1 .ltext .tani5>em {display: block; transform: translateX(180px); transition: transform 1.5s 1.5s ease;}
+.sec1 .ltext .tani6>em {display: block; transform: translateY(-100px); transition: transform 1.0s 1.0s ease;}
+.sec1 .ltext .tani7>em {display: block; transform: translateY(100px); transition: transform 1.4s 1.4s ease;}
+
+.sec1 .ltext .tani8>em {display: block; transform: translateY(160px); transition: transform 1.1s 1.1s ease;}
+.sec1 .ltext .tani9>em {display: block; transform: translateX(-160px); transition: transform 1.2s 1.2s ease;
+letter-spacing: 0.27em!important;}
+.sec1 .ltext .tani10>em {display: block; transform: translateY(-160px); transition: transform 1.9s 1.9s ease;
+letter-spacing: 0.27em!important;}
+.sec1 .ltext .tani11>em {display: block; transform: translateX(-160px); transition: transform 0.85s 0.85s ease;}
+.sec1 .ltext .tani12>em {display: block; transform: translateX(160px); transition: transform 1.85s 1.85s ease;}
+.sec1 .ltext .tani13>em {display: block; transform: translateY(160px); transition: transform 1.3s 1.3s ease;}
+.sec1 .ltext .tani14>em {display: block; transform: translateY(-160px); transition: transform 0.65s 0.65s ease;}
+.sec1 .ltext .tani15>em {display: block; transform: translateX(-160px); transition: transform 1.75s 1.75s ease;}
+.sec1 .ltext .tani16>em {display: block; transform: translateX(160px); transition: transform 1.05s 1.05s ease;}
+.sec1 .ltext .tani17>em {display: block; transform: translateY(160px); transition: transform 1.65s 1.65s ease;}
+.sec1 .ltext .tani18>em {display: block; transform: translateX(-160px); transition: transform 1.15s 1.15s ease;}
+.sec1 .ltext .tani19>em {display: block; transform: translateY(160px); transition: transform 1.55s 1.55s ease;}
+.sec1 .ltext .tani20>em {display: block; transform: translateY(-160px); transition: transform 1.25s 1.25s ease;}
+.sec1 .ltext .tani21>em {display: block; transform: translateX(160px); transition: transform 1.45s 1.45s ease;}
+.sec1 .ltext .tani22>em {display: block; transform: translateY(160px); transition: transform 1.35s 1.35s ease;}
+.sec1 .ltext .tani23>em {display: block; transform: translateY(-160px); transition: transform 0.9s 0.9s ease;}
+.sec1 .ltext .tani24>em {display: block; transform: translateX(160px); transition: transform 0.6s 0.6s ease;}
+.sec1 .ltext .tani25>em {display: block; transform: translateY(160px); transition: transform 1.1s 1.1s ease;}
+.sec1 .ltext .tani26>em {display: block; transform: translateX(-160px); transition: transform 0.95s 0.95s ease;}
+.sec1 .ltext .tani27>em {display: block; transform: translateX(160px); transition: transform 0.75s 0.75s ease;}
+.sec1 .ltext .tani28>em {display: block; transform: translateY(160px); transition: transform 1.8s 1.8s ease;}
+.sec1 .ltext .tani29>em {display: block; transform: translateY(-160px); transition: transform 1.06s 1.06s ease;}
+.sec1 .ltext .tani30>em {display: block; transform: translateX(-160px); transition: transform 1.9s 1.9s ease;}
+.sec1 .ltext .tani31>em {display: block; transform: translateX(160px); transition: transform 1.6s 1.6s ease;}
+
+
+
+.ltext.fixed {position: fixed; top: 10%; left: 10%; font-size: 1.5vw; transition:0.8s;}
+#section1.show .sec1 .ltext  span em {transform: translateX(0px);}
+
+/* sec2 */
+.sec2 {padding: 10% 0;
+    overflow: hidden;}
+        
+.sec2 .about {color: #fff; width: 47%;
+    font-size: 5.3vw;
+    line-height: 1em;
+    font-family: 'Montserrat', sans-serif;
+    float: left;}
+
+/* sec3 */
+.sec3 {}
+.sec3 .port1 {width: 47%;}
+.sec3 .port1 .portext-top {width: 100%;
+     font-family: 'Montserrat', sans-serif;}
+.sec3 .port1 .portext-top .port-tbox .text-left{font-size: 17vw;
+    display: inline-block;
+    line-height: .8em;
+    color: #fff;
+    font-weight: bold;}
+
+.sec3 .port2 {width: 62%;}
+.sec3 .port2 .portext-top {width: 100%;
+     font-family: 'Montserrat', sans-serif;}
+.sec3 .port2 .portext-top .port-tbox .text-left{font-size: 17vw;
+    display: inline-block;
+    line-height: .8em;
+    color: #fff;
+    font-weight: bold;}
+.sec3 .port2 .portext-top .port-tbox .mdash {
+    }
+.sec3 .port2 .portext-top .port-tbox .mdash span {width: 12vw;
+    height: 3vw;
+    background-color: #fff;
+    line-height: 1em;
+    display: inline-block;
+    margin-bottom: 40%;
+    box-sizing: border-box;}
+
+.sec3 .port3 {width: 47%;}
+.sec3 .port3 .portext-top {width: 100%;
+     font-family: 'Montserrat', sans-serif;}
+.sec3 .port3 .portext-top .port-tbox .text-left{font-size: 17vw;
+    display: inline-block;
+    line-height: .8em;
+    color: #fff;
+    font-weight: bold;}
+.sec3 .port3 .portext-top .port-tbox .mdash {
+    }
+.sec3 .port3 .portext-top .port-tbox .mdash span {width: 12vw;
+    height: 3vw;
+    background-color: #fff;
+    line-height: 1em;
+    display: inline-block;
+    margin-bottom: 40%;
+    box-sizing: border-box;}
+
+/*포트폴리오작업물 부분*/
+.project-wrap {padding-top: 20vh;}
+.project-wrap .p-m-img {position: relative;
+    width: 23%;}
+.project-wrap .p-m-img li{width:100%;
+    height: 55vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+.project-wrap .p-m-img li img{width: 100&;
+    height: 100%;
+    opacity: 0;}
+
+
+.project-wrap .portlist {width: 47%;
+    float: left;
+   }
+.project-wrap .portlist li {width: 100%;
+    text-align: center;
+    height: 9vh;
+    }
+.project-wrap .portlist li a {width: 100%;
+    height: 100%;
+    line-height: 9vh;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    }
+.project-wrap .portlist li a span {width: 20%;
+    float: left;
+    text-align: left;}
+.project-wrap .portlist li a em {width: 80%;
+    font-size: 1.2em;
+    float: left;
+    text-align: left;
+    font-weight: 500;} 
+.portlist .p-d-img {position: relative;
+    width: 100%;
+    
+   }
+.portlist .p-d-img li{width:100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+.portlist .p-d-img li img{width: 100&;
+    height: 100%;
+    opacity: 0;}
+
+.project-wrap .p-t-img {position: relative;
+    width: 15%;
+    }
+.project-wrap .p-t-img li{width:100%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+     }
+.project-wrap .p-t-img li img{width: 100&;
+    height: 100%;
+    opacity: 0;}
+
+.project-wrap .view2 { opacity: 1!important;
+    transition:1s;}
+
+/*sec4*/
+
+
+
+
+
+
+

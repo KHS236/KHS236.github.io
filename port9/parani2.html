@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax Animation 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FEDCC8;
+        }
+
+        .parallax {
+            perspective: 100px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .layer img {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .cover {
+            background: #64bdf0;
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 2000px;
+            z-index: 2;
+        }
+
+        .layer.img0 {
+            transform: translateZ(-400px) scale(2)
+        }
+
+        .layer.img1 {
+            transform: translateZ(-350px) scale(4.6)
+        }
+
+        .layer.img2 {
+            transform: translateZ(-300px) scale(2.3)
+        }
+
+        .layer.img3 {
+            transform: translateZ(-250px) scale(2.5)
+        }
+
+        .layer.img4 {
+            transform: translateZ(-200px) scale(3)
+        }
+
+        .layer.img5 {
+            transform: translateZ(-150px) scale(2.5)
+        }
+
+        .layer.img6 {
+            transform: translateZ(-100px) scale(2)
+        }
+
+        .layer.img7 {
+            transform: translateZ(-50px) scale(1.7)
+        }
+
+        .layer.img8 {
+            transform: translateZ(-0px) scale(1
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="parallax">
+        <div class="layer img1"><img src="https://tistory1.daumcdn.net/tistory/2980704/skin/images/bg8.png" alt=""></div>
+        <div class="layer img2"><img src="https://tistory2.daumcdn.net/tistory/2980704/skin/images/bg7.png" alt=""></div>
+        <div class="layer img3"><img src="https://tistory3.daumcdn.net/tistory/2980704/skin/images/bg6.png" alt=""></div>
+        <div class="layer img4"><img src="https://tistory3.daumcdn.net/tistory/2980704/skin/images/bg5.png" alt=""></div>
+        <div class="layer img5"><img src="https://tistory2.daumcdn.net/tistory/2980704/skin/images/bg4.png" alt=""></div>
+        <div class="layer img6"><img src="https://tistory3.daumcdn.net/tistory/2980704/skin/images/bg3.png" alt=""></div>
+        <div class="layer img7"><img src="https://tistory4.daumcdn.net/tistory/2980704/skin/images/bg2.png" alt=""></div>
+        <div class="layer img8"><img src="https://tistory2.daumcdn.net/tistory/2980704/skin/images/bg1.png" alt=""></div>
+        <div class="cover"></div>
+    </header>
+</body>
+
+</html>

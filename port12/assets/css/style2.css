@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* contents */
+#contents {}
+#section1 {height: 100vh; }
+#section2 {background: #F32740;}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* row */
+.row {padding: 10px;}
+
+/* progress */
+.progress {background: transparent; color: #fff; width: 100%; height: 100%; position: absolute; z-index: 5000;}
+.progress-text {font-family: 'Abel', sans-serif; font-size: 5vw; color:rgba(255,255,255,1); position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+.stext span {display: inline-block;}
+
+/* sec1 */
+.sec1 {position: relative; height: 100vh; text-align: center; background: #186e26 url(../img/bg.jpg) center center; background-size: cover;}
+.sec1:before {content: ''; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100vh; background: rgba(24,110,38,.5);}
+.sec1 .sec1_top {position: absolute; left: 0; top: 0; width: 100%; height: 40vh; line-height: 78px; z-index: 10; background: #F32740; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.35em; color: #fff; font-family: 'Abel', sans-serif;}
+.sec1 .title {height: 100vh;}
+.sec1 .title h1 {position: absolute; left: 50%; top: 50%; overflow: hidden; width: 100%; transform: translate(-50%, -50%); z-index: 1000; font-size: 9vw; line-height: 9vw; font-family: 'Muli', sans-serif; font-weight: 900; letter-spacing: -0.02em; font-style: italic; color: #fff;}
+.sec1 .title h1:after {font-size: 74px; color: #c31f1f;content: 'publisher'; position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%) rotate(-4deg); font-family: 'Nanum Brush Script', cursive;}
+.sec1 .sec1_bom {overflow: hidden; position: absolute; left: 0; bottom: 0; z-index: 10; width: 100%; height: 40vh; background: #F32740;}
+.sec1 .sec1_bom .logo {float: left; margin: 35px 0 0 4px;}
+.sec1 .sec1_bom .menu {float: right; margin-top: 40px; margin-right: 20px;}
+.sec1 .sec1_bom .menu li {display: inline;}
+.sec1 .sec1_bom .menu li a {display: inline-block; padding: 10px; color: #fff; text-transform: uppercase; font-weight: bold; font-size: 14px; font-family: 'Abel', sans-serif;}
+.sec1 .sec1_bom .logo img {width: 100px;}
+.sec1 .sec1_bom.on {position: fixed; bottom: auto; top: -21px;}
+
+
+.sec1 .frame {position: absolute; left: 0; bottom: 0; width: 100%;}
+.sec1 .frame.top {bottom: auto; top: 0;}
+.sec1 .frame-line {height: 7px; border-top: 2px solid #000; border-bottom: 2px solid #000; box-sizing: border-box; background: #85d2ff;}
+.sec1 .frame-img {position: relative; width: 100%; height: 8px; background: #f7d230 url(https://pumper.thisismailan.com/assets/images/frame-pattern.svg) repeat-x 0 0; animation: line 100s infinite linear; transform: translateZ(0);}
+.sec1 .frame-img.line2 {animation: line2 100s infinite linear;}
+
+/* sec1 animation */
+.sec1 .sec1_top strong            {opacity: 0; transition: opacity 0.6s 2s ease;}
+.sec1 .sec1_bom .logo             {opacity: 0; transition: opacity 0.6s 2.2s ease;}
+.sec1 .sec1_bom .menu             {opacity: 0; transition: opacity 0.6s 2.4s ease;}
+.sec1 .title h1 span:nth-child(1) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 2.6s ease, transform 0.6s 2.6s ease;}
+.sec1 .title h1 span:nth-child(2) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 2.7s ease, transform 0.6s 2.7s ease;}
+.sec1 .title h1 span:nth-child(3) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 2.8s ease, transform 0.6s 2.8s ease;}
+.sec1 .title h1 span:nth-child(4) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 2.9s ease, transform 0.6s 2.9s ease;}
+.sec1 .title h1 span:nth-child(5) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 3.0s ease, transform 0.6s 3.0s ease;}
+.sec1 .title h1 span:nth-child(6) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 3.1s ease, transform 0.6s 3.1s ease;}
+.sec1 .title h1 span:nth-child(7) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 3.2s ease, transform 0.6s 3.2s ease;}
+.sec1 .title h1 span:nth-child(8) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 3.3s ease, transform 0.6s 3.3s ease;}
+.sec1 .title h1 span:nth-child(9) {opacity: 0; transform: translateY(100px); transition: opacity 0.6s 3.4s ease, transform 0.6s 3.4s ease;}
+.sec1 .title h1:after             {opacity: 0; transition: opacity 0.6s 3.5s ease;}
+
+body.active .sec1 .sec1_top strong      {opacity: 1;}
+body.active .sec1 .sec1_bom .logo       {opacity: 1;}
+body.active .sec1 .sec1_bom .menu       {opacity: 1;}
+body.active .sec1 .title h1             {opacity: 1;}
+body.active .title h1 span:nth-child(1) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(2) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(3) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(4) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(5) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(6) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(7) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(8) {opacity: 1; transform: translateY(0);}
+body.active .title h1 span:nth-child(9) {opacity: 1; transform: translateY(0);}
+body.active .sec1 .title h1:after       {opacity: 1;}
+
+
+/* sec2 */ 
+.sec2 {position: relative; border: 3px solid #000; background: #FEFFF1;}
+.sec2 .tit {overflow: hidden; border-bottom: 3px solid #000; box-sizing: border-box;}
+.sec2 .tit h2 {float: left; width: 75%; background: #000; font-size: 20vw; line-height: 0.8em; color: #fff;  text-transform: uppercase; text-align: center; letter-spacing: -0.05em; font-family: 'Abel', sans-serif; font-weight: bold;}
+.sec2 .tit .btn {float: left; width: 25%; position: relative; }
+.sec2 .tit .btn em {font-size: 20vw; line-height: 0.8em; color: #FEFFF1;  text-transform: uppercase;}
+.sec2 .tit .btn a {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.sec2 .tit .btn img {width: 30px;}
+
+.sec2 .con1 {padding: 15%;}
+.sec2 .con1 .desc {margin-bottom: 20%;font-size: 65px;font-family: 'Abel', sans-serif;letter-spacing: -4px;font-weight: bold;line-height: 80px;}
+
+
+
+
+
+/* main 애니메이션 */
+@keyframes line {
+    0% {background-position: 0}
+    100% {background-position: 100%}
+}
+@keyframes line2 {
+    0% {background-position: 100%}
+    100% {background-position: 0}
+}
+
+
+

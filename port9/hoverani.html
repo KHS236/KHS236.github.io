@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Effect animation</title>
+    <style>
+        @font-face {
+            font-family: 'UhBeeDoolDool';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeDoolDool.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #F4EEF2;
+            font-family: 'UhBeeDoolDool';
+        }
+
+        .box-wrap {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            position: relative;
+            width: 250px;
+            height: 182px;
+            border: 10px solid #fff;
+            box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3)
+        }
+
+        .box img {
+            width: 100%;
+
+        }
+
+        .box .info {
+            color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background: rgba(150, 154, 181, 0.5);
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.35s ease-in-out;
+        }
+
+        .box:hover .info {
+            opacity: 1;
+        }
+
+        .box .info h3 {
+            font-size: 30px;
+            padding-bottom: 0.1em;
+            line-height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .box .info p {
+            font-size: 26px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box-wrap">
+        <div class="box">
+            <div class="img">
+                <img src="https://tistory4.daumcdn.net/tistory/2980704/skin/images/psd.jpg" alt="Hover Effect">
+            </div>
+            <div class="info">
+                <h3>Design</h3>
+                <p>일러스트를 이용한 디자인입니다.</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script>
+        var snowmax = 100
+        var snowcolor = new Array("#aaaacc", "#ddddff", "#ccccdd", "#f3f3f3", "#f0ffff")
+        var snowtype = new Array("Times", "Arial", "Times", "Verdana")
+
+        var snowletter = "*"
+        var sinkspeed = 0.6
+        var snowmaxsize = 50
+        var snowminsize = 10
+        var snowingzone = 1
+
+        //starts
+
+        var snow = new Array()
+        var marginbottom
+        var marginright
+        var timer
+        var i_snow = 0
+        var x_mv = new Array();
+        var crds = new Array();
+        var lftrght = new Array();
+        var browserinfos = navigator.userAgent
+        var ie5 = document.all && document.getElementById && !browserinfos.match(/Opera/)
+        var ns6 = document.getElementById && !document.all
+        var opera = browserinfos.match(/Opera/)
+        var browserok = ie5 || ns6 || opera
+
+        function randommaker(range) {
+            rand = Math.floor(range * Math.random())
+            return rand
+        }
+
+        function initsnow() {
+            if (ie5 || opera) {
+                marginbottom = document.body.scrollHeight
+                marginright = document.body.clientWidth - 10
+            } else if (ns6) {
+                marginbottom = document.body.scrollHeight
+                marginright = window.innerWidth - 10
+            }
+            var snowsizerange = snowmaxsize - snowminsize
+            for (i = 0; i <= snowmax; i++) {
+                crds[i] = 0;
+                lftrght[i] = Math.random() * 15;
+                x_mv[i] = 0.03 + Math.random() / 10;
+                snow[i] = document.getElementById("s" + i)
+                snow[i].style.fontFamily = snowtype[randommaker(snowtype.length)]
+                snow[i].size = randommaker(snowsizerange) + snowminsize
+                snow[i].style.fontSize = snow[i].size + 'px';
+                snow[i].style.color = snowcolor[randommaker(snowcolor.length)]
+                snow[i].style.zIndex = 1000
+                snow[i].sink = sinkspeed * snow[i].size / 5
+                if (snowingzone == 1) {
+                    snow[i].posx = randommaker(marginright - snow[i].size)
+                }
+                if (snowingzone == 2) {
+                    snow[i].posx = randommaker(marginright / 2 - snow[i].size)
+                }
+                if (snowingzone == 3) {
+                    snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 4
+                }
+                if (snowingzone == 4) {
+                    snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 2
+                }
+                snow[i].posy = randommaker(2 * marginbottom - marginbottom - 2 * snow[i].size)
+                snow[i].style.left = snow[i].posx + 'px';
+                snow[i].style.top = snow[i].posy + 'px';
+            }
+            movesnow()
+        }
+
+        function movesnow() {
+            for (i = 0; i <= snowmax; i++) {
+                crds[i] += x_mv[i];
+                snow[i].posy += snow[i].sink
+                snow[i].style.left = snow[i].posx + lftrght[i] * Math.sin(crds[i]) + 'px';
+                snow[i].style.top = snow[i].posy + 'px';
+
+                if (snow[i].posy >= marginbottom - 2 * snow[i].size || parseInt(snow[i].style.left) > (marginright - 3 * lftrght[i])) {
+                    if (snowingzone == 1) {
+                        snow[i].posx = randommaker(marginright - snow[i].size)
+                    }
+                    if (snowingzone == 2) {
+                        snow[i].posx = randommaker(marginright / 2 - snow[i].size)
+                    }
+                    if (snowingzone == 3) {
+                        snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 4
+                    }
+                    if (snowingzone == 4) {
+                        snow[i].posx = randommaker(marginright / 2 - snow[i].size) + marginright / 2
+                    }
+                    snow[i].posy = 0
+                }
+            }
+            var timer = setTimeout("movesnow()", 50)
+        }
+
+        for (i = 0; i <= snowmax; i++) {
+            document.write("<span id='s" + i + "' style='position:absolute;top:-" + snowmaxsize + "'>" + snowletter + "</span>")
+        }
+        if (browserok) {
+            window.onload = initsnow
+        }
+
+    </script>
+</body>
+
+</html>

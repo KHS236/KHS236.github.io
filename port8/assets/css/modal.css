@@ -1,0 +1,173 @@
+@font-face { font-family: 'NIXGONM-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.modal {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); }
+.modal .modal-container {display: none; height: 580px;  margin: 43px 8px 0 8px;}
+.modal .box {width: 500px; height: 300px;}
+
+
+
+.circle {height: 0px; width: 0px; background: #000; z-index: 2;transition: background .1s ease;}
+.circle-active {height: 100vh;width: 100vw;opacity: 0.4; }
+.circle-hide {opacity: 0 !important;}
+
+.box-btn {position: absolute; top: 50%; left: 50%; width:300px; height: 300px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0); cursor: pointer; }
+.box-img {display: none; position: absolute; top: 43px; left: 9px; width: 981px; height: 580px; border-radius: 0 0 5px 5px; overflow-y: scroll; }
+.box-img .bi_btn {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff; }
+.box-img .bi_link {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.box-img p {text-align: center; line-height: 2; font-size: 25px;}
+
+.box-img::-webkit-scrollbar {background: #fff; width: 10px;}
+.box-img::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.4); border-radius: 5px;}
+.box-img::-webkit-scrollbar-track {background: transparent;}
+
+/* 인스타 */
+.insta1 {position: absolute; top: 86%; left: 39%; width:150px; height: 150px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0); cursor: pointer; }
+.insta2 {position: absolute; top: 86%; left: 58%; width:150px; height: 150px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0); cursor: pointer; }
+.insta3 {position: absolute; top: 86%; left: 77%; width:150px; height: 150px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0); cursor: pointer; }
+.insta1 .box-img {display: none; position: absolute; top: 43px; left: 9px; width: 981px; height: 580px; border-radius: 0 0 5px 5px; overflow-y: scroll; }
+.box-img .bi_btn {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff; }
+.insta1 .box-img .bi_link {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.insta1 .box-img p {font-family: 'NIXGONM-Vb';text-align: center; line-height: 2; font-size: 25px;}
+
+.insta1 .box-img::-webkit-scrollbar {background: #fff;}
+.insta2 .box-img::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.4); border-radius: 5px;}
+.insta3 .box-img::-webkit-scrollbar-track {background: transparent;}
+
+/* 코딩 */
+.coding1 {position: absolute; top: 46%; left: 95%; width:150px; height: 100px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0.5); cursor: pointer; }
+.coding1 .codingImg {display: none; position: absolute; top: 43px; left: 9px; width: 981px; height: 580px; border-radius: 0 0 5px 5px; overflow-y: scroll; }
+.coding1 .codingBtn {position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff; }
+.coding1 .box-img .bi_link {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.coding1 .box-img p {font-family: 'NIXGONM-Vb';text-align: center; line-height: 2; font-size: 25px;}
+
+.coding2 {position: absolute; top: 66%; left: 95%; width:150px; height: 100px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0.5); cursor: pointer; }
+.codingImg2 {display: none; position: absolute; top: 43px; left: 9px; width: 981px; height: 580px; border-radius: 0 0 5px 5px; overflow-y: scroll; }
+.codingBtn2 {position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff; }
+.coding2 .box-img .bi_link {position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.coding2 .box-img p {text-align: center; line-height: 2; font-size: 25px;}
+
+.coding3 {position: absolute; top: 86%; left: 95%; width:150px; height: 100px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0.5); cursor: pointer; }
+.codingImg3 {display: none; position: absolute; top: 43px; left: 9px; width: 981px; height: 580px; border-radius: 0 0 5px 5px; overflow-y: scroll; }
+.codingBtn {position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff; }
+.coding3 .box-img .bi_link {position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.coding3 .box-img p {text-align: center; line-height: 2; font-size: 25px;}
+
+/* 카카오톡 */
+.kakao {position: absolute; top: 40%; left: 25.3%; width: 277px; height: 70px; margin-left: -150px; margin-top: -150px; 
+    background: rgba(0,0,0,0);  }
+.kakao:hover {background: rgba(0,0,0,0.1); cursor: pointer;}
+.kakaoImg {display: none; position: absolute; top: 4.5%; left: 40%; width: 34%; height: 580px; border-radius: 0 0 5px 5px; overflow:hidden;}
+.kakaoImg .bi_btn {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff; }
+.kakaoImg .bi_link {font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.kakaoImg p {font-family: 'NIXGONM-Vb';text-align: center; line-height: 2; font-size: 25px;}
+
+/* 닫기버튼 */
+.btn {width: 25px; height: 25px; position: absolute; top: 12px; left: 22px;}
+.btn:after {content:''; position: absolute; width: 10px; height: 2px; background: #000; top: 12px; right: 8px; transform: rotate(45deg);}
+.btn:before {content:''; position: absolute; width: 2px; height: 10px; background: #000; top: 8px; right: 12px; transform: rotate(45deg);}
+.btn:after, .btn:before {opacity: 0; transition: all 0.3s;}
+.btn:hover:after, .btn:hover:before {opacity: 1; cursor: pointer;}
+
+.in {animation: in 1s ease;}
+.out {animation: out 1s ease;}
+
+@keyframes in {
+  0% {height: 0; width: 0;z-index: 0;}
+  30% {top: 20%; z-index: 0;}
+  60% {z-index: 1000;}
+  100% {top: 50%;z-index: 1000; height: 700px; width: 1000px;}
+}
+@keyframes out {
+  0% {top: 50%; z-index: 1000; height: 700px; width: 1000px;}
+  30% {top: 80%; z-index: 1000;padding: 0;}
+  60% {z-index: 0;}
+  90%, 100% {height: 0;width: 0;z-index: 0;}
+}
+
+.modal_wrap1 .modal {background: url(../img/main_ai.svg) no-repeat;}
+.modal_wrap2 .modal {background: url(../img/main_ps.svg) no-repeat;}
+.modal_wrap3 .modal {background: url(../img/main_xd.svg) no-repeat;}
+.modal_wrap4 .modal {background: url(../img/main_bee_test.svg) no-repeat;}
+.modal_wrap5 .modal {background: url(../img/main_insta.svg) no-repeat;}
+.modal_wrap6 .modal {background: url(../img/main_coding.svg) no-repeat;}
+.modal_wrap7 .modal {background: url(../img/main_kakao.svg) no-repeat;}
+.modal_wrap8 .modal {background: url(../img/main_megabox.svg) no-repeat;}
+.modal_wrap9 .modal {background: url(../img/main_hanbi.svg) no-repeat;}
+.modal_wrap9 .modal:hover {background: url(../img/main_mehover.svg) no-repeat;}
+.modal_wrap10 .modal {background: url(../img/main_minimi.svg) no-repeat;}
+.modal_wrap11 .modal {background: url(../img/main_folder.svg) no-repeat;}
+.modal_wrap12 .modal {background: url(../img/main_folder.svg) no-repeat;}
+
+
+
+/* modal_wrap1 */
+.modal_wrap1 {width: 1000px; height: 700px;}
+.modal_wrap1 .box .select1 {position: absolute; left: 200px; top: 180px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap1 .box .select2 {position: absolute; left: 444px; top: 180px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap1 .box .select3 {position: absolute; left: 684px; top: 180px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap1 .box .select4 {position: absolute; left: 200px; top: 355px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap1 .box .select5 {position: absolute; left: 444px; top: 355px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap1 .box .select6 {position: absolute; left: 684px; top: 355px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+
+.modal_wrap1 .box_img { }
+.modal_wrap1 .box_img > div {display: none; position: absolute;  top: 43px; left: 9px;  width: 981px; height: 580px;background: #fff;}
+.modal_wrap1 .box_img > div .bbtn {font-size: 25px; text-align:center; line-height: 54px; font-weight: bold; font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.modal_wrap1 .box_img > div .blink { font-size: 25px;  text-align:center; line-height: 54px; font-weight: bold; font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+
+
+
+/* modal_wrap2 */
+.modal_wrap2 {width: 1000px; height: 700px;}
+.modal_wrap2 .box .select1 {position: absolute; left: 200px; top: 180px; width: 214px; height: 140px; background: url(../img/psImg1.jpg); cursor: pointer}
+.modal_wrap2 .box .select2 {position: absolute; left: 444px; top: 180px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap2 .box .select3 {position: absolute; left: 684px; top: 180px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap2 .box .select4 {position: absolute; left: 200px; top: 355px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap2 .box .select5 {position: absolute; left: 444px; top: 355px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+.modal_wrap2 .box .select6 {position: absolute; left: 684px; top: 355px; width: 214px; height: 140px; background: transparent; cursor: pointer}
+
+
+.modal_wrap2 .box_img { }
+.modal_wrap2 .box_img > div {display: none; position: absolute;  top: 43px; left: 9px;  width: 981px; height: 580px;background: #fff;}
+.modal_wrap2 .box_img > div .bbtn {font-size: 25px; text-align:center; line-height: 54px; font-weight: bold; font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.modal_wrap2 .box_img > div .blink { font-size: 25px;  text-align:center; line-height: 54px; font-weight: bold; font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+
+
+
+/* modal_wrap3 */
+.modal_wrap3 {width: 1000px; height: 700px;}
+.modal_wrap3 .box .select1 {position: absolute; left: 200px; top: 180px; width: 214px; height: 140px; background: #333; cursor: pointer}
+.modal_wrap3 .box .select2 {position: absolute; left: 444px; top: 180px; width: 214px; height: 140px; background: #444; cursor: pointer}
+.modal_wrap3 .box .select3 {position: absolute; left: 684px; top: 180px; width: 214px; height: 140px; background: #555; cursor: pointer}
+.modal_wrap3 .box .select4 {position: absolute; left: 200px; top: 355px; width: 214px; height: 140px; background: #666; cursor: pointer}
+
+.modal_wrap3 .box_img { }
+.modal_wrap3 .box_img > div {display: none; position: absolute;  top: 43px; left: 9px;  width: 981px; height: 580px;background: #fff;}
+.modal_wrap3 .box_img > div .bbtn { font-size: 25px; text-align:center; line-height: 54px; font-weight: bold; font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 30px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+.modal_wrap3 .box_img > div .blink { font-size: 25px;  text-align:center; line-height: 54px; font-weight: bold; font-family: 'NIXGONM-Vb';position: fixed; z-index: 1000; bottom: 100px; right: 100px; width: 50px; height: 50px; border: 2px solid #000; border-radius: 50%; background: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

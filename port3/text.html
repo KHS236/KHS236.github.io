@@ -1,0 +1,31 @@
+.sec2 .sit2 .bg {position: relative; width: 100%; height: 2100px;}
+.sec2 .sit2 .bg:before {
+	content: '';
+	width: 100%; height: 100%; 
+	position: absolute; top: 0; left: 0; 
+	background-image: url(../img_apple2/iPhone-Xs-large.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.sec2 .sit2 .bg:after {
+	content: '';
+	width: 100%; height: 100%; 
+	position: absolute; top: 0; left: 0; 
+	background-image: url(../img_apple2/iPhone-Xs.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+
+/* sec2 Animation */
+.sec2 .sit1 {opacity: 0; transform: translateY(40px); transition: opacity 1.95s ease, transform 0.75s ease;}
+.sec2 .sit2 .bg {opacity: 0; transform: translateY(40px); height: 2100px; transition: opacity 1.95s ease, transform 0.75s ease, height 3s ease;}
+.sec2 .sit2 .bg:before {background-size: 100%; transition: all 3s ease}
+.sec2 .sit2 .bg:after {background-size: 95%; transition: all 3s ease}
+
+.sec2 .sit1.active {opacity: 1; transform: translateY(0px);}
+.sec2 .sit2.active .bg {opacity: 1; transform: translateY(0px); height: 650px;}
+.sec2 .sit2.active .bg:before {background-size: 30%;}
+.sec2 .sit2.active .bg:after {background-size: 28%;}
+/* .sec2 .sit2.active .bg:before {background-size: 360px 622.44px;}
+.sec2 .sit2.active .bg:after {background-size: 336px 580.9px;} */

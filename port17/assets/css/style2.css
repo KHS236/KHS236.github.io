@@ -1,0 +1,206 @@
+/* layout */
+#contents {}
+#section1 {height: 100vh; background: #04042F;}
+#section2 {background: #04042F;}
+#section3 {height: 2000px; background: #ccc;}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* container */
+.container {}
+
+
+/* nav */
+#nav {
+    position: fixed; left: 10px; top: 10px; z-index: 1000; 
+}
+#nav h1 {
+    color: #fff; font-size: 44px; 
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* sec1 */
+#section1 .bgCloud1 {position: absolute; top: 0; left: 0; width: 100%; z-index: 10; opacity: 0.7;}
+#section1 .cloud1 {position: absolute; top: 0; left: 0; width: 380px; z-index: 40;}
+#section1 .cloud2 {position: absolute; top: 0; left: 0; width: 540px; z-index: 30;}
+
+
+.stars{
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: fixed;
+    bottom: 0;
+    perspective-origin:50% 100%;
+    left: 50%;
+    animation:rotate 90s infinite linear;
+}
+.star{
+    width:2px;
+    height:2px;
+    background:#fff;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin:0 0 -300px;
+    transform: translate3d(0,0,-300px);
+    backface-visibility:hidden;
+}
+
+.sec1 {position: relative; height: 100vh;}
+.sec1 .moon1 {
+    position: absolute; left: 5%; top:20%; z-index: 100;
+    width: 200px;
+    animation: moveY 10s infinite alternate;
+}
+.sec1 .moon2 {
+    position: absolute; right: 5%; bottom:10%; z-index: 100;
+    width: 300px;
+    animation: moveX 20s infinite alternate;
+}
+.sec1 .human {
+    position: absolute; left:50%; top:50%; z-index: 10;
+    width: 550px;
+}
+.sec1 em {
+    position: absolute; left:50%; top:50%; z-index: 10;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 10vw;
+    width: 600px;
+    height: 600px;
+    line-height: 600px;
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    background-color: #bca5e3;
+    animation: transform 50s ease-in-out infinite both alternate;
+    box-shadow: 
+        inset 10px 0 40px #a174db,
+        inset -10px 0 20px #40245e,
+        inset -40px 10px 110px #1b1648;
+}
+.sec1 em:after {
+    content: 'Professional Web publisher'; position: absolute; left: 50%; bottom: -100px;
+    transform: translateX(-50%);
+    font-size: 23px;
+    font-family: 'Abel', sans-serif;
+}
+
+.sec1 .radius {
+    position: absolute; left:50%; top:50%; z-index: 10;
+    transform: translate(-50%, -50%);
+    width: 600px; height: 600px;
+}
+.sec1 .radius:before {
+    content: '';
+    position: absolute; left: -100px; top: -50px; z-index: -1;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: #bca5e3;
+    opacity: 0.3;
+    animation: transform 40s -10s ease-in-out infinite both alternate;
+    box-shadow: 
+        inset 10px 0 40px #a174db,
+        inset -10px 0 20px #40245e,
+        inset -40px 10px 110px #1b1648;
+}
+.sec1 .radius:after {
+    content: '';
+    position: absolute; left: 250px; top: 100px; z-index: -5;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: #bca5e3;
+    opacity: 0.3;
+    animation: transform 30s -20s ease-in-out infinite both alternate;
+    box-shadow: 
+        inset 10px 0 40px #a174db,
+        inset -10px 0 20px #40245e,
+        inset -40px 10px 110px #1b1648;
+}
+
+
+
+
+
+
+/* sec2 */
+.sec2 {padding: 10% 0;}
+.sec2 h2 {
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 10vw;
+    color: #fff;
+}
+.sec2 .skill ul {
+    display: flex;
+}
+.sec2 .skill li {position: relative; margin: 10px; padding: 10px;}
+.sec2 .skill li:nth-child(1) {
+    background: url(https://www.netbluez.com/img/graphic-planet.png) no-repeat;
+    background-size: contain;
+}
+.sec2 .skill li:nth-child(2) {
+    background: url(https://www.netbluez.com/img/graphic-planet.png) no-repeat;
+    background-size: contain;
+}
+.sec2 .skill li:nth-child(3) {
+    background: url(https://www.netbluez.com/img/graphic-planet.png) no-repeat;
+    background-size: contain;
+}
+.sec2 .skill li:nth-child(4) {
+    background: url(https://www.netbluez.com/img/graphic-planet.png) no-repeat;
+    background-size: contain;
+}
+.sec2 .skill li:nth-child(5) {
+    background: url(https://www.netbluez.com/img/graphic-planet.png) no-repeat;
+    background-size: contain;
+}
+
+.sec2 .skill a {
+    color: #fff; 
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* keyframes */
+@keyframes transform {
+   0%  { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+   28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+   42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+  100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+}
+
+@keyframes moveY {
+    0%   {transform: translateY(0)}
+    50%  {transform: translateY(40px)}
+    100% {transform: translateY(0)}
+}
+@keyframes moveX {
+    0%   {transform: translateX(0)}
+    50%  {transform: translateX(40px)}
+    100% {transform: translateX(0)}
+}
+@keyframes rotate{
+  0%   {transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);} 
+  100% {transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);} 
+}
+
+

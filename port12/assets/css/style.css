@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+
+/* nav */
+#nav{overflow: hidden; position: absolute; left: 0; bottom: 0; width: 100%; height: 10vh; z-index: 1000; background-color: #f32840;}
+#nav h1{float: left; width: 300px; height: 10vh;}
+#nav a{display: block;}
+#nav a img{height: 77px;}
+#nav .mNav{display: none;}
+#nav .menu{float: right; margin-right: 15px;}
+#nav .menu li{display: inline; line-height: 75px;}
+#nav .menu li a{display: inline-block; margin-right: 35px; font-size: 14px; color: #fff; font-weight: bold;}
+
+
+/* main */
+#main{height: 100vh; text-align: center;}
+#main .mainTop{height: 10vh; background-color: #f32840;}
+#main .mainTop .mainTit{font-size: 14px; color: #fff; font-weight: bold; line-height: 75px;}
+#main .mainCenter{height: 80vh; background: url(../img/main.jpg) no-repeat center center; background-size: 100% 100%;}
+
+
+
+/* contents */
+#contents{background-color: #f32840;}
+#contents > div{}
+#contents > {}
+
+/* section */
+#section1{height: 8000px; border: 3px solid #000; background-color: #fefff1;}
+.Tit{overflow: hidden; height: 310px; border-bottom: 3px solid #000; box-sizing: border-box;}
+.titLeft{float: left; width: 70%; height: 310px; padding-top: 22px; box-sizing: border-box; background-color: #000;}
+.titLeft h2{font-size: 200px; color: #fff; text-align: center; font-family: 'tmonmonsori.ttfregular';}
+.titRight{position: relative; float: left; width: 30%; height: 310px; background-color: #fefff1;}
+.titRight a{display: block;}
+.titRight img{display: block; width: 50px; height: 50px; position: absolute; left: 50%; top: 50%; margin: -25px 0 0 -25px;}
+.about{position: relative; padding: 190px 140px; box-sizing: border-box;}
+.about p{font-size: 40px; font-weight: bold; text-transform: uppercase;}
+.about .aboutDesc1{margin-bottom: 330px;}
+.about .aboutDesc1 .highLight{position: relative;} /* 모름 */
+.about .aboutDesc1 .highLight:after{}
+.about .aboutDesc2{margin-bottom: 320px;}
+.about .picture1{position: absolute; top: 2035px; left: 0; width: 100%; height: 1250px; margin-top: -625px; background: url(../img/about_img1.jpg) no-repeat center center; background-size: 100% 100%;}
+
+/* 여백 영역 */
+.row{padding: 10px;}
+
+/* 미디어쿼리 */
+@media (max-width: 1280px){
+    .Tit{height: 280px;}
+    .titLeft h2{font-size: 180px;}
+    .titRight img{margin: -33px 0 0 -25px;}
+    .about p{font-size: 30px;}
+    .about .aboutDesc1{margin-bottom: 250px;}
+    .about .aboutDesc2{margin-bottom: 240px;}
+    .about .picture1{top: 1800px; left: 0; width: 100%; height: 1000px; margin-top: -625px;}
+}
+
+@media (max-width: 1024px){
+    .about{padding: 190px 100px;}
+}
+
+@media (max-width: 960px){
+    .about{padding: 190px 60px;}
+    .titLeft h2{font-size: 140px;}
+    .titLeft{padding-top: 42px;}
+    .titRight img{margin: -43px 0 0 -25px;}
+    .about p{font-size: 28px;}
+    .about .picture1{ height: 800px;}
+
+@media (max-width: 768px){
+    #nav h1{float: left; width: 200px; height: 10vh;}
+    #nav .menu{display: none;}
+    #nav .mNav{display: block; position: absolute; bottom: 50%; right: 10px; z-index: 2000; width: 35px; height: 35px; margin-bottom: -16px; background-color: rebeccapurple;}
+    .mNav .icon-wrap{}
+    .mNav .icon-wrap .icon,
+    .mNav .icon-wrap .icon:before,
+    .mNav .icon-wrap .icon:after{width: 30px; height: 4px; background-color: #fff;}
+    .mNav .icon-wrap .icon{position: relative; margin-top: 15px;}
+    .mNav .icon-wrap .icon:before{content: ""; position: absolute; top: 10px;}
+    .mNav .icon-wrap .icon:after{content: ""; position: absolute; bottom: 10px;}
+    #nav .menu{float: right; margin-right: 15px;}
+    #nav .menu li{display: inline; line-height: 75px;}
+    #nav .menu li a{display: inline-block; margin-right: 35px; font-size: 14px; color: #fff; font-weight: bold;}
+    
+    .about{padding: 150px 50px;}
+    .Tit{height: 200px;}
+    .titLeft{padding-top: 32px;}
+    .titLeft h2{font-size: 100px;}
+    .titRight img{margin: -80px 0 0 -25px;}
+    .about .picture1{top: 1600px; left: 0; height: 600px;}
+}
+
+@media (max-width: 576px){
+    .about{padding: 120px 30px;}
+    .Tit{height: 150px;}
+    .titLeft{padding-top: 22px;}
+    .titLeft h2{font-size: 80px;}
+    .titRight img{width: 30px; height: 30px; margin: -95px 0 0 -15px;}
+    .about p{font-size: 20px;}
+    .about .picture1{top: 1500px; height: 400px;}
+
+}
+
+@media (max-width: 375px){
+    #nav .mNav{right: 5px;}
+}
+
+@media (max-width: 320px){
+    
+}

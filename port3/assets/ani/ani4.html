@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Infinity Loader</title>
+
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background: linear-gradient(to right, #232526, #414345);
+		}
+		.infinity {
+			position: relative;
+			width: 65px; height: 29px;
+			animation: spin 2s infinite cubic-bezier(0.76, -0.52, 0.02, 1.48); 
+		}
+		.infinity:before, .infinity:after {
+			content:'';
+			position: absolute;
+			top: 0; left: 0;
+			width: 19px; height: 19px;
+			border: 5px solid #ed1c5b;
+			border-radius: 50% 50% 0 50%;
+			transform: rotate(-45deg);
+		}
+		.infinity:before {
+			animation: left 1s infinite alternate ease-in-out, 
+				morph 1s infinite alternate ease-in-out;
+		}
+		.infinity:after {
+			left: auto;
+			right: 0;
+			border-radius: 50% 50% 50% 0;
+			transform: rotate(45deg);
+			animation: right 1s infinite alternate cubic-bezier(0.76, -0.52, 0.02, 1.48), 
+				morph 1s infinite alternate cubic-bezier(0.76, -0.52, 0.02, 1.48);	
+		}
+
+		@keyframes left { 
+			0% {left: 18px;}
+		}
+		@keyframes right {
+			0% {right: 18px;}
+		}
+		@keyframes morph {
+			0% {border-radius: 50%;}
+		}
+		@keyframes spin {
+			0% {transform: rotate(540deg)};
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="infinity"></div>
+
+
+
+
+
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../js/TweenMax.min.js"></script>
+
+</body>
+</html>

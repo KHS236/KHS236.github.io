@@ -1,0 +1,162 @@
+/* 레이아웃 */
+body {width: 100vw; height: 100vh; overflow: hidden; background-color: #dbdbdb;}
+#wrap { }
+#headers {width: 100%; height: 40px; background-color:#f1f1f1; border-bottom: 2px solid #000;}
+#contents {}
+
+
+/* 로딩 */
+.progress {background: #f38578;color: #fff;height: 100vh;width: 100%;position: absolute; z-index: 5000;}
+.progress-bar {border-top: 1px solid rgb(160,160,160);position: absolute;top: 54%;width: 0%;}
+.progress-text {font-family: 'Chau Philomene One', sans-serif;font-size: 2vw;color: #fff;margin-top: 10px;position: absolute;text-align: center;top: 50%;width: 100%;}
+.progress-complete .progress-bar {border-top-color: rgb(255,255,255)}
+
+
+/* 헤더 */
+.header_logo {width: 28px; position:absolute; left: 20px; top:0.7%;}
+.header_text {width: 150px; position: absolute; left: 55px; top: 1.5%;}
+.header_ham {width: 30px; position: absolute; right: 20px; top: 1.2%;}
+.header_clock {width: 55px; position: absolute; right: 75px; top: 1.3%;}
+.header_lang {width: 23px; position: absolute; right: 145px; top: 1.1%;}
+.header_siri {width: 20px; position: absolute; right: 183px; top:1.1%;}
+.header_search {width: 20px; position: absolute; right: 220px; top:1.1%;}
+.header_wifi {width: 23px; position: absolute; right: 256px; top: 1.2%;}
+.header_battery {width: 30px; position: absolute; right: 296px; top: 1.4%;}
+
+
+/* 메인 아이콘 */
+.app_dog     {width: 100px; position: absolute; right: 8.4%; top: 15%;}
+.app_ai      {width: 100px; position: absolute; right: 1%; top: 33%;}
+.app_xd      {width: 100px; position: absolute; right: 8.4%; top: 33%;}
+.app_ps      {width: 100px; position: absolute; right: 13.5%; top: 33.1%;}
+.app_chrome  {width: 100px; position: absolute; right: 1.9%; top: 48%;}
+.app_coding  {width: 100px; position: absolute; right: 8.4%; top: 48%;}
+.app_music   {width: 100px; position: absolute; left: 30px; top: 63px;}
+.app_megabox {width: 100px; position: absolute; right: 8.2%; top: 63%;}
+.app_minimi  {width: 100px; position: absolute; right: 13.9%; top: 62.8%;}
+.app_kakao   {width: 100px; position: absolute; right: 2%; top: 77%;}
+.app_insta   {width: 100px; position: absolute; right: 8%; top: 77%;}
+.folder_s    {width: 100px; position: absolute; left: 1%; top: 77%;}
+.folder_b    {width: 100px; position: absolute; left: 7%; top: 77.1%;}
+
+
+/* 메인 애니메이션 */
+.app_dog      {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.1s ease, translateY 0.5s 2.1s ease;}
+.app_ai       {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.2s ease, translateY 0.5s 2.1s ease;}
+.app_ps       {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.3s ease, translateY 0.5s 2.1s ease;}
+.app_xd       {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.4s ease, translateY 0.5s 2.1s ease;}
+.app_megabox  {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.5s ease, translateY 0.5s 2.1s ease;}
+.app_coding   {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.6s ease, translateY 0.5s 2.1s ease;}
+.app_insta    {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.7s ease, translateY 0.5s 2.1s ease;}
+.app_kakao    {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.8s ease, translateY 0.5s 2.1s ease;}
+.app_music    {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 2.9s ease, translateY 0.5s 2.1s ease;}
+.app_chrome   {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 3.0s ease, translateY 0.5s 2.1s ease;}
+.app_me       {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 3.1s ease, translateY 0.5s 2.1s ease;}
+.folder_s     {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 3.2s ease, translateY 0.5s 2.1s ease;}
+.folder_b     {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 3.3s ease, translateY 0.5s 2.1s ease;}
+.app_minimi   {opacity: 0; transform: translateY(30px); transition: opacity 0.5s 3.4s ease, translateY 0.5s 2.1s ease;}
+.table        {opacity: 0; bottom: -5%; transition: opacity 0.5s 3.5s ease, bottom 0.5s 2.1s ease;;  }
+
+body.active .app_dog      {opacity: 1; transform: translateY(0px);}
+body.active .app_ai       {opacity: 1; transform: translateY(0px);}
+body.active .app_ps       {opacity: 1; transform: translateY(0px);}
+body.active .app_xd       {opacity: 1; transform: translateY(0px);}
+body.active .app_megabox  {opacity: 1; transform: translateY(0px);}
+body.active .app_coding   {opacity: 1; transform: translateY(0px);}
+body.active .app_insta    {opacity: 1; transform: translateY(0px);}
+body.active .app_kakao    {opacity: 1; transform: translateY(0px);}
+body.active .app_music    {opacity: 1; transform: translateY(0px);}
+body.active .app_chrome   {opacity: 1; transform: translateY(0px);}
+body.active .app_me       {opacity: 1; transform: translateY(0px);}
+body.active .folder_s     {opacity: 1; transform: translateY(0px);}
+body.active .folder_b     {opacity: 1; transform: translateY(0px);}
+body.active .app_minimi   {opacity: 1; transform: translateY(0px);}
+body.active .table        {opacity: 1; bottom: 1%;}
+
+/* 오버 효과 */
+.hoverBounce:hover {animation: bounce 1s;}
+.hoverBounce2:hover {animation: bounce 1.4s ease-in-out;}
+.hoverHeartBeat:hover {animation: heartBeat 1s;}
+.hoverjello:hover {animation: jello 1s;}
+.hoverbounceOutDown:hover {animation: bounceOutDown 1s;}
+.hoverbounceOutUp:hover {animation: bounceOutUp 1s;}
+.hoverZoomOutDown:hover {animation: zoomOutDown 1s;}
+.hoverFlip:hover {animation: flip 1s ease;}
+.hoverRotateIn:hover {animation: rotateIn 1s ease;}
+.hoverTada:hover {animation: tada 1s ease;}
+.hoverPulse:hover {animation: pulse 1s ease;}
+.hoverShake:hover {animation: shake 1s ease;}
+.hoverWobble:hover {animation: wobble 1s ease;}
+.hoverFadeInUp:hover {animation: fadeInUp 1s ease;}
+
+
+/* 테이블 */
+.table {width: 900px; position: absolute; left: 50%; transform: translateX(-50%);background: url(../img/main_table.svg) no-repeat; height: 100px;}
+.table > div {position: relative;}
+.table > div > span {opacity: 0; transition: opacity 0.3s ease;}
+.table > div:hover > span {opacity: 1;}
+
+.table .app_boll_bg {width: 95px; position: absolute; left: 75px; bottom: 40px; z-index: 2;}
+.table .app_boll    {width: 95px; position: absolute; left: 75px; bottom: 40px; z-index: 2;}
+.table .app_cal     {width: 90px; position: absolute; left: 195px; bottom: 45px; z-index: 3;}
+.table .app_set     {width: 80px; position: absolute; left: 309px; bottom: 45px; z-index: 3;}
+.table .app_mail    {width: 100px; position: absolute; left: 415px; bottom: 40px; z-index: 4;}
+.table .app_memo    {width: 65px; position: absolute; left: 535px; bottom: 40px; z-index: 3;}
+.table .app_finder  {width: 75px; position: absolute; left: 640px; bottom: 40px; z-index: 3;}
+.table .app_trash   {width: 74px; position: absolute; left: 750px; bottom: 40px; z-index: 3;}
+.table .app_name    {width: 80px; position: absolute; left: 10%; bottom: 100%; z-index: 2; }
+
+
+/* 모달 */
+.modal-wrapper {width:100%;height:100%;position:fixed;top:0; left:0;background:rgba(255,257,153,0.75);visibility:hidden;opacity:0;transition: all 0.25s ease-in-out;}
+.modal-wrapper.open {opacity:1;visibility:visible;}
+.modal-wrapper.open .modal {opacity:1;}
+.modal {width:1100px; height:691px; transform: translate(-50%,-50%); display:block; position:relative; top:50%; left:50%; opacity:0; transition: all 0.5s ease-in-out;}
+
+.modal.photoshop {background: url(../img/main_ps.svg) no-repeat; background-size: 100%;}
+.modal.illustrator {background: url(../img/main_ai.svg) no-repeat; background-size: 100%;}
+.modal.xd {background: url(../img/main_xd.svg) no-repeat; background-size: 100%;}
+
+.modal .photoshop .box-btn1 .select1  {position: absolute; left: 200px; top: 180px; width: 214px; height: 140px; background: #333; cursor: pointer}
+.modal .photoshop .box-btn1 .select2  {position: absolute; left: 444px; top: 180px; width: 214px; height: 140px; background: #444; cursor: pointer}
+.modal .photoshop .box-btn1 .select3  {position: absolute; left: 684px; top: 180px; width: 214px; height: 140px; background: #555; cursor: pointer}
+.modal .photoshop .box-btn1 .select4  {position: absolute; left: 200px; top: 355px; width: 214px; height: 140px; background: #666; cursor: pointer}
+.modal .photoshop .box-btn1 .select5  {position: absolute; left: 444px; top: 355px; width: 214px; height: 140px; background: #777; cursor: pointer}
+.modal .photoshop .box-btn1 .select6  {position: absolute; left: 684px; top: 355px; width: 214px; height: 140px; background: #888; cursor: pointer}
+.modal .photoshop .box-cont1 > div {display: none; position: absolute;  top: 109px; left: 11px;  width: 1078px; height: 578px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .photoshop .box-cont1 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 5px solid #000; background: #fff; border-radius: 50%;}
+.modal .photoshop .box-cont1 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 5px solid #000; background: #fff; border-radius: 50%;}
+
+.modal .illustrator .box-btn2 .select1  {position: absolute; left: 200px; top: 180px; width: 214px; height: 140px; background: #333; cursor: pointer}
+.modal .illustrator .box-btn2 .select2  {position: absolute; left: 444px; top: 180px; width: 214px; height: 140px; background: #444; cursor: pointer}
+.modal .illustrator .box-btn2 .select3  {position: absolute; left: 684px; top: 180px; width: 214px; height: 140px; background: #555; cursor: pointer}
+.modal .illustrator .box-btn2 .select4  {position: absolute; left: 200px; top: 355px; width: 214px; height: 140px; background: #666; cursor: pointer}
+.modal .illustrator .box-btn2 .select5  {position: absolute; left: 444px; top: 355px; width: 214px; height: 140px; background: #777; cursor: pointer}
+.modal .illustrator .box-btn2 .select6  {position: absolute; left: 684px; top: 355px; width: 214px; height: 140px; background: #888; cursor: pointer}
+.modal .illustrator .box-cont2 > div {display: none; position: absolute;  top: 109px; left: 11px;  width: 1078px; height: 578px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .illustrator .box-cont2 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 5px solid #000; background: #fff; border-radius: 50%;}
+.modal .illustrator .box-cont2 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 5px solid #000; background: #fff; border-radius: 50%;}
+
+.modal .xd .box-btn3 .select1  {position: absolute; left: 200px; top: 180px; width: 214px; height: 140px; background: #333; cursor: pointer}
+.modal .xd .box-btn3 .select2  {position: absolute; left: 444px; top: 180px; width: 214px; height: 140px; background: #444; cursor: pointer}
+.modal .xd .box-btn3 .select3  {position: absolute; left: 684px; top: 180px; width: 214px; height: 140px; background: #555; cursor: pointer}
+.modal .xd .box-btn3 .select4  {position: absolute; left: 200px; top: 355px; width: 214px; height: 140px; background: #666; cursor: pointer}
+.modal .xd .box-cont3 > div {display: none; position: absolute;  top: 48px; left: 11px;  width: 1078px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .xd .box-cont3 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 5px solid #000; background: #fff; border-radius: 50%;}
+.modal .xd .box-cont3 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 5px solid #000; background: #fff; border-radius: 50%;}
+
+
+
+
+.btn-close {width:20px; height:20px; display:block; position: absolute; left: 29px; top: 18px; opacity: 0; transition: opacity 0.3s  }
+.btn-close:hover {opacity: 1;}
+.btn-close::before, .btn-close::after {content:''; width:8px; height:2px; display:block;background:#000;}
+.btn-close::before {margin-top:8px; margin-left: 5px; transform:rotate(45deg);}
+.btn-close::after{margin-top:-2px; margin-left: 5px; transform:rotate(-45deg);}
+
+
+
+
+
+
+

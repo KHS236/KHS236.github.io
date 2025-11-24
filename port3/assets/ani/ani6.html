@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Horizontal Site</title>
+
+	<style>
+		* {margin: 0; padding: 0;}
+		li {list-style: none;}
+		a {text-decoration: none;}
+
+		body {background: #fff5a4;}
+
+		.character {
+			width: 400px; height: 300px;
+			position: fixed; left: 50%; bottom: 0; 
+			z-index: 10;
+			margin-left: -200px;
+			background-size: 4000px;
+			background-image: url(https://tistory2.daumcdn.net/tistory/2911136/skin/images/front.jpg);
+		}
+
+		.character.walking {
+			animation: walk 1s steps(10, start) infinite;
+		}
+		@keyframes walk {
+			0% 	 {background-position:0px 0px; }
+			100% {background-position:-4000px 0px; }
+		}
+		.character.left {
+			background-image: url(https://tistory2.daumcdn.net/tistory/2911136/skin/images/back.jpg);
+			background-position: 0px;
+		}
+
+		.road {overflow: hidden; position: fixed; height: 100vh; width: 15000px; }
+		.road > div {width: 1500px;  }
+		.container {
+			float: left; 
+			height: 100vh; width: 1500px; 
+			line-height: 100vh; 
+			text-align: center; 
+			position: relative; 
+			font-size: 6vw; color: #ef8285;
+		}
+
+	</style>
+</head>
+<body style="overflow-X:hidden">
+	<div class="character"></div>
+
+	<div class="road">
+		<div class="container road1">START</div>
+		<div class="container road2">RUN</div>
+		<div class="container road3">RUN</div>
+		<div class="container road4">RUN</div>
+		<div class="container road5">RUN!~~~</div>
+		<div class="container road6">RUN~~</div>
+		<div class="container road7">OMG</div>
+		<div class="container road8">PLEASE</div>
+		<div class="container road9">OH NO..</div>
+		<div class="container road10">END</div>
+	</div>
+
+
+
+
+
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../js/TweenMax.min.js"></script>
+	<script>
+		// 전체 길이 값
+		// 마지막 스크롤 값
+		// 현재 화면의 가로 값
+		// 현재 화면의 세로 값
+		// 현재 화면의 스크롤 값
+		// 스크롤 했을 때 STEP
+		// 스크롤을 움직이면 ~
+
+		var lastScrollTop = 0;									//현재 스크롤 값(제일 마지막 스크롤 값)
+		var roadLength = $(".road").width();		//전체 가로 값 15000
+		$("body").css("height", roadLength);		//전체 세로 값은 width 전체 값을 할당 : 가로로 만들기 위해서..
+
+		$(window).scroll(function(){
+			var wScroll = $(window).scrollTop();	
+			var wWidth = $(window).width();		//현재 화면의 가로 값
+			var wHeight = $(window).height();		//현재 화면의 세로 값
+			var dHeight = $("body").height() - wHeight;		//전체 시로 값 - 현재 화면의 새로 값
+			var wRoad = roadLength - wWidth;		//전체 가로 값 - 현재 화면의 가로 값
+			var step = wRoad/dHeight;		//전체 가로 값 / 전체 세로 값
+			var goLeft = wScroll * step;
+			
+			$( ".road").css({"transform":"translateX(-"+ goLeft +"px)"});
+			
+			clearTimeout($.data(this,"scrollCheck"));
+			$.data(this,"scrollCheck",setTimeout(function(){
+				$(".character").removeClass("walking");
+			},100));		
+			
+			if(wScroll > lastScrollTop){
+				// 앞으로 가기
+				$(".character").removeClass("left")
+				$(".character").addClass("walking");
+			}else {
+				$(".character").addClass("left");
+				$(".character").addClass("walking");
+			}
+			
+			lastScrollTop = wScroll;
+		});
+
+
+		// 키보드 움직였을때
+		$(document).keydown(function(e){
+			if(e.which == 39){
+				var scrollTop = $(document).scrollTop();
+				$(window).scrollTop(scrollTop + 50);
+			}
+			if(e.which == 37){
+				var scrollTop = $(document).scrollTop();
+				$(window).scrollTop(scrollTop - 50);
+			}
+		});		
+
+		
+	</script>
+
+</body>
+</html>

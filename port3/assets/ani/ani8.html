@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG TweenMax Animation</title>
+
+	<style>
+		body { 
+			background: rgb(238,175,156);
+		}
+		svg {
+			position: absolute; left: 50%; top: 50%;
+			transform: translate(-50%,-50%);
+		}
+		#ani1 {
+			width: 300px; background: rgb(238,175,156);
+		}
+		#white-ring {
+			fill: none;
+			stroke: #fff;
+			stroke-width: 14;
+		}
+		#yellow-ring {
+			fill: none;
+			stroke: #fff5ab;
+			stroke-width: 14;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="svg">
+		<svg id="ani1" viewBox = "0 0 300 150">
+			<circle id="white-ring" class="st1" cx="125.8" cy="75.2" r="34.8" />
+			<circle id="yellow-ring" class="st2" cx="172.8" cy="75.2" r="34.8" />
+		</svg>
+	</div>
+
+
+
+
+
+
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../js/TweenMax.min.js"></script>
+	<script>
+		var whiteRing = document.getElementById("white-ring");		//자바스크립트
+		var yellowRing = document.getElementById("yellow-ring");		//자바스크립트
+
+		// var tl = new TimelineMax({ repeat:-1 })
+		// 		tl.fromTo();
+		new TimelineMax({ repeat:-1 })
+		.fromTo(whiteRing, 1, {x:0, y:0},{x:-70, y:10, ease:Power2.easeInOut},.5).fromTo(whiteRing, 1, {x:-70, y:10},{x:0, y:0, ease:Power2.easeInOut});
+
+		new TimelineMax({ repeat:-1 })
+		.fromTo(yellowRing, 1, {x:0, y:0},{x:70, y:10, ease:Power2.easeInOut},.5).fromTo(yellowRing, 1, {x:70, y:10},{x:0, y:0, ease:Power2.easeInOut});		
+
+	</script>
+</body>
+</html>

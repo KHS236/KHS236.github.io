@@ -1,0 +1,90 @@
+/* layout */
+#contents {}
+#section1 {height: 2000px; background: #111;}
+#section2 {height: 2000px; background: #222;}
+#section3 {height: 2000px; background: #333;}
+#section4 {height: 2000px; background: #444;}
+#section5 {height: 2000px; background: #555;}
+#section6 {height: 2000px; background: #666;}
+
+/* scroll */
+.scroll {position: fixed; top: 20px; left: 20px; width: 40px; height: 40px; background: rgba(0,0,0,0.7); line-height: 40px; text-align: center; color: #fff; font-size: 12px;}
+
+
+
+
+/* .sec1 */
+.sec1 {}
+.sec1 .radius {
+    position: fixed; left: 50%; top:50%; z-index: 10;
+    transform: translate(-50%, -50%);
+    width: 600px; height: 600px;
+}
+.sec1 .radius em {
+    position: absolute; left:50%; top:50%; z-index: 10;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 10vw;
+    width: 600px;
+    height: 600px;
+    line-height: 600px;
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    background-color: #B939CD;
+    animation: transform 15s ease-in-out infinite both alternate;
+    box-shadow: 
+        inset 10px 0 40px #aa00c7,
+        inset -10px 0 20px #04042F,
+        inset -40px 10px 110px #04042F;
+}
+.sec1 .radius em:before {
+    content: 'My Coding'; position: absolute; left: 50%; top: -20%;
+    transform: translateX(-50%);
+    font-size: 50px; font-weight: 700;
+    font-family: 'Abel', sans-serif;
+}
+.sec1 .radius em:after {
+    content: 'Professional Front-End / Web Publisher'; position: absolute; left: 50%; bottom: -100px;
+    transform: translateX(-50%);
+    font-size: 22px; white-space: nowrap;
+    font-family: 'Abel', sans-serif; 
+}
+
+.sec1 .radius:before {
+    content: '';
+    position: absolute; left: -100px; top: -50px; z-index: -1;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: #B939CD;
+    opacity: 0.3;
+    animation: transform 40s -10s ease-in-out infinite both alternate;
+    box-shadow: 
+        inset 10px 0 40px #aa00c7,
+        inset -10px 0 20px #04042F,
+        inset -40px 10px 110px #04042F;
+}
+.sec1 .radius:after {
+    content: '';
+    position: absolute; left: 250px; top: 100px; z-index: -5;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-color: #B939CD;
+    opacity: 0.3;
+    animation: transform 40s -10s ease-in-out infinite both alternate;
+    box-shadow: 
+        inset 10px 0 40px #aa00c7,
+        inset -10px 0 20px #04042F,
+        inset -40px 10px 110px #04042F;
+}
+
+.sec1 .moon1 {
+    position: fixed; right: 3%; top: 10%; z-index: 100;
+    width: 300px;
+    animation: moveY 5s infinite alternate;
+}
+
+
+
+

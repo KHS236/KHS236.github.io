@@ -1,0 +1,226 @@
+/* 레이아웃 */
+body {width: 100vw; height: 100vh; overflow: hidden; background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);}
+#wrap { }
+#headers {width: 100%; height: 40px; background-color:#f1f1f1; border-bottom: 2px solid #000;}
+#contents {}
+
+
+/* 로딩 */
+.progress {background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); color: #fff;height: 100vh;width: 100%;position: absolute; z-index: 5000;}
+.progress-bar {border-top: 1px solid rgb(160,160,160);position: absolute;top: 54%;width: 0%;}
+.progress-text {font-family: 'Chau Philomene One', sans-serif;font-size: 2vw;color: #fff;margin-top: 10px;position: absolute;text-align: center;top: 50%;width: 100%;}
+.progress-complete .progress-bar {border-top-color: rgb(255,255,255)}
+
+
+/* 헤더 */
+.header_logo {width: 28px; position:absolute; left: 20px; top:0.7%;}
+.header_text {width: 150px; position: absolute; left: 55px; top: 1.5%;}
+.header_ham {width: 30px; position: absolute; right: 20px; top: 1.2%;}
+.header_clock {width: 55px; position: absolute; right: 75px; top: 1.3%;}
+.header_lang {width: 23px; position: absolute; right: 145px; top: 1.1%;}
+.header_siri {width: 20px; position: absolute; right: 183px; top:1.1%;}
+.header_search {width: 20px; position: absolute; right: 220px; top:1.1%;}
+.header_wifi {width: 23px; position: absolute; right: 256px; top: 1.2%;}
+.header_battery {width: 30px; position: absolute; right: 296px; top: 1.4%;}
+
+/* 메인 애니메이션 */
+.table {bottom: 0;}
+.table .finder   {opacity: 0; transition: opacity 0.5s 2.1s ease;}
+.table .ai       {opacity: 0; transition: opacity 0.5s 2.2s ease;}
+.table .ps       {opacity: 0; transition: opacity 0.5s 2.3s ease;}
+.table .xd       {opacity: 0; transition: opacity 0.5s 2.4s ease;}
+.table .coding   {opacity: 0; transition: opacity 0.5s 2.5s ease;}
+.table .megabox  {opacity: 0; transition: opacity 0.5s 2.6s ease;}
+.table .setting  {opacity: 0; transition: opacity 0.5s 2.7s ease;}
+.table .card     {opacity: 0; transition: opacity 0.5s 2.8s ease;}
+.table .insta    {opacity: 0; transition: opacity 0.5s 2.9s ease;}
+.table .music    {opacity: 0; transition: opacity 0.5s 3.0s ease;}
+.table .chrome   {opacity: 0; transition: opacity 0.5s 3.1s ease;}
+.table .minimi   {opacity: 0; transition: opacity 0.5s 3.2s ease;}
+.table .dog      {opacity: 0; transition: opacity 0.5s 3.3s ease;}
+.table .rocket   {opacity: 0; transition: opacity 0.5s 3.4s ease;}
+.table .trash    {opacity: 0; transition: opacity 0.5s 3.5s ease;}
+.table .behance  {opacity: 0; transition: opacity 0.5s 3.6s ease;}
+.table .dirbble  {opacity: 0; transition: opacity 0.5s 3.7s ease;}
+.table .tistory  {opacity: 0; transition: opacity 0.5s 3.8s ease;}
+ 
+
+body.active .table .finder   {opacity: 1; }
+body.active .table .ai       {opacity: 1; }
+body.active .table .ps       {opacity: 1; }
+body.active .table .xd       {opacity: 1; }
+body.active .table .coding   {opacity: 1; }
+body.active .table .megabox  {opacity: 1; }
+body.active .table .setting  {opacity: 1; }
+body.active .table .card     {opacity: 1; }
+body.active .table .insta    {opacity: 1; }
+body.active .table .music    {opacity: 1; }
+body.active .table .chrome   {opacity: 1; }
+body.active .table .minimi   {opacity: 1; }
+body.active .table .dog      {opacity: 1; }
+body.active .table .rocket   {opacity: 1; }
+body.active .table .trash    {opacity: 1; }
+body.active .table .behance  {opacity: 1; }
+body.active .table .dirbble  {opacity: 1; }
+body.active .table .tistory  {opacity: 1; }
+
+
+/* 오버 효과 */
+.hoverBounce:hover {animation: bounce 1s;}
+.hoverBounce2:hover {animation: bounce 1.4s ease-in-out;}
+.hoverHeartBeat:hover {animation: heartBeat 1s;}
+.hoverjello:hover {animation: jello 1s;}
+.hoverbounceOutDown:hover {animation: bounceOutDown 1s;}
+.hoverbounceOutUp:hover {animation: bounceOutUp 1s;}
+.hoverZoomOutDown:hover {animation: zoomOutDown 1s;}
+.hoverFlip:hover {animation: flip 1s ease;}
+.hoverRotateIn:hover {animation: rotateIn 1s ease;}
+.hoverTada:hover {animation: tada 1s ease;}
+.hoverPulse:hover {animation: pulse 1s ease;}
+.hoverShake:hover {animation: shake 1s ease;}
+.hoverWobble:hover {animation: wobble 1s ease;}
+.hoverFadeInUp:hover {animation: fadeInUp 1s ease;}
+
+
+/* 테이블 */
+.table {width: 1200px; position: absolute; left: 50%; transform: translateX(-50%); height: 100px; background: url(../img/table3.svg) no-repeat center;}
+.table > div {position: relative; text-align: center;}
+.table > div > span {position: absolute; left: 50%; top: -20px; transform: translateX(-50%); display: block; border-radius: 5px; width: 50%;padding: 3px 10px 0 10px; opacity: 0; background: #fff; border: 2px solid #000; transition: opacity 0.3s ease;}
+.table > div:hover > span {opacity: 1;}
+
+.table {width: 1200px; position: absolute; left: 50%; transform: translateX(-50%); height: 100px; background: url(../img/table3.svg) no-repeat center;}
+.table .finder {width: 90px; position: absolute; left:0px; bottom: 2px; z-index: 2;}
+.table .ai {width: 90px; position: absolute; left: 70px; bottom: 2px; z-index: 2;}
+.table .ps {width: 90px; position: absolute; left: 140px; bottom: 2px; z-index: 2;}
+.table .xd {width: 90px; position: absolute; left: 210px; bottom: 2px; z-index: 2;}
+.table .coding {width: 90px; position: absolute; left: 280px; bottom: 2px; z-index: 2;}
+.table .megabox {width: 90px; position: absolute; left: 350px; bottom: 2px; z-index: 2;}
+.table .setting {width: 90px; position: absolute; left: 420px; bottom: 2px; z-index: 2;}
+.table .card {width: 90px; position: absolute; left: 490px; bottom: 2px; z-index: 2;}
+.table .insta {width: 90px; position: absolute; left: 560px; bottom: 2px; z-index: 2;}
+.table .music {width: 90px; position: absolute; left: 630px; bottom: 2px; z-index: 2;}
+.table .chrome {width: 90px; position: absolute; left: 700px; bottom: 2px; z-index: 2;}
+.table .minimi {width: 90px; position: absolute; left: 770px; bottom: 2px; z-index: 2;}
+.table .dog {width: 90px; position: absolute; left: 840px; bottom: 2px; z-index: 2;}
+.table .rocket {width: 90px; position: absolute; left: 910px; bottom: 2px; z-index: 2;}
+.table .behance {width: 90px; position: absolute; left: 980px; bottom: 2px; z-index: 2;}
+.table .dirbble {width: 90px; position: absolute; left: 1045px; bottom: 2px; z-index: 2;}
+.table .trash {width: 86px; position: absolute; left: 1115px; bottom: 2px; z-index: 2;}
+
+/* 메인 */
+.mainImg {width: 750px; position: absolute; left: 50%; top: 50%; z-index: 0; transform: translate(-50%, -50%);}
+
+
+/* 모달 */
+.modal-wrapper {width:100%;height:100%;position:fixed;top:0; left:0;background:rgba(0,0,0,0.75);visibility:hidden;opacity:0;transition: all 0.25s ease-in-out;}
+.modal-wrapper.open {opacity:1;visibility:visible;}
+.modal-wrapper.open .modal {opacity:1;}
+.modal {width:1100px; height:691px; transform: translate(-50%,-50%); display:block; position:relative; top:50%; left:50%; opacity:0; transition: all 0.5s ease-in-out;}
+
+.modal.photoshop {background: url(../img/main_ps.svg) no-repeat; background-size: 100%;}
+.modal.illustrator {background: url(../img/main_ai.svg) no-repeat; background-size: 100%;}
+.modal.xd {background: url(../img/main_xd.svg) no-repeat; background-size: 100%;}
+.modal.coding {background: url(../img/main_coding.svg) no-repeat; background-size: 100%;}
+.modal.megabox {background: url(../img/main_megabox.svg) no-repeat; background-size: 100%;}
+.modal.insta {background: url(../img/main_insta.svg) no-repeat; background-size: 100%;}
+.modal.chrome {background: url(../img/main_bee.svg) no-repeat; background-size: 100%;}
+.modal.minimi {background: url(../img/main_minimi.svg) no-repeat; background-size: 100%;}
+.modal.behance {background: url(../img/main_minimi.svg) no-repeat; background-size: 100%;}
+.modal.dirbble {background: url(../img/main_minimi.svg) no-repeat; background-size: 100%;}
+
+
+.modal .photoshop .box-btn1 .select1  {position: absolute; left: 221px; top: 199px; width: 233px; height: 153px; background: url(../img/psJpg1.jpg); cursor: pointer; background-size: 100%;}
+.modal .photoshop .box-btn1 .select2  {position: absolute; left: 488px; top: 199px; width: 233px; height: 153px; background: url(../img/psJpg2.jpg); cursor: pointer; background-size: 100%;}
+.modal .photoshop .box-btn1 .select3  {position: absolute; left: 753px; top: 199px; width: 233px; height: 153px; background: url(../img/psJpg3.jpg); cursor: pointer; background-size: 100%;}
+.modal .photoshop .box-btn1 .select4  {position: absolute; left: 221px; top: 391px; width: 233px; height: 153px; background: url(../img/psJpg4.jpg); cursor: pointer; background-size: 100%;}
+.modal .photoshop .box-btn1 .select5  {position: absolute; left: 488px; top: 391px; width: 233px; height: 153px; background: url(../img/psJpg5.jpg); cursor: pointer; background-size: 100%;}
+.modal .photoshop .box-btn1 .select6  {position: absolute; left: 753px; top: 391px; width: 233px; height: 153px; background: url(../img/psJpg6.jpg); cursor: pointer; background-size: 100%;}
+.modal .photoshop .box-btn1 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .photoshop .box-btn1 > div:hover span {opacity: 1;}
+.modal .photoshop .box-cont1 > div {display: none; position: absolute;  top: 109px; left: 11px;  width: 1078px; height: 578px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .photoshop .box-cont1 > div img {width: 100%;}
+.modal .photoshop .box-cont1 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg);  border-radius: 50%; overflow: hidden;}
+.modal .photoshop .box-cont1 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/goBtn.svg);  border-radius: 50%; overflow: hidden;}
+
+.modal .illustrator .box-btn2 .select1  {position: absolute; left: 221px; top: 199px; width: 233px; height: 153px; background: url(../img/aiJpg1.jpg); cursor: pointer; background-size: 100%;}
+.modal .illustrator .box-btn2 .select2  {position: absolute; left: 488px; top: 199px; width: 233px; height: 153px; background: url(../img/aiJpg2.jpg); cursor: pointer; background-size: 100%;}
+.modal .illustrator .box-btn2 .select3  {position: absolute; left: 753px; top: 199px; width: 233px; height: 153px; background: url(../img/aiJpg3.jpg); cursor: pointer; background-size: 100%;}
+.modal .illustrator .box-btn2 .select4  {position: absolute; left: 221px; top: 391px; width: 233px; height: 153px; background: url(../img/aiJpg4.jpg); cursor: pointer; background-size: 100%;}
+.modal .illustrator .box-btn2 .select5  {position: absolute; left: 488px; top: 391px; width: 233px; height: 153px; background: url(../img/aiJpg5.jpg); cursor: pointer; background-size: 100%;}
+.modal .illustrator .box-btn2 .select6  {position: absolute; left: 753px; top: 391px; width: 233px; height: 153px; background: url(../img/aiJpg6.jpg); cursor: pointer; background-size: 100%;}
+.modal .illustrator .box-btn2 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .illustrator .box-btn2 > div:hover span {opacity: 1;}
+.modal .illustrator .box-cont2 > div {display: none; position: absolute;  top: 109px; left: 11px;  width: 1078px; height: 578px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .illustrator .box-cont2 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg);  border-radius: 50%; overflow: hidden;}
+.modal .illustrator .box-cont2 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/goBtn.svg);  border-radius: 50%; overflow: hidden;}
+
+.modal .xd .box-btn3 .select1  {position: absolute; left: 255px; top: 437px; width: 126px; height: 126px; border-radius: 9px; background: url(../img/xdJpg1.jpg); background-size: 100%; cursor: pointer; border:2px solid #000;}
+.modal .xd .box-btn3 .select2  {position: absolute; left: 405px; top: 437px; width: 126px; height: 126px; border-radius: 9px; background: url(../img/xdJpg2.jpg); background-size: 100%; cursor: pointer; border:2px solid #000;}
+.modal .xd .box-btn3 .select3  {position: absolute; left: 559px; top: 437px; width: 126px; height: 126px; border-radius: 9px; background: url(../img/xdJpg3.jpg); background-size: 100%; cursor: pointer; border:2px solid #000;}
+.modal .xd .box-btn3 .select4  {position: absolute; left: 710px; top: 437px; width: 126px; height: 126px; border-radius: 9px; background: url(../img/xdJpg4.jpg); background-size: 100%; cursor: pointer; border:2px solid #000;}
+.modal .xd .box-btn3 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .xd .box-btn3 > div:hover span {opacity: 1;}
+.modal .xd .box-cont3 > div {display: none; position: absolute;  top: 48px; left: 11px;  width: 1078px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .xd .box-cont3 > div .over {height: 640px; width: 1078px; overflow-y: scroll;}
+.modal .xd .box-cont3 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg);  border-radius: 50%; overflow: hidden;}
+.modal .xd .box-cont3 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/goBtn.svg);  border-radius: 50%; overflow: hidden;}
+
+.modal .coding .box-btn4 .select1  {position: absolute; left: 257px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #333; cursor: pointer}
+.modal .coding .box-btn4 .select2  {position: absolute; left: 407px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #444; cursor: pointer}
+.modal .coding .box-btn4 .select3  {position: absolute; left: 561px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #555; cursor: pointer}
+.modal .coding .box-btn4 .select4  {position: absolute; left: 712px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #666; cursor: pointer}
+.modal .coding .box-btn4 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .coding .box-btn4 > div:hover span {opacity: 1;}
+.modal .coding .box-cont4 > div {display: none; position: absolute;  top: 48px; left: 11px;  width: 1078px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .coding .box-cont4 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg); border-radius: 50%; overflow: hidden;}
+.modal .coding .box-cont4 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg); border-radius: 50%; overflow: hidden;}
+
+.modal .megabox .box-btn5 .select1  {position: absolute; left: 330px; top: 138px; width: 400px; height: 400px; border-radius: 9px; background: transparent; cursor: pointer}
+.modal .megabox .box-cont5 > div {display: none; position: absolute;  top: 48px; left: 10px;  width: 1079px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .megabox .box-cont5 > div .over {height: 640px; width: 1078px; overflow-y: scroll;}
+.modal .megabox .box-cont5 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg); border-radius: 50%; overflow: hidden;}
+.modal .megabox .box-cont5 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/goBtn.svg); border-radius: 50%; overflow: hidden;}
+
+.modal .insta .box-btn6 .select1  {position: absolute; left: 257px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #333; cursor: pointer}
+.modal .insta .box-btn6 .select2  {position: absolute; left: 407px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #444; cursor: pointer}
+.modal .insta .box-btn6 .select3  {position: absolute; left: 561px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #555; cursor: pointer}
+.modal .insta .box-btn6 .select4  {position: absolute; left: 712px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #666; cursor: pointer}
+.modal .insta .box-btn6 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .insta .box-btn6 > div:hover span {opacity: 1;}
+.modal .insta .box-cont6 > div {display: none; position: absolute;  top: 48px; left: 11px;  width: 1078px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .insta .box-cont6 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg);  border-radius: 50%; overflow: hidden;}
+.modal .insta .box-cont6 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/goBtn.svg);  border-radius: 50%; overflow: hidden;}
+
+.modal .chrome .box-btn7 .select1  {position: absolute; left: 257px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #333; cursor: pointer}
+.modal .chrome .box-btn7 .select2  {position: absolute; left: 407px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #444; cursor: pointer}
+.modal .chrome .box-btn7 .select3  {position: absolute; left: 561px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #555; cursor: pointer}
+.modal .chrome .box-btn7 .select4  {position: absolute; left: 712px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #666; cursor: pointer}
+.modal .chrome .box-btn7 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .chrome .box-btn7 > div:hover span {opacity: 1;}
+.modal .chrome .box-cont7 > div {display: none; position: absolute;  top: 48px; left: 11px;  width: 1078px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .chrome .box-cont7 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/xBtn.svg);  border-radius: 50%; overflow: hidden;}
+.modal .chrome .box-cont7 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: #fff url(../img/goBtn.svg);  border-radius: 50%; overflow: hidden;}
+
+.modal .minimi .box-btn8 .select1  {position: absolute; left: 257px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #333; cursor: pointer}
+.modal .minimi .box-btn8 .select2  {position: absolute; left: 407px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #444; cursor: pointer}
+.modal .minimi .box-btn8 .select3  {position: absolute; left: 561px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #555; cursor: pointer}
+.modal .minimi .box-btn8 .select4  {position: absolute; left: 712px; top: 438px; width: 124px; height: 124px; border-radius: 9px; background: #666; cursor: pointer}
+.modal .minimi .box-btn8 > div span {opacity: 0; color: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: rgba(0,0,0,0.4); text-align: center; line-height: 55px; border-radius: 50%;}
+.modal .minimi .box-btn8 > div:hover span {opacity: 1;}
+.modal .minimi .box-cont8 > div {display: none; position: absolute;  top: 48px; left: 11px;  width: 1078px; height: 640px; background: #fff; overflow: hidden; border-radius: 0 0 5px 5px;}
+.modal .minimi .box-cont8 > div .btn_x {position: absolute; right: 20px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: url(../img/xBtn.svg); border-radius: 50%; overflow: hidden;}
+.modal .minimi .box-cont8 > div .btn_link {position: absolute; right: 90px; bottom: 20px; width: 50px; height: 50px; border: 1px solid #000; background: url(../img/goBtn.svg); border-radius: 50%; overflow: hidden;}
+
+
+.btn-close {width:20px; height:20px; display:block; position: absolute; left: 29px; top: 18px; opacity: 0; transition: opacity 0.3s  }
+.btn-close:hover {opacity: 1;}
+.btn-close::before, .btn-close::after {content:''; width:8px; height:2px; display:block;background:#000;}
+.btn-close::before {margin-top:8px; margin-left: 5px; transform:rotate(45deg);}
+.btn-close::after{margin-top:-2px; margin-left: 5px; transform:rotate(-45deg);}
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+/* layout */
+#contents {}
+#section1 {height: 7000px; background: #ccc;}
+#section2 {height: 4000px; background: #000;}
+#section3 {height: 6000px; background: #f00;}
+#section4 {height: 2000px; background: #666;}
+#section5 {height: 2000px; background: #555;}
+#section6 {}
+#section7 {}
+#section8 {}
+
+
+/* info */
+.info {position: fixed; right: 35px; top: 25px; z-index: 999;}
+.info span {position: relative; background: rgba(0,0,0,0.6);border-radius: 50%; color: #fff;width: 50px; height: 50px; display:inline-block;text-align: center; line-height: 50px;}
+.info .scroll_top:before {content:''; position: absolute;left: 50%; top: -50px; transform: translateX(-50%);}
+
+/* common */
+.fiexd5 {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.fiexd0 {position: fixed; left: 0; top: 0;}
+
+/* sec1 */
+.sec1 {position: relative;}
+.sec1 .abox1 {width: 3500px; height: 100vh; background: #101010; z-index: 10; color: #fff;} 
+.sec1 .abox2 {width: 3500px; height: 100vh; background: #fff; z-index: 1; color: #000;}
+
+.mTxt span {position: fixed; display: block; font-weight: 700; line-height: 1.3em; font-size: 15vh; left: 0; top: 20vw; z-index: 1000; color: #fff; transform: rotate(-90deg); width: 50vw;}
+.mTxt span:nth-child(1) {left: 0vw;}
+.mTxt span:nth-child(2) {left: 11vw;}
+.mTxt span:nth-child(3) {left: 22vw;}
+.mTxt span:nth-child(4) {left: 33vw;}
+
+.mImg1 {position: fixed; left: 80%; top: 50%; z-index: 100; transform: translateY(-50%);}
+.mImg2 {position: fixed; left: 90%; top: 30%; z-index: 100; transform: translateY(-50%);}
+.mImg3 {position: fixed; left: 100%; top: 70%; z-index: 100; transform: translateY(-50%);}
+.mImg1 img {width: 50vw;}
+.mImg2 img {width: 40vw;}
+.mImg3 img {width: 30vw;}
+
+.t_box {position: absolute; left: 45vw; top: 0; width: 60vw; height: 100vh;}
+.t_box ul {transform: rotate(-90deg); padding-left: 19vw;}
+.t_box ul li {font-size: 5.5vw; font-family: 'Roboto'; font-weight: 700;}
+
+
+/* sec2 */
+.sec2 {}
+.sec2 .site1 {overflow: hidden; width: 9000px; left: 100%;}
+.sec2 .site1 > div {position: relative; float: left; width: 1000px; height:100vh;}
+.sec2 .site1 .s1 {background: #fff; width: 3000px;}
+.sec2 .site1 .s2 {background: #222; width: 3000px;}
+.sec2 .site1 .s3 {background: #333; width: 3000px;}
+
+.sec2 .site1 .s1 figure {width: 1100px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.sec2 .site1 .s1 figure img {display: block; width: 600px; float: left;}
+.sec2 .site1 .s1 figcaption {display: block; width: 400px; margin-left: 100px; float: left; font-family: 'Roboto'; font-size: 18px; font-weight: 400; line-height: 1.6em; padding-top: 5%;}
+
+.sec2 .site1 figure img {display: block; width: 600px; float: left;}
+
+/* sec3 */
+.sec3 {position: relative;}
+.sec3 .ani1 {overflow: hidden; width: 9000px; left: -9000px;}
+.sec3 .ani1 > div {position: relative; float: left; height: 100vh;}
+.sec3 .ani1 .a1 {background: #111; width: 3000px; }
+.sec3 .ani1 .a2 {background: #222; width: 3000px; }
+.sec3 .ani1 .a3 {background: #333; width: 3000px; }
+
+.sec3 .ani1 .a3 figure {width: 1100px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.sec3 .ani1 .a3 figure img {display: block; width: 600px; float: left;}
+.sec3 .ani1 .a3 figcaption {display: block; width: 400px; margin-left: 100px; float: left; font-family: 'Roboto'; font-size: 18px; font-weight: 400; line-height: 1.6em; padding-top: 5%;}
+
+.sec3 .ani1 figure img {display: block; width: 600px; float: left;}
+
+
+
+
+/* mediaquery */
+@media (max-width:1000px){
+
+}
+
+
+
+
+
+
+
+
