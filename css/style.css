@@ -1,7 +1,11 @@
 /* 전체 */
-body {font-family: 'Noto Sans KR', sans-serif;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
-#section_wrap {overflow: hidden;}
+#section_wrap {
+    overflow: hidden;
+}
 
 /* 네비게이션 */
 #nav_wrap {
@@ -35,7 +39,7 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .nav .color1 {
-    color: #fbd366;
+    color: #3EE9b9;
     font-size: 16px;
 }
 
@@ -46,13 +50,13 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 .nav .menu li {
     float: left;
     margin-left: 60px;
-    
+
 }
 
 .nav .menu li a {
     line-height: 76px;
     font-size: 14px;
-    color:#fff;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.8px;
     -webkit-transition: all 0.3s ease;
@@ -60,12 +64,12 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .nav .menu li.active a {
-    color: #fbd366;
+    color: #3EE9b9;
     font-weight: bold;
 }
 
 .nav .menu li a:hover {
-    color: #fbd366;
+    color: #3EE9b9;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -96,13 +100,15 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 }
 
 #nav_wrap.on .nav .color1 {
-    color: #fbd366;
+    color: #3EE9b9;
     font-size: 16px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-#nav_wrap.on .nav .menu {float: right;}
+#nav_wrap.on .nav .menu {
+    float: right;
+}
 
 #nav_wrap.on .nav .menu li {
     float: left;
@@ -112,19 +118,19 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 #nav_wrap.on .nav .menu li a {
     line-height: 76px;
     font-size: 14px;
-    color:#737373;
+    color: #737373;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.8px;
 }
 
 #nav_wrap.on .nav .menu li.active a {
-    color: #907dda;
+    color: #3ee9b9;
     font-weight: bold;
     font-size: 14px;
 }
 
 #nav_wrap.on .nav .menu li a:hover {
-    color: #907dda;
+    color: #3ee9b9;
     transition: all 0.3s ease;
 }
 
@@ -160,11 +166,33 @@ body {font-family: 'Noto Sans KR', sans-serif;}
     text-align: center;
 }
 
+#container_skills h3 {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #333c60;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 60px;
+    letter-spacing: 0.8px;
+}
+
+#container_skills h3:after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #907dda;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    margin-left: -60px;
+}
+
 #section1 .container1 .avatar {
     border-radius: 100%;
     display: inline-block;
-    background-color: rgba(183,183,183,0.15);
-    border: 1px solid rgba(118,118,118,0.3);
+    background-color: rgba(183, 183, 183, 0.15);
+    border: 1px solid rgba(118, 118, 118, 0.3);
     padding: 8px;
 }
 
@@ -178,7 +206,7 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 #section1 .container1 h2 {
     font-size: 76px;
     color: #fff;
-    text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     padding-top: 12px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -195,6 +223,7 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 /* section2 */
 #section2 {
     width: 100%;
+    height: 1100px;
     border-top: 1px solid #ddd;
     background: url(../img/portbg.png);
     background-size: cover;
@@ -247,7 +276,9 @@ body {font-family: 'Noto Sans KR', sans-serif;}
     overflow: hidden;
 }
 
-#section2 .box_wrap .last {margin-right: 0;}
+#section2 .box_wrap .last {
+    margin-right: 0;
+}
 
 #section2 .box_wrap .p_box .img_box {
     position: relative;
@@ -258,42 +289,56 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 }
 
 #section2 .box_wrap .p_box .img_box img {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 100%;
-    -webkit-transition:all .4s linear;
-    transition:all .4s linear;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
 }
 
 #section2 .box_wrap .p_box .img_box .overlay {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
     opacity: 0;
     width: 384px;
     height: 250px;
-    background-color:rgba(144,125,218,0.7);
-    -webkit-transition:all .4s ease-in-out;
-    transition:all .4s ease-in-out;
+    background-color: rgba(144, 125, 218, 0.7);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 #section2 .box_wrap .p_box .img_box .overlay .info {
-    display:inline-block;
-    text-transform:uppercase;
-    color:#fff;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
     border: 1px solid #fff;
     margin-top: 115px;
     margin-left: 138.5px;
     padding: 7px 14px;
-    opacity:0;
-    -webkit-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
-#section2 .box_wrap .p_box .img_box:hover img {transform:scale(1.2);}
-#section2 .box_wrap .p_box .img_box:hover .info {opacity:1; transform:translatey(0); transition-delay:.1s;}
-#section2 .box_wrap .p_box .img_box .overlay:hover {opacity:1;}
-#section2 .box_wrap .p_box .img_box .overlay .info:hover {box-shadow:0 0 5px #fff;}
+
+#section2 .box_wrap .p_box .img_box:hover img {
+    transform: scale(1.2);
+}
+
+#section2 .box_wrap .p_box .img_box:hover .info {
+    opacity: 1;
+    transform: translatey(0);
+    transition-delay: .1s;
+}
+
+#section2 .box_wrap .p_box .img_box .overlay:hover {
+    opacity: 1;
+}
+
+#section2 .box_wrap .p_box .img_box .overlay .info:hover {
+    box-shadow: 0 0 5px #fff;
+}
 
 
 #section2 .box_wrap .p_box span {
@@ -340,7 +385,228 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 }
 
 #section3 .container3 address .color1 {
-    color: #fbd366;
+    color: #3ee9b9;
+}
+
+
+
+
+/* ========================
+[수정] Skills Section (Badge Style)
+======================== */
+#section_skills {
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+#section_skills .container_skills {
+    width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.skill_wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_left,
+.skill_right {
+    width: 46%;
+    /* 양쪽 분할 */
+    padding: 30px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+.skill_group h4 {
+    font-size: 20px;
+    color: #333c60;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-left: 4px solid #907dda;
+    padding-left: 10px;
+}
+
+.badge_box img {
+    height: 28px;
+    /* 배지 높이 통일 */
+    margin-right: 5px;
+    margin-bottom: 8px;
+    width: auto;
+    /* 비율 유지 */
+}
+
+/* ========================
+[수정] Portfolio Section (Single View)
+======================== */
+/* 기존 #section2 .box_wrap 관련 스타일은 무시됩니다 */
+
+.portfolio_view {
+    width: 1200px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pf_img {
+    width: 720px;
+    height: 356px;
+    /* 이미지 영역 */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pf_img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.pf_img:hover img {
+    transform: scale(1.05);
+}
+
+.pf_text {
+    width: 35%;
+    /* 텍스트 영역 */
+    text-align: left;
+}
+
+.pf_text h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.pf_text .desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    word-break: keep-all;
+}
+
+.pf_info {
+    margin-bottom: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.pf_info li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.pf_info li strong {
+    color: #907dda;
+    display: inline-block;
+    width: 60px;
+    font-weight: 600;
+}
+
+.btn_site {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #333c60;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn_site:hover {
+    background-color: #907dda;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(144, 125, 218, 0.4);
+}
+
+/* ========================
+[수정] Contact Section
+======================== */
+#section_contact .sub_tit {
+    text-align: center;
+    margin-top: -40px;
+    /* 제목과의 간격 조정 */
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: #777;
+    font-weight: 300;
+}
+
+.input_group label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333c60;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* 기존 .form_box, .input_group 스타일은 그대로 둡니다 (호환됨) */
+
+.form_box {
+    width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.input_group {
+    margin-bottom: 20px;
+}
+
+.input_group input,
+.input_group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fdfdfd;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input_group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.input_group input:focus,
+.input_group textarea:focus {
+    border-color: #907dda;
+    background-color: #fff;
+}
+
+#section_contact button {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #907dda;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+#section_contact button:hover {
+    background-color: #333c60;
 }
 
 
@@ -348,5 +614,200 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 
 
 
+/* ==============================================
+[통일] 모든 섹션 제목 스타일 (SKILLS, PORTFOLIO, CONTACT)
+============================================== */
+/* 기존에 개별적으로 적힌 h3 스타일을 이 코드로 덮어씌웁니다. */
+
+#section_skills h3,
+#section2 h3,
+#section_contact h3 {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #333c60;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 60px;
+    /* 위쪽 여백 */
+    margin-bottom: 50px;
+    /* 제목과 내용 사이 여백 */
+    letter-spacing: 0.8px;
+    /* 자간 */
+}
+
+/* 제목 아래 보라색 밑줄바 (공통) */
+#section_skills h3:after,
+#section2 h3:after,
+#section_contact h3:after {
+    content: '';
+    width: 120px;
+    /* 밑줄 길이 */
+    height: 2px;
+    /* 밑줄 두께 */
+    background-color: #907dda;
+    /* 보라색 포인트 컬러 */
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    /* 텍스트 바로 아래 위치 (padding-top 60px + 글자크기 고려) */
+    margin-left: -60px;
+    /* 정중앙 정렬 (width의 절반만큼 왼쪽으로 이동) */
+}
+
+/* Contact 섹션의 서브 타이틀 위치 미세 조정 */
+#section_contact .sub_tit {
+    margin-top: -30px;
+    /* 제목과의 간격을 좁힘 */
+    margin-bottom: 50px;
+}
 
 
+#section_contact {
+    height: 815px;
+    width: 100%;
+
+}
+
+.container_contact {
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+
+/* ==============================================
+   1. [수정] Contact 버튼 중앙 정렬 & 여백 추가
+   ============================================== */
+.mt50 {
+    margin-top: 100px !important;
+}
+
+/* 프로젝트 간격 벌리기 */
+
+#section_contact button {
+    display: block;
+    /* 블록 요소로 변경해야 margin auto가 먹힘 */
+    margin: 30px auto 0;
+    /* 위쪽 30px, 좌우 자동(중앙), 아래 0 */
+    padding: 15px 50px;
+    background-color: #907dda;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 4px;
+}
+
+#section_contact button:hover {
+    background-color: #333c60;
+}
+
+
+/* ==============================================
+   2. [추가] 다크 모드 (Dark Theme) 
+   * 원래대로 되돌리려면 아래 코드를 모두 삭제하세요.
+   ============================================== */
+
+/* 전체 배경 및 텍스트 기본 */
+body {
+    background-color: #1a1b26;
+    /* 아주 어두운 남색 계열 */
+    color: #e0e0e0;
+}
+
+/* 섹션별 배경색 어둡게 변경 */
+#section_skills,
+#section2,
+#section_contact {
+    background-color: #1a1b26 !important;
+    /* 배경색 덮어쓰기 */
+    border-top: 1px solid #333;
+}
+
+/* 박스들 (스킬, 컨택 폼) 배경색 변경 */
+.skill_left,
+.skill_right,
+.form_box {
+    background-color: #24253a;
+    /* 배경보다 살짝 밝은 톤 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* 그림자 진하게 */
+    border: 1px solid #333;
+}
+
+/* 제목 폰트 색상 변경 (어두운 배경이라 흰색으로) */
+#section_skills h3,
+#section2 h3,
+#section_contact h3,
+.pf_text h4,
+.skill_group h4 {
+    color: #fff !important;
+}
+
+/* 본문 텍스트 색상 변경 */
+.skill_item .txt,
+.pf_text .desc,
+.pf_info li {
+    color: #bbb;
+}
+
+/* 입력 폼(Input) 다크 모드 */
+.input_group input,
+.input_group textarea {
+    background-color: #1a1b26;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.input_group input:focus,
+.input_group textarea:focus {
+    border-color: #907dda;
+    background-color: #24253a;
+}
+
+.input_group label {
+    color: #ccc;
+}
+
+/* 스크롤 시 네비게이션 바 다크 모드 */
+#nav_wrap.on {
+    background-color: #1a1b26;
+    border-bottom: 1px solid #333;
+}
+
+#nav_wrap.on .nav .menu li a {
+    color: #fff;
+    /* 스크롤 내려도 글자 흰색 유지 */
+}
+
+#nav_wrap.on .nav .menu li.active a {
+    color: #3ee9b9;
+    /* 포인트 컬러 유지 */
+}
+
+/* ==============================================
+   [수정] 포트폴리오 섹션 텍스트 색상 강제 변경
+   (배경이 밝은 이미지일 경우 글씨가 잘 보이도록)
+   ============================================== */
+
+/* 1. PORTFOLIO 메인 제목 */
+#section2 h3 {
+    color: #333c60 !important; /* 진한 남색 */
+}
+
+/* 2. 프로젝트 제목 (Preparing... 등) */
+#section2 .pf_text h4 {
+    color: #222 !important; /* 검정색 */
+}
+
+/* 3. 프로젝트 설명글 */
+#section2 .pf_text .desc {
+    color: #555 !important; /* 진한 회색 */
+}
+
+/* 4. 프로젝트 상세 정보 (Status, Period 등) */
+#section2 .pf_info li {
+    color: #666 !important; /* 회색 */
+}
