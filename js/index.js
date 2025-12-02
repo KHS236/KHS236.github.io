@@ -70,6 +70,7 @@ $(document).ready(function () {
 
         // 여기에 "Service ID"와 "Template ID"를 순서대로 넣으세요.
         // 세 번째 'this'는 지우지 말고 그대로 두세요! (폼 데이터를 의미함)
+
         emailjs.sendForm('service_zxua0iv', 'template_36xjiyt', this)
             .then(function () {
                 alert('메세지가 성공적으로 전송되었습니다!');

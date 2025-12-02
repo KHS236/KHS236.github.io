@@ -173,7 +173,6 @@ body {
     color: #333c60;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    padding-top: 60px;
     letter-spacing: 0.8px;
 }
 
@@ -403,9 +402,22 @@ body {
 
 #section_skills .container_skills {
     width: 1200px;
-    padding: 100px 0;
     margin: 0 auto;
+    height: auto;
 }
+.gn_wrap{
+    /* border: 3px solid red; */
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gn_wrap>a{
+    height: 28px;
+}
+.gn_wrap>a>img{border: 1px solid white;}
 
 .skill_wrapper {
     width: 1000px;
@@ -630,7 +642,7 @@ body {
     font-weight: bold;
     padding-top: 60px;
     /* 위쪽 여백 */
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     /* 제목과 내용 사이 여백 */
     letter-spacing: 0.8px;
     /* 자간 */
@@ -810,4 +822,13 @@ body {
 /* 4. 프로젝트 상세 정보 (Status, Period 등) */
 #section2 .pf_info li {
     color: #666 !important; /* 회색 */
+}
+
+
+h6{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
